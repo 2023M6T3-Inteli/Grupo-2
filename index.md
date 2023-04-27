@@ -13,21 +13,23 @@
 </tr>
 </table>
 
-. Nome do Projeto: TINAM App
-. Nome do Parceiro: Dell
-. Nome do Grupo: TINAM Dev's
-. Integrantes do grupo
-  Abner Silve
-  Arthur Fraige
-  Carolina Fricks
-  Gabriel Nascimento
-  Mike Mouadeb
-  Sophia Tosar
+ # Nome do Projeto: TINAM App
+	
+ # Nome do Parceiro: Dell
+	
+ # Nome do Grupo: TINAM Dev's
+	
+ # Integrantes do grupo
+  - Abner Silva
+  - Arthur Fraige
+  - Carolina Fricks
+  - Gabriel Nascimento
+  - Mike Mouadeb
+  - Sophia Tosar
 
 <font size="+12"><center>
-Template do Documento do Projeto
-Módulo 6 - Engenharia de Software
-Elaboração de aplicação para dispositivos móveis.
+# Módulo 6 - Engenharia de Software
+## Elaboração de aplicação para dispositivos móveis.
 </center></font>
 
 >*Observação 1: A estrutura inicial deste documento é só um exemplo. O seu grupo deverá alterar esta estrutura de acordo com o que está sendo solicitado nos artefatos.*
@@ -97,12 +99,14 @@ Nesta seção, serão apresentados os problemas identificados e as necessidades 
 
 ### Matriz de avaliação de valor Oceano Azul
 
+	
+	
 Definir 8 atributos que são importantes para os clientes e diferenciá-los da concorrência por meio das ações de Reduzir, Eliminar, Aumentar e Criar.
 
 
 ### Proposta de Valor e Value Proposition Canvas
+<img src="https://github.com/2023M6T3-Inteli/Grupo-2/blob/main/docs/img/Canvas.png">
 
-Apresenta o Canvas de Proposta de Valor com relação à solução.
 
 
 ### Matriz de Risco
@@ -116,10 +120,7 @@ Informar o quanto o parceiro tem projetado para investir no projeto e quais são
 
 
 ## Mapeamento do processo
-
-Apresentar a modelagem do processo "to be", representando em alto nível o fluxo de trabalho a ser realizado dentro da solução.
-
-
+<img src="https://github.com/2023M6T3-Inteli/Grupo-2/blob/main/docs/img/Mapeamento%20de%20processos.png">
 
 ## Descritivo da Solução
 
@@ -158,11 +159,23 @@ A seção de requisitos do sistema é atualizada constantemente durante o ciclo 
 
 ## Requisitos Funcionais
 Esta seção da documentação do software fornece uma descrição detalhada dos requisitos do sistema. Ela inclui informações sobre as funcionalidades esperadas do software, as restrições e limitações do sistema e outras especificações relevantes.
+- O sistema deve  possuir uma lista de conteúdo (documentários e projetos)
+disponíveis na página inicial. 
+- O sistema deverá ter uma barra de busca para procurar conteúdo.
+- O sistema permitirá ao usuário publicar, editar , solicitar para participar e excluir conteúdo.
+- O sistema deve permitir que o usuário o acesso com o email da Dell.
+- O sistema deve permitir que o usuário navegue pela aplicação.
+- O sistema deve ter um ranking que lista os usuários mais engajados.
+- O sistema deve fornecer meios para o líder do projeto aceitar ou negar requisições de candidatos do projeto. 
+- O sistema deve permitir a visualização de perfis de outros usuários.
+- O sistema deve notificar o usuário sobre os conteúdos que são relevantes para o usuário. 
+
 
 
 ## Requisitos não Funcionais
 
 Descreve os recursos necessários para sua execução, os requisitos de segurança e privacidade.
+
 
 
 ## Perfis de Usuários 
