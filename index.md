@@ -13,18 +13,21 @@
 </tr>
 </table>
 
-. Nome do Projeto: xxxx
-. Nome do Parceiro: xxxx
-. Nome do Grupo: xxxx
-. Integrantes do grupo…
-  aaaaaa
-  bbbbbb
-  cccccc
+. Nome do Projeto: TINAM App
+. Nome do Parceiro: Dell
+. Nome do Grupo: TINAM Dev's
+. Integrantes do grupo
+  Abner Silve
+  Arthur Fraige
+  Carolina Fricks
+  Gabriel Nascimento
+  Mike Mouadeb
+  Sophia Tosar
 
 <font size="+12"><center>
 Template do Documento do Projeto
 Módulo 6 - Engenharia de Software
-Solução de otimização de corte de bobinas de papel
+Elaboração de aplicação para dispositivos móveis.
 </center></font>
 
 >*Observação 1: A estrutura inicial deste documento é só um exemplo. O seu grupo deverá alterar esta estrutura de acordo com o que está sendo solicitado nos artefatos.*
@@ -115,6 +118,7 @@ Informar o quanto o parceiro tem projetado para investir no projeto e quais são
 ## Mapeamento do processo
 
 Apresentar a modelagem do processo "to be", representando em alto nível o fluxo de trabalho a ser realizado dentro da solução.
+
 
 
 ## Descritivo da Solução
