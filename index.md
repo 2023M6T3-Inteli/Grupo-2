@@ -1,14 +1,12 @@
-<center>
-[template-documento1](../img/template-documento1.jpg)
-</center>
+
 <table>
 <tr>
 <table>
 <tr>
 <td>
-<a href= "https://klabin.com.br/"><img src="https://klabin.com.br/o/klabinklabinonline-theme/images/klabin-logo.png" alt="Klabin" border="0" width="100%"></a>
+<a href= "https://klabin.com.br/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Dell_logo_2016.svg/72px-Dell_logo_2016.svg.png" alt="Dell" border="0" width="100%"></a>
 </td>
-<td><a href= "https://www.inteli.edu.br/"><img src="../img/inteli-logo.png" alt="Inteli - Instituto de Tecnologia e Liderança" border="0" width="30%"></a>
+<td><a href= "https://www.inteli.edu.br/"> <img src="../img/inteli-logo.png" alt="Inteli - Instituto de Tecnologia e Liderança" border="0" width="30%"></a>
 </td>
 </tr>
 </table>
