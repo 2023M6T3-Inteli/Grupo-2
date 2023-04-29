@@ -138,7 +138,7 @@ A seção de requisitos do sistema é atualizada constantemente durante o ciclo 
 
 ## Mapeamento do processo
 
-<img src="./img/Mapeamento%20de%20processos.png">
+<img src="./img/mapeamento-de-processos-V2.png">
 
 ## Requisitos Funcionais
 
@@ -185,6 +185,12 @@ Atualizar a cada revisão/atualização da arquitetura, mantendo todas as 3 vers
 
 <center>
 <img src="./img/arquitetura-do-sistema-V1.png" alt="arq" border="0" width="100%">
+Arquitetura do sistema 1.0
+</center>
+
+## Diagrama de fluxo
+<center>
+<img src="./img/diagrama-de-fluxos-V1.png" alt="arq" border="0" width="100%">
 Arquitetura do sistema 1.0
 </center>
 
