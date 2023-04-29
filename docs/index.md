@@ -191,7 +191,7 @@ Arquitetura do sistema 1.0
 ## Diagrama de fluxo
 <center>
 <img src="./img/diagrama-de-fluxos-V1.png" alt="arq" border="0" width="100%">
-Arquitetura do sistema 1.0
+Diagrama de fluxo 1.0
 </center>
 
 # UX e UI Design
