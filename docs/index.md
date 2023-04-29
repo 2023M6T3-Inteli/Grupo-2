@@ -200,9 +200,8 @@ Atualizar a cada revisão/atualização da arquitetura, mantendo todas as 3 vers
 
 
 <center>
-![template-documento4](./img/template-documento4.jpg)
 <img src="https://github.com/2023M6T3-Inteli/Grupo-2/blob/docs/docs/img/arquitetura-do-sistema-V1.png" alt="arq" border="0" width="100%">
-Exemplo de Diagrama de Arquitetura
+Arquitetura do sistema 1.0
 </center>
 
 
