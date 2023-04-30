@@ -83,12 +83,15 @@
 # Visão Geral do Projeto
 
 ## Parceiro de Negócios
+O Parceiro de Negócios desse módulo é a Dell, uma das maiores fabricantes de PCs do mundo. Atualmente, ela oferece uma ampla gama de produtos e serviços de tecnologia. Além disso, ela é muito conhecida por sua presença em soluções de infraestrutura de data center e serviços em nuvem. 
 
-Breve descrição da instituição representada pelo parceiro de negócios, porte, onde atua, área de mercado que atua e posicionamento no mercado.
+Ademais, a empresa tem foco em inovação e design. Hoje em dia, a Dell continua sendo uma empresa líder em tecnologia e oferece soluções inovadoras e serviços de alta qaulidade para seus clientes em todo o mundo.
 
 ## Problema
+O Problema que a Dell tem enfrentado é a retenção de talentos e a desmotivação de funcionários. A Dell espera obter um time mais engajado e motivado dentro da empresa. Por isso, o grupo TINAM Devs desenvolveu uma rede social para os funcionários da Dell. 
 
-Descrever o problema ou a oportunidade de negócio.
+Esse aplicativo, tem como objetivo motivar os funcionários da Dell por meio da oportunidade de fazer postagens, compartilhar conteúdos, participar de projetos oferecidos dentro da empresa e consequentemente, ser bonificado pde acordo com as interações feitas dentro do aplicativo.
+
 
 ### Análise do Problema
 
