@@ -117,8 +117,9 @@ Dessa forma, depois de analisar a empresa Dell antes e depois do produto que foi
 <img src="./img/Canvas.png">
 
 ### Matriz de Risco
-
-Apresenta a matriz de risco com relação ao projeto.
+A matriz de riscos é uma ferramenta de análise de riscos que ajuda a identificar e priorizar os riscos em projetos. 
+A Imagem abaixo apresenta a Mateiz de Riscos realizada para esse projeto.
+<img scr="./img/Matriz de riscos.png">
 
 ### Análise Financeira
 A análise financeira de um projeto é essencial para ajudar os gestores a tomar decisões informadas sobre o investimento do projeto. Logo, de acordo com os dados obtidos nessa análise, é levado em consideração se o projeto poderá ou não trazer lucros para a empresa.
