@@ -94,7 +94,22 @@ Descrever o problema ou a oportunidade de negócio.
 Nesta seção, serão apresentados os problemas identificados e as necessidades do usuário, bem como uma avaliação da situação atual e as possíveis soluções para cada questão. Além disso, serão identificados os obstáculos e limitações do projeto, a fim de assegurar que todas as preocupações sejam abordadas antes do início da implementação. A Análise do Problema é essencial para garantir que a solução do software seja eficaz e atenda às necessidades dos usuários. É importante que seja realizada uma pesquisa exaustiva e que todas as perspectivas sejam consideradas para garantir que a solução seja bem-sucedida.
 
 ### Matriz de Oceano Azul
-Definir 8 atributos que são importantes para os clientes e diferenciá-los da concorrência por meio das ações de Reduzir, Eliminar, Aumentar e Cria
+A Matriz de Oceano Azul é uma ferramenta de estratégia empresarial criada para identificar oportunidades de negócios em mercados inexplorados. Ela gera oportunidade para as empresas criarem novos espaços de mercado e cresçam de forma significativa e sustentável. 
+No Link abaixo, é possível acessar a matriz de oceano azul que o grupo TINAM Devs produziu.
+
+(https://docs.google.com/spreadsheets/d/1KIeyIy-Iuh03lGvlmdwfQv6QXbmrh3x-anDuJ2xkDOg/edit#gid=0)
+
+Dessa forma, depois de analisar a empresa Dell antes e depois do produto que foi desenvolvido pelo grupo, é possível tirar algumas conclusões:
+
+01 O projeto vai aumentar praticidade para os funcionários da Dell 
+02- O projeto vai aumentar as tecnologias da Dell 
+03- O projeto vai eliminar a dificuldade de alocação dos funcionários 
+04-  O projeto vai aumentar a estética das tecnologias da Dell
+05- O projeto vai aumentar a durabilidade dos funcionários na empresa
+06- O projeto vai aumentar a qualidade da equipe de funcionários da Dell
+07- O projeto vai aumentar a experiência do cliente 
+08- O projeto vai criar inovação na empresa Dell.
+
 
 ### Proposta de Valor e Value Proposition Canvas
 
