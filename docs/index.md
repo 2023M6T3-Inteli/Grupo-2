@@ -62,6 +62,7 @@
   - [Casos de Uso](#casos-de-uso)
 - [Arquitetura do Sistema](#arquitetura-do-sistema)
 - [UX e UI Design](#ux-e-ui-design)
+  -[Benchmarking](#benchmarking-e-revisão-de-design-systems)
   - [Wireframes](#wireframes)
   - [Design de Interface - Guia de Estilos](#design-de-interface---guia-de-estilos)
 - [Projeto de Banco de Dados](#projeto-de-banco-de-dados)
@@ -215,6 +216,11 @@ Diagrama de fluxo 1.0
 
 Aborda o design e a funcionalidade da aplicação ou sistema em questão. Ela fornece informações sobre como o software é projetado para ser fácil de usar e intuitivo para os usuários. Nesta seção, deve ser possível encontrar descrições detalhadas sobre as principais características e recursos da interface do usuário, como botões, menus, ícones e outros elementos que são utilizados para facilitar a interação do usuário com o software. Além disso, são fornecidos exemplos de como as funcionalidades do software são acessadas e usadas pelos usuários, incluindo informações sobre os passos necessários para realizar tarefas específicas. Esta seção também aborda as principais preocupações de UX, como acessibilidade, usabilidade, consistência e simplicidade. São apresentados exemplos de como o software é projetado para atender às necessidades dos usuários com diferentes tipos de habilidades e recursos.
 
+## Benchmarking e Revisão de Design Systems 
+O Benchmarking é uma técnica de gestão que envolve a comparação sistemática do desempenho da empresa com outras empresas que estão no mesmo setor de mercado. O seu objetivo é identificar as melhores práticas e processos usados pela empresa e aquilo que pode melhorar. 
+
+Nessa seção será apresentado o Benchmarking de Designs Systems referentes à Dell, IBM e Adobe. 
+(https://docs.google.com/document/d/17mJUcLigGvAFVsf1VpK_UhXA2e7wYPeR90jAvjpeL6U/edit)
 ## Wireframes
 
 Telas de baixa fidelidade das áreas do usuário, conectados, demonstrando a diagramação e o fluxo de navegação
