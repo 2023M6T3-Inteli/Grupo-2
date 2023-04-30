@@ -102,14 +102,14 @@ No Link abaixo, é possível acessar a matriz de oceano azul que o grupo TINAM D
 
 Dessa forma, depois de analisar a empresa Dell antes e depois do produto que foi desenvolvido pelo grupo, é possível tirar algumas conclusões:
 
-01 O projeto vai aumentar praticidade para os funcionários da Dell 
-02- O projeto vai aumentar as tecnologias da Dell 
-03- O projeto vai eliminar a dificuldade de alocação dos funcionários 
-04-  O projeto vai aumentar a estética das tecnologias da Dell
-05- O projeto vai aumentar a durabilidade dos funcionários na empresa
-06- O projeto vai aumentar a qualidade da equipe de funcionários da Dell
-07- O projeto vai aumentar a experiência do cliente 
-08- O projeto vai criar inovação na empresa Dell.
+- O projeto vai aumentar praticidade para os funcionários da Dell 
+- O projeto vai aumentar as tecnologias da Dell 
+-  O projeto vai eliminar a dificuldade de alocação dos funcionários 
+- O projeto vai aumentar a estética das tecnologias da Dell
+- O projeto vai aumentar a durabilidade dos funcionários na empresa
+- O projeto vai aumentar a qualidade da equipe de funcionários da Dell
+- O projeto vai aumentar a experiência do cliente 
+- O projeto vai criar inovação na empresa Dell.
 
 
 ### Proposta de Valor e Value Proposition Canvas
@@ -119,7 +119,7 @@ Dessa forma, depois de analisar a empresa Dell antes e depois do produto que foi
 ### Matriz de Risco
 A matriz de riscos é uma ferramenta de análise de riscos que ajuda a identificar e priorizar os riscos em projetos. 
 A Imagem abaixo apresenta a Mateiz de Riscos realizada para esse projeto.
-<img scr="./img/Matriz de riscos.png">
+<img scr="./Matriz de riscos.PNG/"
 
 ### Análise Financeira
 A análise financeira de um projeto é essencial para ajudar os gestores a tomar decisões informadas sobre o investimento do projeto. Logo, de acordo com os dados obtidos nessa análise, é levado em consideração se o projeto poderá ou não trazer lucros para a empresa.
