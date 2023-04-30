@@ -121,7 +121,11 @@ Dessa forma, depois de analisar a empresa Dell antes e depois do produto que foi
 Apresenta a matriz de risco com relação ao projeto.
 
 ### Análise Financeira
-Informar o quanto o parceiro tem projetado para investir no projeto e quais são as projeções de custos e de receitas, relacionadas ao projeto (para o período de um ano), que o parceiro projeta ter.
+A análise financeira de um projeto é essencial para ajudar os gestores a tomar decisões informadas sobre o investimento do projeto. Logo, de acordo com os dados obtidos nessa análise, é levado em consideração se o projeto poderá ou não trazer lucros para a empresa.
+
+A seguir, encontra-se o link para acessar a análise financeira realizada pelo grupo TINAM Devs.
+
+https://docs.google.com/document/d/16Y3fO-OvyRv0n_pdTYwdQThtXdSX4TZi7Df-IhWQdBc/edit
 
 ### Mapeamento do Processo
 Apresentar a modelagem do processo "to be", representando em alto nível o fluxo de trabalho a ser realizado dentro da solução.
