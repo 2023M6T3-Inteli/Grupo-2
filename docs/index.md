@@ -43,9 +43,10 @@
   - [Parceiro de Negócios](#parceiro-de-negócios)
   - [Problema](#problema)
     - [Análise do Problema](#análise-do-problema)
-    - [Análise da Indústria](#análise-da-indústria)
-    - [Análise do cenário e Matriz SWOT](#análise-do-cenário-e-Matriz-SWOT)
+    - [Matriz de Oceano Azul](#matriz-de-oceano-azul)
     - [Proposta de Valor e Value Proposition Canvas](#proposta-de-valor-e-value-proposition-canvas)
+    - [Análise financeira do projeto](#analise-financeira)
+    - [Mapeamento do Processo](#mapeamento-do-processo)
     - [Matriz de Risco](#matriz-de-risco)
   - [Descritivo da Solução](#descritivo-da-solução)
     - [Objetivos](#objetivos)
@@ -92,13 +93,8 @@ Descrever o problema ou a oportunidade de negócio.
 
 Nesta seção, serão apresentados os problemas identificados e as necessidades do usuário, bem como uma avaliação da situação atual e as possíveis soluções para cada questão. Além disso, serão identificados os obstáculos e limitações do projeto, a fim de assegurar que todas as preocupações sejam abordadas antes do início da implementação. A Análise do Problema é essencial para garantir que a solução do software seja eficaz e atenda às necessidades dos usuários. É importante que seja realizada uma pesquisa exaustiva e que todas as perspectivas sejam consideradas para garantir que a solução seja bem-sucedida.
 
-### Análise da Indústria
-
-Análise da indústria (Modelo de 5 Forças de Porter) em relação ao cenário da empresa parceira.
-
-### Análise do cenário e Matriz SWOT
-
-Apresenta a Matriz SWOT com análise da empresa parceira.
+### Matriz de Oceano Azul
+Definir 8 atributos que são importantes para os clientes e diferenciá-los da concorrência por meio das ações de Reduzir, Eliminar, Aumentar e Cria
 
 ### Proposta de Valor e Value Proposition Canvas
 
@@ -107,6 +103,12 @@ Apresenta a Matriz SWOT com análise da empresa parceira.
 ### Matriz de Risco
 
 Apresenta a matriz de risco com relação ao projeto.
+
+### Análise Financeira
+Informar o quanto o parceiro tem projetado para investir no projeto e quais são as projeções de custos e de receitas, relacionadas ao projeto (para o período de um ano), que o parceiro projeta ter.
+
+### Mapeamento do Processo
+Apresentar a modelagem do processo "to be", representando em alto nível o fluxo de trabalho a ser realizado dentro da solução.
 
 ## Descritivo da Solução
 
