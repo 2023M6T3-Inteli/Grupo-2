@@ -60,6 +60,7 @@
   - [Requisitos não Funcionais](#requisitos-não-funcionais)
   - [Perfis de Usuários](#perfis-de-usuários)
   - [Casos de Uso](#casos-de-uso)
+  - [Matriz de rastreabilidade](#matriz-de-rastreabilidade)
 - [Arquitetura do Sistema](#arquitetura-do-sistema)
 - [UX e UI Design](#ux-e-ui-design) -[Benchmarking](#benchmarking-e-revisão-de-design-systems)
   - [Wireframes](#wireframes)
@@ -185,6 +186,19 @@ Esta seção da documentação do software fornece uma descrição detalhada dos
 ## Requisitos não Funcionais
 
 Descreve os recursos necessários para sua execução, os requisitos de segurança e privacidade.
+  
+- O sistema deve seguir as normas da LGPD, permitindo o acesso apenas para funcionários da Dell.
+- O sistema deve seguir a paleta de cores e fontes da Dell.
+- O sistema deve ter a aplicação em inglês
+- O sistema deve ser capaz de aguentar grande número de usuários e conteúdos.
+- O sistema deve funcionar corretamente na plataforma mobile.
+- O sistema deve possibilitar que o usuario de forma fácil aplique para a vaga proposta pela inteligencia artificial.
+- O sistema deve ser capaz de enviar notificações para o usuário de eventos desejados.
+- O sistema deve fornecer uma área de visualização de todos os participantes que se candidataram às vagas dos projetos gerindo de forma eficiente.
+- O sistema deve notificar o lider de projetos caso o projeto tenha sido aprovado
+- O sistema deve fornecer a opção de ver os comandos de aprovar ou desaprovar todas as propostas de projetos da equipe gerindo de forma segura. 
+- O sistema deve armazenar e mostrar todo o histórico de projetos cadastrados na plataforma 
+- O sistema deve  oferecer a opção de cadastrar o projeto na plataforma para atingir novos participantes de forma simples e rápida.
 
 ## Perfis de Usuários
 
@@ -194,14 +208,35 @@ A seção de perfil de usuário da documentação de software é responsável po
 
 A seção de casos de uso da documentação de software é uma parte crucial que descreve as funcionalidades
 do software e como elas serão utilizadas pelos usuários. Aqui, são listados todos os cenários possíveis de uso do software, incluindo as ações que o usuário pode realizar, as interações com o sistema e os resultados esperados. Os casos de uso são descritos em detalhes, incluindo a descrição do objetivo da funcionalidade, as entradas de dados, as ações do usuário e os resultados esperados. Além disso, também são incluídos os critérios de aceitação, que são os padrões que o software precisa atender para ser considerado como funcionando corretamente.
-
-Neste projeto os casos de uso devem ser descritos no formato de User Stories:
-Como PERFIL, DEVO/POSSO AÇÃO para OBJETIVO
-PERFIL: perfil do usuário que realizará a ação
-DEVO/POSSO: obrigatoriedade da ação
-AÇÃO: o que será realizado
-OBJETIVO: qual a finalidade da ação.
-
+  
+  - Eu como funcionário da Dell, quero fazer postagens na plataforma.
+  - Eu como funcionário da Dell, quero me inscrever em novos projetos.
+  - Eu como funcionário da Dell, quero ler postagens dos temas que tenho interesse.
+  - Eu como funcionário da Dell, quero receber feedback do gestor do projeto no qual participei.
+  - Eu como líder de projeto, quero saber o interesse dos colaboradores que se inscreveram no meu projeto. 
+  - Eu como funcionário da Dell, quero denunciar postagens que não fazem sentido pro aplicativo. 
+  - Como funcionária da Dell, quero receber notificações sobre projetos de assuntos que tenho interesse.
+  - Como líder do projeto quero poder visualizar as vagas que já foram preenchidas.
+  - Como funcionário, desejo desmarcar como salvo por não ter mais interesse.
+  - Como usuário, quero visualizar minha posição em relação aos meus colegas, dentro do ranking geral de usuários
+  - Como usuário, quero buscar um projeto específico em uma barra de pesquisas
+  - Como funcionário da Dell, quero ter acesso a um tutorial, para aprender a usar a plataforma
+  - Como funcionário da Dell, quero visualizar o perfil de outros usuários.
+  - Como funcionário, desejo receber e visualizar as minhas notificação se fui aprovado para participar do projeto
+  - Como funcionário, quero vizualizar meu rank.
+  - Como funcionário da Dell, quero visualizar o meu perfil com as minhas informações registradas
+  - Como funcionário da Dell, quero ter acesso a opção de acessar o dashboard de projetos para gerenciar.
+  - Como funcionário da Dell, desejo visualizar todos os candidatos às vagas dos projetos que estou gerindo.
+  - Como funcionário da Dell, desejo editar o status do projetos criados por mim.
+  - Como funcionário da Dell, desejo excluir meus projetos criados
+  - Como funcionário da Dell , desejo vizualizar somente os projetos criados por mim.
+  - Como funcionário da Dell, desejo aprovar ou rejeitar a participação dos candidatos.
+  - Como funcionário da Dell, desejo  receber e visualizar as minhas notificação se o meu projeto foi aprovado ou rejeitado
+  
+## Matriz de rastreabilidade
+  A seção de matriz de rastreabilidade tem como função auxiliar a visualização da relação entre os requisitos funcionais e não funcionais e os casos de uso.
+  
+  (https://docs.google.com/spreadsheets/d/12dbTVegm-uH6M-8SOcBtjQVkdFnjaft-R1v4uMoWH3o/edit?usp=sharing)
 <center>
 
 </center>
