@@ -43,9 +43,10 @@
   - [Parceiro de Negócios](#parceiro-de-negócios)
   - [Problema](#problema)
     - [Análise do Problema](#análise-do-problema)
-    - [Análise da Indústria](#análise-da-indústria)
-    - [Análise do cenário e Matriz SWOT](#análise-do-cenário-e-Matriz-SWOT)
+    - [Matriz de Oceano Azul](#matriz-de-oceano-azul)
     - [Proposta de Valor e Value Proposition Canvas](#proposta-de-valor-e-value-proposition-canvas)
+    - [Análise financeira do projeto](#analise-financeira)
+    - [Mapeamento do Processo](#mapeamento-do-processo)
     - [Matriz de Risco](#matriz-de-risco)
   - [Descritivo da Solução](#descritivo-da-solução)
     - [Objetivos](#objetivos)
@@ -61,6 +62,7 @@
   - [Casos de Uso](#casos-de-uso)
 - [Arquitetura do Sistema](#arquitetura-do-sistema)
 - [UX e UI Design](#ux-e-ui-design)
+  -[Benchmarking](#benchmarking-e-revisão-de-design-systems)
   - [Wireframes](#wireframes)
   - [Design de Interface - Guia de Estilos](#design-de-interface---guia-de-estilos)
 - [Projeto de Banco de Dados](#projeto-de-banco-de-dados)
@@ -81,32 +83,56 @@
 # Visão Geral do Projeto
 
 ## Parceiro de Negócios
+O Parceiro de Negócios desse módulo é a Dell, uma das maiores fabricantes de PCs do mundo. Atualmente, ela oferece uma ampla gama de produtos e serviços de tecnologia. Além disso, ela é muito conhecida por sua presença em soluções de infraestrutura de data center e serviços em nuvem. 
 
-Breve descrição da instituição representada pelo parceiro de negócios, porte, onde atua, área de mercado que atua e posicionamento no mercado.
+Ademais, a empresa tem foco em inovação e design. Hoje em dia, a Dell continua sendo uma empresa líder em tecnologia e oferece soluções inovadoras e serviços de alta qaulidade para seus clientes em todo o mundo.
 
 ## Problema
+O Problema que a Dell tem enfrentado é a retenção de talentos e a desmotivação de funcionários. A Dell espera obter um time mais engajado e motivado dentro da empresa. Por isso, o grupo TINAM Devs desenvolveu uma rede social para os funcionários da Dell. 
 
-Descrever o problema ou a oportunidade de negócio.
+Esse aplicativo, tem como objetivo motivar os funcionários da Dell por meio da oportunidade de fazer postagens, compartilhar conteúdos, participar de projetos oferecidos dentro da empresa e consequentemente, ser bonificado pde acordo com as interações feitas dentro do aplicativo.
+
 
 ### Análise do Problema
 
 Nesta seção, serão apresentados os problemas identificados e as necessidades do usuário, bem como uma avaliação da situação atual e as possíveis soluções para cada questão. Além disso, serão identificados os obstáculos e limitações do projeto, a fim de assegurar que todas as preocupações sejam abordadas antes do início da implementação. A Análise do Problema é essencial para garantir que a solução do software seja eficaz e atenda às necessidades dos usuários. É importante que seja realizada uma pesquisa exaustiva e que todas as perspectivas sejam consideradas para garantir que a solução seja bem-sucedida.
 
-### Análise da Indústria
+### Matriz de Oceano Azul
+A Matriz de Oceano Azul é uma ferramenta de estratégia empresarial criada para identificar oportunidades de negócios em mercados inexplorados. Ela gera oportunidade para as empresas criarem novos espaços de mercado e cresçam de forma significativa e sustentável. 
+No Link abaixo, é possível acessar a matriz de oceano azul que o grupo TINAM Devs produziu.
 
-Análise da indústria (Modelo de 5 Forças de Porter) em relação ao cenário da empresa parceira.
+(https://docs.google.com/spreadsheets/d/1KIeyIy-Iuh03lGvlmdwfQv6QXbmrh3x-anDuJ2xkDOg/edit#gid=0)
 
-### Análise do cenário e Matriz SWOT
+Dessa forma, depois de analisar a empresa Dell antes e depois do produto que foi desenvolvido pelo grupo, é possível tirar algumas conclusões:
 
-Apresenta a Matriz SWOT com análise da empresa parceira.
+- O projeto vai aumentar praticidade para os funcionários da Dell 
+- O projeto vai aumentar as tecnologias da Dell 
+-  O projeto vai eliminar a dificuldade de alocação dos funcionários 
+- O projeto vai aumentar a estética das tecnologias da Dell
+- O projeto vai aumentar a durabilidade dos funcionários na empresa
+- O projeto vai aumentar a qualidade da equipe de funcionários da Dell
+- O projeto vai aumentar a experiência do cliente 
+- O projeto vai criar inovação na empresa Dell.
+
 
 ### Proposta de Valor e Value Proposition Canvas
 
 <img src="./img/Canvas.png">
 
 ### Matriz de Risco
+A matriz de riscos é uma ferramenta de análise de riscos que ajuda a identificar e priorizar os riscos em projetos. 
+A Imagem abaixo apresenta a Mateiz de Riscos realizada para esse projeto.
+<img scr="./img/Matriz de riscos.PNG/"
 
-Apresenta a matriz de risco com relação ao projeto.
+### Análise Financeira
+A análise financeira de um projeto é essencial para ajudar os gestores a tomar decisões informadas sobre o investimento do projeto. Logo, de acordo com os dados obtidos nessa análise, é levado em consideração se o projeto poderá ou não trazer lucros para a empresa.
+
+A seguir, encontra-se o link para acessar a análise financeira realizada pelo grupo TINAM Devs.
+
+https://docs.google.com/document/d/16Y3fO-OvyRv0n_pdTYwdQThtXdSX4TZi7Df-IhWQdBc/edit
+
+### Mapeamento do Processo
+Apresentar a modelagem do processo "to be", representando em alto nível o fluxo de trabalho a ser realizado dentro da solução.
 
 ## Descritivo da Solução
 
@@ -198,6 +224,11 @@ Diagrama de fluxo 1.0
 
 Aborda o design e a funcionalidade da aplicação ou sistema em questão. Ela fornece informações sobre como o software é projetado para ser fácil de usar e intuitivo para os usuários. Nesta seção, deve ser possível encontrar descrições detalhadas sobre as principais características e recursos da interface do usuário, como botões, menus, ícones e outros elementos que são utilizados para facilitar a interação do usuário com o software. Além disso, são fornecidos exemplos de como as funcionalidades do software são acessadas e usadas pelos usuários, incluindo informações sobre os passos necessários para realizar tarefas específicas. Esta seção também aborda as principais preocupações de UX, como acessibilidade, usabilidade, consistência e simplicidade. São apresentados exemplos de como o software é projetado para atender às necessidades dos usuários com diferentes tipos de habilidades e recursos.
 
+## Benchmarking e Revisão de Design Systems 
+O Benchmarking é uma técnica de gestão que envolve a comparação sistemática do desempenho da empresa com outras empresas que estão no mesmo setor de mercado. O seu objetivo é identificar as melhores práticas e processos usados pela empresa e aquilo que pode melhorar. 
+
+Nessa seção será apresentado o Benchmarking de Designs Systems referentes à Dell, IBM e Adobe. 
+(https://docs.google.com/document/d/17mJUcLigGvAFVsf1VpK_UhXA2e7wYPeR90jAvjpeL6U/edit)
 ## Wireframes
 
 Telas de baixa fidelidade das áreas do usuário, conectados, demonstrando a diagramação e o fluxo de navegação
