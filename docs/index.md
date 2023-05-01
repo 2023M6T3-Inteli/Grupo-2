@@ -272,15 +272,47 @@ Nessa seção será apresentado o Benchmarking de Designs Systems referentes à 
 
 Telas de baixa fidelidade das áreas do usuário, conectados, demonstrando a diagramação e o fluxo de navegação
 
-Exemplos: tela da home, tela de login, etc. Em cada tela colocar: cabeçalho, rodapé, barra lateral, área de conteúdo
+<h1>Versão 1.0</h1>
+<p>Sendo a versão incial ainda possui algumas telas para serem criadas e visualizadas, onde na próxima versão já estrão prontas de acordo com o nosso planejamento.</p>
 
-Aqui você deve colocar o link para o wireframe ou colocar as imagens geradas na sequência correta do fluxo de navegação
+<img src="./img/wireframe_01.png">
+
+- Login : Tela de login, onde vai ser a tela onde terá a primeira interação com o usuário, principalmente com os usuários da Dell
+
+<br>
+
+- Home: Tela Home, onde será a segunda tela após o preenchimento das creedenciais no login, elá é a tela principal da aplicação, pois é a tela que mais tem interação, tanto com postagens ou sejá conteúdos sugeridos e também será possível ver os projetos presentes na plataforma
+
+<br>
+
+- Project page: Ainda seria a Home porem com a visualização dos projetos, tento tanto o foco em projetos abertos e fechados e de possivel aplicação a um projeto
+
+<br>
+
+- Profile : Tela de perfil, onde o usuário poderá visualizar as suas informações e seus projetos e também suas postagens
+
+<br>
+
+- Ranking : Tela de rank, onde é possivel visualizar a sua posição e a dos top 10 dentro da plataforma
+
+<strong>Todas as telas foram pensadas para seguirem o DS da Dell disponibilizado nesse link: https://www.delldesignsystem.com/, por esse motivos todos os icones, modelos de imagem, margins, grids e etc estão tentando seguir o DS da Dell, por esse motivo estamos criando telas com o modelo do Twitter, além de se tornar algo familiar para os usuários, facilitada no aprendizado da utilização do aplicativo, além de querermos trazer um ambiente saudavel e agradavel para aqueles que tem interrese em navegar pela área tech.</strong>
+
+<h2>Fluxo de navegação</h2>
+<img src="./img/wireframe_02.png">
+
+<h2>Style Guide</h2>
+<img src="./img/wireframe_03.png">
+
+<h3>Link Figma:</h3>
+
+https://www.figma.com/file/DUPhcHeSxuH0VSe4csEKtS/mobile?node-id=1%3A2&t=lskHFxYTPBXZzf2U-1
 
 ## Design de Interface - Guia de Estilos
 
 Refere-se ao design visual, cores, tipografia, imagens, logotipos, ou seja, os elementos visuais que compõem o produto.
-Aqu
-i você deve colocar o link para seu documento de guia de estilos
+
+<h3>Versão 1.0</h3>
+<img src="./img/wireframe_03.png">
 
 # Projeto de Banco de Dados
 
