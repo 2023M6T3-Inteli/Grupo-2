@@ -137,6 +137,8 @@ https://docs.google.com/document/d/16Y3fO-OvyRv0n_pdTYwdQThtXdSX4TZi7Df-IhWQdBc/
 
 Apresentar a modelagem do processo "to be", representando em alto nível o fluxo de trabalho a ser realizado dentro da solução.
 
+<img src="./img/mapeamento-de-processos-V2.png">
+
 ## Descritivo da Solução
 
 Descrição da solução a ser desenvolvida (o que é, quais principais funcionalidades, como usar) . Caso ainda não esteja definida a solução na Sprint 1, o faça assim que possível.
@@ -164,10 +166,6 @@ Descrever os principais stakeholders envolvidos no projeto e seus papéis.
 Esta seção é importante porque permite que os desenvolvedores entendam claramente o que é esperado do software e quais serão as restrições e desafios enfrentados durante o desenvolvimento. Além disso, permite que os usuários finais saibam se o software atende às suas expectativas e se está adequado ao seu ambiente de trabalho.
 
 A seção de requisitos do sistema é atualizada constantemente durante o ciclo de desenvolvimento do software, garantindo que todas as necessidades e especificações estejam sempre atualizadas.
-
-## Mapeamento do processo
-
-<img src="./img/mapeamento-de-processos-V2.png">
 
 ## Requisitos Funcionais
 
