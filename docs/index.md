@@ -1,35 +1,41 @@
-<center>
-![template-documento1](./img/template-documento1.jpg)
-</center>
 <table>
 <tr>
 <table>
 <tr>
 <td>
-<a href= "https://klabin.com.br/"><img src="https://klabin.com.br/o/klabinklabinonline-theme/images/klabin-logo.png" alt="Klabin" border="0" width="100%"></a>
+<a href= "https://klabin.com.br/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Dell_logo_2016.svg/72px-Dell_logo_2016.svg.png" alt="Dell" border="0" width="100%"></a>
 </td>
 <td><a href= "https://www.inteli.edu.br/"><img src="./img/inteli-logo.png" alt="Inteli - Instituto de Tecnologia e Liderança" border="0" width="30%"></a>
 </td>
 </tr>
 </table>
 
-. Nome do Projeto: xxxx
-. Nome do Parceiro: xxxx
-. Nome do Grupo: xxxx
-. Integrantes do grupo…
-  aaaaaa
-  bbbbbb
-  cccccc
+# Nome do Projeto: TINAM App
+
+# Nome do Parceiro: Dell
+
+# Nome do Grupo: TINAM Dev's
+
+# Integrantes do grupo
+
+- Abner Silva
+- Arthur Fraige
+- Carolina Fricks
+- Gabriel Nascimento
+- Mike Mouadeb
+- Sophia Tosar
 
 <font size="+12"><center>
-Template do Documento do Projeto
-Módulo 6 - Engenharia de Software
-Solução de otimização de corte de bobinas de papel
+
+# Módulo 6 - Engenharia de Software
+
+## Elaboração de aplicação para dispositivos móveis.
+
 </center></font>
 
->*Observação 1: A estrutura inicial deste documento é só um exemplo. O seu grupo deverá alterar esta estrutura de acordo com o que está sendo solicitado nos artefatos.*
+> _Observação 1: A estrutura inicial deste documento é só um exemplo. O seu grupo deverá alterar esta estrutura de acordo com o que está sendo solicitado nos artefatos._
 
->*Observação 2: O índice abaixo não precisa ser editado se você utilizar o Visual Studio Code com a extensão **Markdown All in One**. Essa extensão atualiza o índice automaticamente quando o arquivo é salvo.*
+> _Observação 2: O índice abaixo não precisa ser editado se você utilizar o Visual Studio Code com a extensão **Markdown All in One**. Essa extensão atualiza o índice automaticamente quando o arquivo é salvo._
 
 **Conteúdo**
 
@@ -37,9 +43,10 @@ Solução de otimização de corte de bobinas de papel
   - [Parceiro de Negócios](#parceiro-de-negócios)
   - [Problema](#problema)
     - [Análise do Problema](#análise-do-problema)
-    - [Análise da Indústria](#análise-da-indústria)
-    - [Análise do cenário e Matriz SWOT](#análise-do-cenário-e-Matriz-SWOT)
+    - [Matriz de Oceano Azul](#matriz-de-oceano-azul)
     - [Proposta de Valor e Value Proposition Canvas](#proposta-de-valor-e-value-proposition-canvas)
+    - [Análise financeira do projeto](#analise-financeira)
+    - [Mapeamento do Processo](#mapeamento-do-processo)
     - [Matriz de Risco](#matriz-de-risco)
   - [Descritivo da Solução](#descritivo-da-solução)
     - [Objetivos](#objetivos)
@@ -53,8 +60,9 @@ Solução de otimização de corte de bobinas de papel
   - [Requisitos não Funcionais](#requisitos-não-funcionais)
   - [Perfis de Usuários](#perfis-de-usuários)
   - [Casos de Uso](#casos-de-uso)
+  - [Matriz de rastreabilidade](#matriz-de-rastreabilidade)
 - [Arquitetura do Sistema](#arquitetura-do-sistema)
-- [UX e UI Design](#ux-e-ui-design)
+- [UX e UI Design](#ux-e-ui-design) -[Benchmarking](#benchmarking-e-revisão-de-design-systems)
   - [Wireframes](#wireframes)
   - [Design de Interface - Guia de Estilos](#design-de-interface---guia-de-estilos)
 - [Projeto de Banco de Dados](#projeto-de-banco-de-dados)
@@ -72,63 +80,77 @@ Solução de otimização de corte de bobinas de papel
 - [Referências](#referências)
 - [Apêndice](#apêndice)
 
-
 # Visão Geral do Projeto
-	
-
 
 ## Parceiro de Negócios
 
-Breve descrição da instituição representada pelo parceiro de negócios, porte, onde atua, área de mercado que atua e posicionamento no mercado.
+O Parceiro de Negócios desse módulo é a Dell, uma das maiores fabricantes de PCs do mundo. Atualmente, ela oferece uma ampla gama de produtos e serviços de tecnologia. Além disso, ela é muito conhecida por sua presença em soluções de infraestrutura de data center e serviços em nuvem.
 
+Ademais, a empresa tem foco em inovação e design. Hoje em dia, a Dell continua sendo uma empresa líder em tecnologia e oferece soluções inovadoras e serviços de alta qaulidade para seus clientes em todo o mundo.
 
 ## Problema
 
-Descrever o problema ou a oportunidade de negócio.
+O Problema que a Dell tem enfrentado é a retenção de talentos e a desmotivação de funcionários. A Dell espera obter um time mais engajado e motivado dentro da empresa. Por isso, o grupo TINAM Devs desenvolveu uma rede social para os funcionários da Dell.
 
+Esse aplicativo, tem como objetivo motivar os funcionários da Dell por meio da oportunidade de fazer postagens, compartilhar conteúdos, participar de projetos oferecidos dentro da empresa e consequentemente, ser bonificado pde acordo com as interações feitas dentro do aplicativo.
 
 ### Análise do Problema
 
 Nesta seção, serão apresentados os problemas identificados e as necessidades do usuário, bem como uma avaliação da situação atual e as possíveis soluções para cada questão. Além disso, serão identificados os obstáculos e limitações do projeto, a fim de assegurar que todas as preocupações sejam abordadas antes do início da implementação. A Análise do Problema é essencial para garantir que a solução do software seja eficaz e atenda às necessidades dos usuários. É importante que seja realizada uma pesquisa exaustiva e que todas as perspectivas sejam consideradas para garantir que a solução seja bem-sucedida.
 
+### Matriz de Oceano Azul
 
-### Análise da Indústria
+A Matriz de Oceano Azul é uma ferramenta de estratégia empresarial criada para identificar oportunidades de negócios em mercados inexplorados. Ela gera oportunidade para as empresas criarem novos espaços de mercado e cresçam de forma significativa e sustentável.
+No Link abaixo, é possível acessar a matriz de oceano azul que o grupo TINAM Devs produziu.
 
-Análise da indústria (Modelo de 5 Forças de Porter) em relação ao cenário da empresa parceira.
+(https://docs.google.com/spreadsheets/d/1KIeyIy-Iuh03lGvlmdwfQv6QXbmrh3x-anDuJ2xkDOg/edit#gid=0)
 
+Dessa forma, depois de analisar a empresa Dell antes e depois do produto que foi desenvolvido pelo grupo, é possível tirar algumas conclusões:
 
-### Análise do cenário e Matriz SWOT
-
-Apresenta a Matriz SWOT com análise da empresa parceira.
-
+- O projeto vai aumentar praticidade para os funcionários da Dell
+- O projeto vai aumentar as tecnologias da Dell
+- O projeto vai eliminar a dificuldade de alocação dos funcionários
+- O projeto vai aumentar a estética das tecnologias da Dell
+- O projeto vai aumentar a durabilidade dos funcionários na empresa
+- O projeto vai aumentar a qualidade da equipe de funcionários da Dell
+- O projeto vai aumentar a experiência do cliente
+- O projeto vai criar inovação na empresa Dell.
 
 ### Proposta de Valor e Value Proposition Canvas
 
-Apresenta o Canvas de Proposta de Valor com relação à solução.
-
+<img src="./img/Canvas.png">
 
 ### Matriz de Risco
 
-Apresenta a matriz de risco com relação ao projeto.
+A matriz de riscos é uma ferramenta de análise de riscos que ajuda a identificar e priorizar os riscos em projetos.
+A Imagem abaixo apresenta a Mateiz de Riscos realizada para esse projeto.
+<img src="./img/MatrizDeRiscos.png">
 
+### Análise Financeira
+
+A análise financeira de um projeto é essencial para ajudar os gestores a tomar decisões informadas sobre o investimento do projeto. Logo, de acordo com os dados obtidos nessa análise, é levado em consideração se o projeto poderá ou não trazer lucros para a empresa.
+
+A seguir, encontra-se o link para acessar a análise financeira realizada pelo grupo TINAM Devs.
+
+https://docs.google.com/document/d/16Y3fO-OvyRv0n_pdTYwdQThtXdSX4TZi7Df-IhWQdBc/edit
+
+### Mapeamento do Processo
+
+Apresentar a modelagem do processo "to be", representando em alto nível o fluxo de trabalho a ser realizado dentro da solução.
+
+<img src="./img/mapeamento-de-processos-V2.png">
 
 ## Descritivo da Solução
 
 Descrição da solução a ser desenvolvida (o que é, quais principais funcionalidades, como usar) . Caso ainda não esteja definida a solução na Sprint 1, o faça assim que possível.
 
-
 ### Objetivos
 
-Descrever os objetivos do projeto, objetivos gerais e objetivos específicos. 
-
+Descrever os objetivos do projeto, objetivos gerais e objetivos específicos.
 
 #### Objetivos gerais
 
-
-
 #### Objetivos específicos
-
-
 
 ### Justificativa
 
@@ -136,11 +158,9 @@ Qual o tipo de arquitetura de nuvem escolhida e sua justificativa
 Como arquitetura de nuvem escolhida deverá ser utilizada
 Quais os benefícios trazidos pela arquitetura de nuvem proposta
 
-
-## Partes Interessadas 
+## Partes Interessadas
 
 Descrever os principais stakeholders envolvidos no projeto e seus papéis.
-
 
 # Requisitos
 
@@ -148,88 +168,155 @@ Esta seção é importante porque permite que os desenvolvedores entendam claram
 
 A seção de requisitos do sistema é atualizada constantemente durante o ciclo de desenvolvimento do software, garantindo que todas as necessidades e especificações estejam sempre atualizadas.
 
-
-## Mapeamento do processo em alto nível
-
-Crie um modelo (tipo BPMN/Diagrama de atividades) que represente em alto nível o fluxo de trabalho a ser realizado dentro da solução.
-
-<center>
-![template-documento2](./img/template-documento2.jpg)
-
-Exemplo de Modelo (bpmn/Diagrama de Atividades)
-</center>
-
-
 ## Requisitos Funcionais
+
 Esta seção da documentação do software fornece uma descrição detalhada dos requisitos do sistema. Ela inclui informações sobre as funcionalidades esperadas do software, as restrições e limitações do sistema e outras especificações relevantes.
 
+- O sistema deve possuir uma lista de conteúdo (documentários e projetos)
+  disponíveis na página inicial.
+- O sistema deverá ter uma barra de busca para procurar conteúdo.
+- O sistema permitirá ao usuário publicar, editar , solicitar para participar e excluir conteúdo.
+- O sistema deve permitir que o usuário o acesso com o email da Dell.
+- O sistema deve permitir que o usuário navegue pela aplicação.
+- O sistema deve ter um ranking que lista os usuários mais engajados.
+- O sistema deve fornecer meios para o líder do projeto aceitar ou negar requisições de candidatos do projeto.
+- O sistema deve permitir a visualização de perfis de outros usuários.
+- O sistema deve notificar o usuário sobre os conteúdos que são relevantes para o usuário.
 
 ## Requisitos não Funcionais
 
 Descreve os recursos necessários para sua execução, os requisitos de segurança e privacidade.
+  
+- O sistema deve seguir as normas da LGPD, permitindo o acesso apenas para funcionários da Dell.
+- O sistema deve seguir a paleta de cores e fontes da Dell.
+- O sistema deve ter a aplicação em inglês
+- O sistema deve ser capaz de aguentar grande número de usuários e conteúdos.
+- O sistema deve funcionar corretamente na plataforma mobile.
+- O sistema deve possibilitar que o usuario de forma fácil aplique para a vaga proposta pela inteligencia artificial.
+- O sistema deve ser capaz de enviar notificações para o usuário de eventos desejados.
+- O sistema deve fornecer uma área de visualização de todos os participantes que se candidataram às vagas dos projetos gerindo de forma eficiente.
+- O sistema deve notificar o lider de projetos caso o projeto tenha sido aprovado
+- O sistema deve fornecer a opção de ver os comandos de aprovar ou desaprovar todas as propostas de projetos da equipe gerindo de forma segura. 
+- O sistema deve armazenar e mostrar todo o histórico de projetos cadastrados na plataforma 
+- O sistema deve  oferecer a opção de cadastrar o projeto na plataforma para atingir novos participantes de forma simples e rápida.
 
-
-## Perfis de Usuários 
+## Perfis de Usuários
 
 A seção de perfil de usuário da documentação de software é responsável por descrever instruções detalhadas sobre o uso de cada opção e recursos relacionados ao perfil do usuário, garantindo uma experiência fácil e intuitiva para o usuário final.
 
-
 ## Casos de Uso
 
-A seção de casos de uso da documentação de software é uma parte crucial que descreve as funcionalidades 
+A seção de casos de uso da documentação de software é uma parte crucial que descreve as funcionalidades
 do software e como elas serão utilizadas pelos usuários. Aqui, são listados todos os cenários possíveis de uso do software, incluindo as ações que o usuário pode realizar, as interações com o sistema e os resultados esperados. Os casos de uso são descritos em detalhes, incluindo a descrição do objetivo da funcionalidade, as entradas de dados, as ações do usuário e os resultados esperados. Além disso, também são incluídos os critérios de aceitação, que são os padrões que o software precisa atender para ser considerado como funcionando corretamente.
-
-Neste projeto os casos de uso devem ser descritos  no formato de User Stories:
-Como PERFIL, DEVO/POSSO AÇÃO para OBJETIVO
-PERFIL: perfil do usuário que realizará a ação
-DEVO/POSSO: obrigatoriedade da ação
-AÇÃO: o que será realizado
-OBJETIVO: qual a finalidade da ação.
-
-
+  
+  - Eu como funcionário da Dell, quero fazer postagens na plataforma.
+  - Eu como funcionário da Dell, quero me inscrever em novos projetos.
+  - Eu como funcionário da Dell, quero ler postagens dos temas que tenho interesse.
+  - Eu como funcionário da Dell, quero receber feedback do gestor do projeto no qual participei.
+  - Eu como líder de projeto, quero saber o interesse dos colaboradores que se inscreveram no meu projeto. 
+  - Eu como funcionário da Dell, quero denunciar postagens que não fazem sentido pro aplicativo. 
+  - Como funcionária da Dell, quero receber notificações sobre projetos de assuntos que tenho interesse.
+  - Como líder do projeto quero poder visualizar as vagas que já foram preenchidas.
+  - Como funcionário, desejo desmarcar como salvo por não ter mais interesse.
+  - Como usuário, quero visualizar minha posição em relação aos meus colegas, dentro do ranking geral de usuários
+  - Como usuário, quero buscar um projeto específico em uma barra de pesquisas
+  - Como funcionário da Dell, quero ter acesso a um tutorial, para aprender a usar a plataforma
+  - Como funcionário da Dell, quero visualizar o perfil de outros usuários.
+  - Como funcionário, desejo receber e visualizar as minhas notificação se fui aprovado para participar do projeto
+  - Como funcionário, quero vizualizar meu rank.
+  - Como funcionário da Dell, quero visualizar o meu perfil com as minhas informações registradas
+  - Como funcionário da Dell, quero ter acesso a opção de acessar o dashboard de projetos para gerenciar.
+  - Como funcionário da Dell, desejo visualizar todos os candidatos às vagas dos projetos que estou gerindo.
+  - Como funcionário da Dell, desejo editar o status do projetos criados por mim.
+  - Como funcionário da Dell, desejo excluir meus projetos criados
+  - Como funcionário da Dell , desejo vizualizar somente os projetos criados por mim.
+  - Como funcionário da Dell, desejo aprovar ou rejeitar a participação dos candidatos.
+  - Como funcionário da Dell, desejo  receber e visualizar as minhas notificação se o meu projeto foi aprovado ou rejeitado
+  
+## Matriz de rastreabilidade
+  A seção de matriz de rastreabilidade tem como função auxiliar a visualização da relação entre os requisitos funcionais e não funcionais e os casos de uso.
+  
+  (https://docs.google.com/spreadsheets/d/12dbTVegm-uH6M-8SOcBtjQVkdFnjaft-R1v4uMoWH3o/edit?usp=sharing)
 <center>
-![template-documento3](./img/template-documento3.jpg)
 
-Exemplo de Diagrama de Casos de Uso
 </center>
-
 
 # Arquitetura do Sistema
 
 Atualizar a cada revisão/atualização da arquitetura, mantendo todas as 3 versões no documento..
 
-
 <center>
-![template-documento4](./img/template-documento4.jpg)
-
-Exemplo de Diagrama de Arquitetura
+<img src="./img/arquitetura-do-sistema-V1.png" alt="arq" border="0" width="100%">
+Arquitetura do sistema 1.0
 </center>
 
+## Diagrama de fluxo
+
+<center>
+<img src="./img/diagrama-de-fluxos-V1.png" alt="arq" border="0" width="100%">
+Diagrama de fluxo 1.0
+</center>
 
 # UX e UI Design
 
 Aborda o design e a funcionalidade da aplicação ou sistema em questão. Ela fornece informações sobre como o software é projetado para ser fácil de usar e intuitivo para os usuários. Nesta seção, deve ser possível encontrar descrições detalhadas sobre as principais características e recursos da interface do usuário, como botões, menus, ícones e outros elementos que são utilizados para facilitar a interação do usuário com o software. Além disso, são fornecidos exemplos de como as funcionalidades do software são acessadas e usadas pelos usuários, incluindo informações sobre os passos necessários para realizar tarefas específicas. Esta seção também aborda as principais preocupações de UX, como acessibilidade, usabilidade, consistência e simplicidade. São apresentados exemplos de como o software é projetado para atender às necessidades dos usuários com diferentes tipos de habilidades e recursos.
 
+## Benchmarking e Revisão de Design Systems
+
+O Benchmarking é uma técnica de gestão que envolve a comparação sistemática do desempenho da empresa com outras empresas que estão no mesmo setor de mercado. O seu objetivo é identificar as melhores práticas e processos usados pela empresa e aquilo que pode melhorar.
+
+Nessa seção será apresentado o Benchmarking de Designs Systems referentes à Dell, IBM e Adobe.
+(https://docs.google.com/document/d/17mJUcLigGvAFVsf1VpK_UhXA2e7wYPeR90jAvjpeL6U/edit)
 
 ## Wireframes
 
 Telas de baixa fidelidade das áreas do usuário, conectados, demonstrando a diagramação e o fluxo de navegação
 
-Exemplos: tela da home, tela de login, etc. Em cada tela colocar: cabeçalho, rodapé, barra lateral, área de conteúdo
+<h1>Versão 1.0</h1>
+<p>Sendo a versão incial ainda possui algumas telas para serem criadas e visualizadas, onde na próxima versão já estrão prontas de acordo com o nosso planejamento.</p>
 
-Aqui você deve colocar o link para o wireframe ou colocar as imagens geradas na sequência correta do fluxo de navegação
+<img src="./img/wireframe_01.png">
+
+- Login : Tela de login, onde vai ser a tela onde terá a primeira interação com o usuário, principalmente com os usuários da Dell
+
+<br>
+
+- Home: Tela Home, onde será a segunda tela após o preenchimento das creedenciais no login, elá é a tela principal da aplicação, pois é a tela que mais tem interação, tanto com postagens ou sejá conteúdos sugeridos e também será possível ver os projetos presentes na plataforma
+
+<br>
+
+- Project page: Ainda seria a Home porem com a visualização dos projetos, tento tanto o foco em projetos abertos e fechados e de possivel aplicação a um projeto
+
+<br>
+
+- Profile : Tela de perfil, onde o usuário poderá visualizar as suas informações e seus projetos e também suas postagens
+
+<br>
+
+- Ranking : Tela de rank, onde é possivel visualizar a sua posição e a dos top 10 dentro da plataforma
+
+<strong>Todas as telas foram pensadas para seguirem o DS da Dell disponibilizado nesse link: https://www.delldesignsystem.com/, por esse motivos todos os icones, modelos de imagem, margins, grids e etc estão tentando seguir o DS da Dell, por esse motivo estamos criando telas com o modelo do Twitter, além de se tornar algo familiar para os usuários, facilitada no aprendizado da utilização do aplicativo, além de querermos trazer um ambiente saudavel e agradavel para aqueles que tem interrese em navegar pela área tech.</strong>
+
+<h2>Fluxo de navegação</h2>
+<img src="./img/wireframe_02.png">
+
+<h2>Style Guide</h2>
+<img src="./img/wireframe_03.png">
+
+<h3>Link Figma:</h3>
+
+https://www.figma.com/file/DUPhcHeSxuH0VSe4csEKtS/mobile?node-id=1%3A2&t=lskHFxYTPBXZzf2U-1
 
 ## Design de Interface - Guia de Estilos
+
 Refere-se ao design visual, cores, tipografia, imagens, logotipos, ou seja, os elementos visuais que compõem o produto.
-Aqu
-i você deve colocar o link para seu documento de guia de estilos
 
-
+<h3>Versão 1.0</h3>
+<img src="./img/wireframe_03.png">
 
 # Projeto de Banco de Dados
 
 Documento contendo diagrama de entidades e relacionamentos do banco de dados
-
 
 ## Modelo Conceitual
 
@@ -243,67 +330,49 @@ entidades e tipos de entidades
 atributos e tipos de atributos
 relacionamentos e tipos de relacionamentos
 
+## Modelo Lógico
 
-## Modelo Lógico 
-
-O modelo lógico de banco de dados é uma representação abstrata e simplificada dos dados armazenados no sistema. É utilizado para entender como os dados são relacionados e para garantir a integridade e consistência dos dados armazenados. Incluir  uma descrição detalhada das tabelas, campos e relações presentes no modelo lógico de banco de dados. Também serão apresentadas as regras de negócio e as restrições aplicadas aos dados para garantir a integridade e a consistência dos dados armazenados.
-
-
+O modelo lógico de banco de dados é uma representação abstrata e simplificada dos dados armazenados no sistema. É utilizado para entender como os dados são relacionados e para garantir a integridade e consistência dos dados armazenados. Incluir uma descrição detalhada das tabelas, campos e relações presentes no modelo lógico de banco de dados. Também serão apresentadas as regras de negócio e as restrições aplicadas aos dados para garantir a integridade e a consistência dos dados armazenados.
 
 # Testes de Software
-
-
 
 ## Teste Unitário
 
 Link ou imagem da tabela com dados organizados dos testes realizados
 
-
 ## Teste de Integração
 
 Link ou imagem da tabela com dados organizados dos testes realizados
-
 
 ## Teste de Regressão
 
 Link ou imagem da tabela com dados organizados dos testes realizados
 
-
-## Teste de Usabilidade 
-
-Link ou imagem da tabela com dados organizados dos testes realizados
-
-
-## Teste de Funcionalidade 
+## Teste de Usabilidade
 
 Link ou imagem da tabela com dados organizados dos testes realizados
 
-
-## Teste de API 
+## Teste de Funcionalidade
 
 Link ou imagem da tabela com dados organizados dos testes realizados
 
+## Teste de API
+
+Link ou imagem da tabela com dados organizados dos testes realizados
 
 # Documentação da API
 
 Apresentar a documentação no formato Swagger ou aplicação equivalente com todas as requisições dos endpoints desenvolvidos e funcionando.
 
-
 # Manual do Usuário
 
 Fornecer instruções detalhadas sobre como usar o software corretamente. É uma ferramenta valiosa para ajudar os usuários a compreender as funções do software, instalar o software, configurar as preferências do usuário, entre outras tarefas. O manual do usuário geralmente inclui screenshots, animações e outros recursos visuais para tornar a experiência do usuário mais clara e intuitiva. Além disso, ele também pode incluir informações sobre solução de problemas, dicas e truques, bem como informações de contato para suporte técnico. É importante que a seção de manual do usuário seja atualizada frequentemente para garantir que os usuários tenham acesso à informação mais recente e precisa sobre o software.
-
- 
-
-
-
 
 # Referências
 
 Toda referência citada no texto deverá constar nessa seção, utilizando o padrão de normalização da ABNT - ABNT NBR 10520). As citações devem ser confiáveis e relevantes para o trabalho. São imprescindíveis as citações dos sites de download das ferramentas utilizadas, bem como a citação de algum objeto, música, textura ou outros que não tenham sido produzidos pelo grupo, mas utilizados (mesmo no caso de licenças gratuitas, royalty free ou similares)
 Sugerimos o uso do sistema autor-data para citações.
 
+# Apêndice
 
-# Apêndice 
-
-Os apêndices representam informações adicionais que não caberiam no documento exposto acima, mas que são importantes por alguma razão específica do projeto. 
+Os apêndices representam informações adicionais que não caberiam no documento exposto acima, mas que são importantes por alguma razão específica do projeto.
