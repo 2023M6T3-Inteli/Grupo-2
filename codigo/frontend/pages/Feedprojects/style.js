@@ -7,4 +7,8 @@ export default styles = StyleSheet.create({
       alignItems: 'center',
       justifyContent: 'center',
     },
+    text: {
+      color: '#FFFFFF',
+      fontSize: 20,
+    },
   });
