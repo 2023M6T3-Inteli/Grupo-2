@@ -1,11 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
+import styles from './style';
+
 
 export function CardProject(){
     return (
-    <View>
-        <Text>Teste de cardproject</Text>
+    <View style={styles.container}>
+        <Text style={styles.text}>PROJETO</Text>
+
+        <StatusBar style="auto" />
     </View>
     )
 }

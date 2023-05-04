@@ -5,8 +5,7 @@ import styles from './style'
 
 export function Projects() {
     return (
-      <View style={styles.container}>
-        <Text>Test 145222545</Text>
+      <View style={styles.page}>
         <Text>Teste de cardproject</Text>
 
         <CardProject/>

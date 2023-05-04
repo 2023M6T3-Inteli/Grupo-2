@@ -7,7 +7,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Test 145222545</Text>
-      <Text>Gabriel lindo</Text>
+      <Text>Gabrielr</Text>
 
       <Projects/>
 
