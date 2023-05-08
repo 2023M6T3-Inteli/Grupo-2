@@ -59,9 +59,20 @@ export default function Login() {
                 <LinearGradient colors={['#3069AE', '#295480', '#295A95']} style={{ height: 550 }}>
                     <Text style={styles.hello}>{text}</Text>
 
-                    <View style={{ flex: 1, alignSelf: "center", marginTop: 90 }}>
-                        <TextInput style={styles.inputText} placeholder="Username" placeholderTextColor="white" />
-                        <TextInput style={styles.inputText} placeholder="Password" placeholderTextColor="white" secureTextEntry={true} />
+
+                    <View style={{ flex: 1, alignSelf: "center", marginTop: 90, flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
+                        <Image
+                            source={require("../../assets/Icons/user.png")}
+                            style={{ position: "absolute", top: 8, left: 13, resizeMode: "contain", width: 25 }} />
+
+                        <Image
+                            source={require("../../assets/Icons/key.png")}
+                            style={{ position: "absolute", top: 83, left: 13, resizeMode: "contain", width: 25 }} />
+
+                        <View>
+                            <TextInput style={styles.inputText} placeholder="Username" placeholderTextColor="white" />
+                            <TextInput style={styles.inputText} placeholder="Password" placeholderTextColor="white" secureTextEntry={true} />
+                        </View>
                     </View>
 
                     <View style={{ marginTop: 50 }}>
@@ -79,7 +90,7 @@ export default function Login() {
                             }} >
 
 
-                            <Pressable>
+                            <Pressable onPress={() => { console.log("clique") }}>
                                 <Text style={{ color: "white", fontSize: 20 }}>Login</Text>
                             </Pressable>
                         </LinearGradient>
