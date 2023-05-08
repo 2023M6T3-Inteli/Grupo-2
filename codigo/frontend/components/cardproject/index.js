@@ -1,6 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import { Card, Button} from 'react-native-elements';
+import { StyleSheet, Text, View, Button } from 'react-native';
 
 import styles from './style';
 
@@ -8,24 +7,19 @@ import styles from './style';
 export function CardProject(){
     return (
     <View style={styles.container}>
+        <Text style={styles.title}>Test Project</Text>
 
-        <Card>
-            <Card.Title>Projeto teste</Card.Title>
-            <Card.Divider/>
+        <Text style={styles.text}> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis pretium arcu, vel ullamcorper ante feugiat vitae. In augue risus, venenatis ut libero a, commodo malesuada mauris. </Text>
 
-            <Text style={{marginBottom: 10}}>
-                Esse card foi feito para testar o componente Card do react-native-elements, passei uma cota tentando fazer funcionar, mas agora deu certo. Obrigado Copilot
-            </Text>
-            <Button
-                icon={{name: 'code'}}
-                backgroundColor='#03A9F4'
-                fontFamily='Lato'
-                buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-                title='SAIBA MAIS'
-                onPress={() => {alert('FUNCIONOU')}} />
-        </Card>
-
-        <StatusBar style="auto" />
+        <View style={styles.tagDiv}>
+            <Text style={styles.tags}>#tag1</Text>
+            <Text style={styles.tags}>#tag1</Text>
+            <Text style={styles.tags}>#tag1</Text>
+        </View>
+        
+        <View style={{flexDirection: 'column'}}>
+            <Text style={styles.button}>Apply</Text>
+        </View>
     </View>
     )
 }
