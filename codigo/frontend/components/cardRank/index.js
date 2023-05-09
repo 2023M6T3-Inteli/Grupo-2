@@ -1,11 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image} from 'react-native';
 
 export default function CardRanking({ item }) {
     return (
         <View style={styles.num}>
             {/* <View style={styles.text2}> */}
+            <View style={styles.barra1}>
             <Text style={styles.first}>{item.position}o</Text>
+            </View>
+            <View style={styles.barra}></View>
+            <Image source={require("../../assets/FotoRanking.png")}/>
             <View style={styles.name}>
                 <Text style={styles.mariana}> {item.name}</Text>
                 <Text style={styles.mariana1}>{item.user}</Text>
@@ -36,22 +40,39 @@ const styles = StyleSheet.create({
     },
     first: {
         color: '#fff',
+        fontSize: 20,
+        alignSelf: "center",
+        marginLeft: 10
+    },
+    barra1: {
+        justifyContent: "center",
+        alignItems: "center",
+        flexDirection: "row",
+    },
+    barra: {
+        width: 1,
+        height: 55,
+        backgroundColor: "#fff",
+
     },
     name: {
         color: '#fff',
+        justifyContent: "center",
     },
     mariana: {
         color: '#fff',
     },
     mariana1: {
-        color: '#fff',
+        color: '#42484F',
     },
-    numbPoints: {},
+    numbPoints: {
+        justifyContent: "center",
+    },
     numb: {
-        color: '#fff',
+        color: '#31A2E3',
     },
     pontos: {
-        color: '#fff',
+        color: '#42484F',
     },
 
 });

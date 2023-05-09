@@ -2,7 +2,21 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import CardRanking from '../../components/cardRank';
 
+
+
 export default function Ranking() {
+
+    const dataUsers = [
+        {
+            position:1, name: "Mariana Almeida", user: "@mariana", points:450
+        },{
+            position:2, name: "Mariana Almeida", user: "@mariana", points:450
+        },{
+            position:3, name: "Mariana Almeida", user: "@mariana", points:350
+        },
+    ]
+
+
     return (
         <View style={styles.container}>
             <View style={styles.heading}>
@@ -12,21 +26,15 @@ export default function Ranking() {
             <View style={styles.shopNew}>
                 <View style={styles.text1}>
                     <Text style={styles.shop}>Shop</Text>
-                    <Text style={styles.new}>New</Text>
+                    <Text style={styles.new}>new</Text>
                 </View>
-                {[
-                    {
-                        position:1, name: "Mariana Almeida", user: "@mariana", points:450
-                    },{
-                        position:2, name: "Mariana Almeida", user: "@mariana", points:450
-                    },{
-                        position:3, name: "Mariana Almeida", user: "@mariana", points:450
-                    },{
-                        position:4, name: "Mariana Almeida", user: "@mariana", points:450
-                    },
-                ].map((item,index)=>(
+                {dataUsers.map((item,index)=>(
                     <CardRanking item={item}/>
                 ))}
+            </View>
+            <View style={styles.barraDeitada}></View>
+            <View>
+            
             </View>
 
             <StatusBar style="auto" />
@@ -67,6 +75,12 @@ const styles = StyleSheet.create({
         marginHorizontal: 8,
         justifyContent: "center",
     },
+    barraDeitada: {
+        backgroundColor: "#fff",
+        width: 330,
+        height: 1,
+
+    },
     text1: {
         display: "flex",
         flexDirection: "row",
@@ -74,6 +88,7 @@ const styles = StyleSheet.create({
     shop: {
         color: '#fff',
         marginTop: 48,
+        fontSize: 20,
     },
     new: {
         color: '#fff',
@@ -81,7 +96,9 @@ const styles = StyleSheet.create({
         backgroundColor: '#A534DB',
         borderRadius: 45,
         padding: 10,
-        marginTop: 39,
+        marginTop: 44,
+        fontSize: 13,
+
     },
     
 });
