@@ -6,7 +6,7 @@ export default styles = StyleSheet.create({
         backgroundColor: '#192028',
         marginHorizontal: 50,
         marginVertical: 275,
-        width: 300,
+        width: 350,
         height: 300,
         borderRadius: 10,
     },
