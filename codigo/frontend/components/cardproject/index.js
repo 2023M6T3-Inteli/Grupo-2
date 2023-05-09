@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View, Button, Image } from 'react-native';
 
 import styles from './style';
 
@@ -10,8 +10,10 @@ export function CardProject(){
         <Text style={styles.title}>Test Project</Text>
 
         <View style={styles.leadersDiv}>
+            <Image source={require('../../assets/Vector.png')}/>
             <Text style={styles.leadersText}>Leader name</Text>
             <Text style={styles.leadersText}>04/05/2023</Text>
+
             <Text style={styles.leadersText}>Open</Text>
         </View>
 

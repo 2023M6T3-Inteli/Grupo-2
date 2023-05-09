@@ -6,6 +6,7 @@ export default styles = StyleSheet.create({
       backgroundColor: '#000000',
       alignItems: 'center',
       justifyContent: 'center',
+      height: '100%',
     },
     text: {
       color: '#FFFFFF',

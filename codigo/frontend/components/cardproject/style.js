@@ -2,13 +2,13 @@ import { StyleSheet } from "react-native";
 
 export default styles = StyleSheet.create({
     container: {
-        flex: 1,
+        flexShrink: 1,
         backgroundColor: '#192028',
-        marginHorizontal: 50,
-        marginVertical: 275,
         width: 350,
-        height: 300,
+        height: 325,
         borderRadius: 10,
+        padding: 10,
+        margin: 50,
     },
 
     title: {
@@ -17,17 +17,20 @@ export default styles = StyleSheet.create({
         fontWeight: 'bold',
         marginLeft: 10,
         marginTop: 10,
+        padding: 5,
     },
 
     leadersDiv:{
         flexDirection: 'row',
         marginTop: 10,
+        padding: 5,
     },
 
     leadersText:{
         color: '#fff',
         fontSize: 13,
         marginLeft: 25,
+        padding: 5,
     },
 
     text: {
@@ -35,6 +38,7 @@ export default styles = StyleSheet.create({
         color: '#fff',
         fontSize: 16,
         margin: 10,
+        padding: 5,
 
     },
 
@@ -51,6 +55,7 @@ export default styles = StyleSheet.create({
 
     tagDiv: {
         flexDirection: 'row',
+        padding: 5,
     },
 
     button: {
@@ -59,6 +64,7 @@ export default styles = StyleSheet.create({
         alignSelf: 'flex-end',
         marginRight: 10,
         marginTop: 10,
+        padding: 5,
         
     },
   });
