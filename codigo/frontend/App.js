@@ -1,11 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
+import {Projects} from './pages/Feedprojects';
+
 export default function App() {
   return (
     <View style={styles.container}>
       <Text>Test 145222545</Text>
-      <Text>Gabriel lindo</Text>
+      <Text>Gabrielr</Text>
+
+      <Projects/>
+
       <StatusBar style="auto" />
     </View>
   );
