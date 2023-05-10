@@ -9,3 +9,109 @@ datasource db {
   provider = "sqlite"
   url      = env("DATABASE_URL")
 }
+
+model User {
+  idUser        Int      @id @default(autoincrement())
+  fullName      String
+  email         String   @unique
+  password      String
+  subName       String
+  isManager     Boolean  @default(false)
+  idManager     Int
+
+  rankUser      RankUser[]
+  userTags      UserTags[]
+}
+
+model Project {
+  idProject     Int      @id @default(autoincrement())
+  name          String
+  description   String
+  dataStart     DateTime
+  duration      Int
+  statusApply   Boolean
+  newOrGoing    Boolean
+  idUser        Int
+  idManager     Int
+
+  projectTag    ProjectTag[]
+}  
+
+model Post {
+  idPost        Int     @id @default(autoincrement())
+  article       String
+  time          DateTime
+  ups           Int
+  downs         Int
+  idUser        Int
+  image         String
+  qntLikes      Int
+}
+
+model Comment {
+  idComment     Int     @id @default(autoincrement())
+  idPost        Int
+  idUser        Int
+  comment       String
+}
+
+model Techs {
+  idTag        Int     @id @default(autoincrement())
+  techName     String
+
+  projectTag   ProjectTag[]
+  userTags     UserTags[]
+}
+
+model ProjectComplaint {
+  idProjectComplaint     Int     @id @default(autoincrement())
+  complaintReason        String
+  feedback               String
+  idProject              Int
+}
+
+model PostComplaint {
+  idPostComplaint        Int     @id @default(autoincrement())
+  complaintReason        String
+  feedback               String
+  idPost                 Int
+}
+
+model CommentComplaint {
+  idCommentComplaint     Int     @id @default(autoincrement())
+  complaintReason        String
+  feedback               String
+  idComment              Int
+}
+
+model ProjectTag {
+  idProject             Int       
+  idTag                 Int
+
+  Project               Project   @relation(fields: [idProject], references: [idProject])
+  Techs                 Techs     @relation(fields: [idTag], references: [idTag])
+
+  @@id([idProject, idTag])
+}
+
+model RankUser {
+  idUser                Int
+  points                Int
+  position              Int
+
+  User                  User      @relation(fields: [idUser], references: [idUser])
+
+  @@id([idUser])
+}
+
+model UserTags {
+  idUser                Int
+  idTag                 Int
+  level                 Int
+
+  User                  User      @relation(fields: [idUser], references: [idUser])
+  Techs                 Techs     @relation(fields: [idTag], references: [idTag])
+
+  @@id([idUser, idTag])
+}
+
