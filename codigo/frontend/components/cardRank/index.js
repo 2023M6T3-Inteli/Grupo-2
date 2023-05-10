@@ -6,7 +6,7 @@ export default function CardRanking({ item }) {
         <View style={styles.num}>
             {/* <View style={styles.text2}> */}
             <View style={styles.barra1}>
-            <Text style={styles.first}>{item.position}o</Text>
+            <Text style={styles.first}>{item.position}º</Text>
             </View>
             <View style={styles.barra}></View>
             <Image source={require("../../assets/FotoRanking.png")}/>

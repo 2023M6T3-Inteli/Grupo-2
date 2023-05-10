@@ -15,6 +15,11 @@ export default function Ranking() {
             position:3, name: "Mariana Almeida", user: "@mariana", points:350
         },
     ]
+    const lastUsers = [
+        {
+            position:10, name: "Mariana Almeida", user: "@mariana", points:450
+        },
+    ]
 
 
     return (
@@ -33,10 +38,9 @@ export default function Ranking() {
                 ))}
             </View>
             <View style={styles.barraDeitada}></View>
-            <View>
-            
+            <View style={styles.shopNew}>
+                <CardRanking item={lastUsers[0]}/>
             </View>
-
             <StatusBar style="auto" />
         </View>
     );
@@ -79,6 +83,7 @@ const styles = StyleSheet.create({
         backgroundColor: "#fff",
         width: 330,
         height: 1,
+        marginTop: 90,
 
     },
     text1: {
