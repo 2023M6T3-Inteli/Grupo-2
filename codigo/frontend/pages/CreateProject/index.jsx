@@ -7,7 +7,7 @@ import { styles } from './style';
 function CreateProject() {
 
     const [state, setState] = useState(false)
-    
+
 
 
     return (
@@ -20,7 +20,7 @@ function CreateProject() {
                 <Text style={styles.text}>Create Project</Text>
                 <View style={{ marginLeft: 12.5 }}>
                     <View>
-                        <Text style={styles.text2}>  Project Name <Text style={{color:"red"}}>*</Text></Text>
+                        <Text style={styles.text2}>  Project Name <Text style={{ color: "red" }}>*</Text></Text>
 
                         <TextInput
                             style={styles.input}
@@ -167,25 +167,86 @@ function CreateProject() {
                     <Text style={styles.text3}>Select tags for your projects</Text>
                     <Text style={styles.text4}>This tag can help the AI for calculated the match with other people.</Text>
                 </View>
+                <View style={{ flexDirection: 'row', alignItems: 'center', display: "flex" }}>
 
-                <View style={{marginTop:20, marginLeft:20, marginBottom:100}}>
 
-                    {!state && 
-                        <Pressable style={{ borderWidth: 2, borderColor: "white", borderRadius:20, height:33,width:76, alignItems:"center",justifyContent:"center"}} onPress={() => {
-                            setState(!state)
-                        }}>
-                            <Text style={{ color: "white",textAlign:"center" }}>JAVA</Text>
-                        </Pressable>
-                    }
+                    <View style={{ marginTop: 20, marginLeft: 20, marginBottom: 100 }}>
 
-                    {state && 
-                        <Pressable style={{ borderWidth: 2, borderColor: "white", borderRadius:20, height:33,width:76, alignItems:"center",justifyContent:"center", backgroundColor:"white"}}  onPress={() => {
-                            setState(!state)
-                        }}>
-                            <Text style={{ color: "black" }}>JAVA</Text>
-                        </Pressable>
-                    }
+                        {!state &&
+                            <Pressable style={{ borderWidth: 2, borderColor: "white", borderRadius: 20, height: 33, width: 76, alignItems: "center", justifyContent: "center" }} onPress={() => {
+                                setState(!state)
+                            }}>
+                                <Text style={{ color: "white", textAlign: "center" }}>JAVA</Text>
+                            </Pressable>
+                        }
 
+                        {state &&
+                            <Pressable style={{ borderWidth: 2, borderColor: "white", borderRadius: 20, height: 33, width: 76, alignItems: "center", justifyContent: "center", backgroundColor: "white" }} onPress={() => {
+                                setState(!state)
+                            }}>
+                                <Text style={{ color: "black" }}>JAVA</Text>
+                            </Pressable>
+                        }
+
+                    </View>
+
+                    <View style={{ marginTop: 20, marginLeft: 20, marginBottom: 100 }}>
+
+                        {!state &&
+                            <Pressable style={{ borderWidth: 2, borderColor: "white", borderRadius: 20, height: 33, width: 76, alignItems: "center", justifyContent: "center" }} onPress={() => {
+                                setState(!state)
+                            }}>
+                                <Text style={{ color: "white", textAlign: "center" }}>JAVA</Text>
+                            </Pressable>
+                        }
+
+                        {state &&
+                            <Pressable style={{ borderWidth: 2, borderColor: "white", borderRadius: 20, height: 33, width: 76, alignItems: "center", justifyContent: "center", backgroundColor: "white" }} onPress={() => {
+                                setState(!state)
+                            }}>
+                                <Text style={{ color: "black" }}>JAVA</Text>
+                            </Pressable>
+                        }
+
+                    </View>
+                    <View style={{ marginTop: 20, marginLeft: 20, marginBottom: 100 }}>
+
+                        {!state &&
+                            <Pressable style={{ borderWidth: 2, borderColor: "white", borderRadius: 20, height: 33, width: 76, alignItems: "center", justifyContent: "center" }} onPress={() => {
+                                setState(!state)
+                            }}>
+                                <Text style={{ color: "white", textAlign: "center" }}>JAVA</Text>
+                            </Pressable>
+                        }
+
+                        {state &&
+                            <Pressable style={{ borderWidth: 2, borderColor: "white", borderRadius: 20, height: 33, width: 76, alignItems: "center", justifyContent: "center", backgroundColor: "white" }} onPress={() => {
+                                setState(!state)
+                            }}>
+                                <Text style={{ color: "black" }}>JAVA</Text>
+                            </Pressable>
+                        }
+
+                    </View>
+                    <View style={{ marginTop: 20, marginLeft: 20, marginBottom: 100 }}>
+
+                        {!state &&
+                            <Pressable style={{ borderWidth: 2, borderColor: "white", borderRadius: 20, height: 33, width: 76, alignItems: "center", justifyContent: "center" }} onPress={() => {
+                                setState(!state)
+                            }}>
+                                <Text style={{ color: "white", textAlign: "center" }}>JAVA</Text>
+                            </Pressable>
+                        }
+
+                        {state &&
+                            <Pressable style={{ borderWidth: 2, borderColor: "white", borderRadius: 20, height: 33, width: 76, alignItems: "center", justifyContent: "center", backgroundColor: "white" }} onPress={() => {
+                                setState(!state)
+                            }}>
+                                <Text style={{ color: "black" }}>JAVA</Text>
+                            </Pressable>
+                        }
+
+                    </View>
                 </View>
 
 
