@@ -4,7 +4,7 @@ import { styles } from './style';
 
 
 
-function CreateProject() {
+export function CreateProject() {
 
     const [state, setState] = useState(false)
 
