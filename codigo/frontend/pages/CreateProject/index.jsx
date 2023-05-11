@@ -72,7 +72,7 @@ function CreateProject() {
                     <Text style={styles.text5}>Jobs</Text>
 
 
-                    <View style={{ flexDirection: 'row', alignItems: 'center', width: 380, display: "flex", justifyContent: "space-between", borderBottomColor: 'white', borderBottomWidth: 1, marginTop: 5, marginBotton: 5 }}>
+                    <View style={{ flexDirection: 'row', alignItems: 'center', width: 380, display: "flex", justifyContent: "space-between", borderBottomColor: 'gray', borderBottomWidth: 1, marginTop: 5, marginBotton: 5 }}>
 
                         <Text style={styles.text1}>Front-end</Text>
 
@@ -90,7 +90,7 @@ function CreateProject() {
 
                     </View>
 
-                    <View style={{ flexDirection: 'row', alignItems: 'center', width: 380, display: "flex", justifyContent: "space-between", borderBottomColor: 'white', borderBottomWidth: 1, marginTop: 5, marginBotton: 5 }}>
+                    <View style={{ flexDirection: 'row', alignItems: 'center', width: 380, display: "flex", justifyContent: "space-between", borderBottomColor: 'gray', borderBottomWidth: 1, marginTop: 5, marginBotton: 5 }}>
 
                         <Text style={styles.text1}>Back-end</Text>
 
@@ -108,7 +108,7 @@ function CreateProject() {
 
                     </View>
 
-                    <View style={{ flexDirection: 'row', alignItems: 'center', width: 380, display: "flex", justifyContent: "space-between", borderBottomColor: 'white', borderBottomWidth: 1, marginTop: 5, marginBotton: 5 }}>
+                    <View style={{ flexDirection: 'row', alignItems: 'center', width: 380, display: "flex", justifyContent: "space-between", borderBottomColor: 'gray', borderBottomWidth: 1, marginTop: 5, marginBotton: 5 }}>
 
                         <Text style={styles.text1}>UX Design</Text>
 
@@ -127,7 +127,7 @@ function CreateProject() {
                     </View>
 
 
-                    <View style={{ flexDirection: 'row', alignItems: 'center', width: 380, display: "flex", justifyContent: "space-between", borderBottomColor: 'white', borderBottomWidth: 1, marginTop: 5, marginBotton: 5 }}>
+                    <View style={{ flexDirection: 'row', alignItems: 'center', width: 380, display: "flex", justifyContent: "space-between", borderBottomColor: 'gray', borderBottomWidth: 1, marginTop: 5, marginBotton: 5 }}>
 
                         <Text style={styles.text1}>UI Design</Text>
 
@@ -146,7 +146,7 @@ function CreateProject() {
                     </View>
 
 
-                    <View style={{ flexDirection: 'row', alignItems: 'center', width: 380, display: "flex", justifyContent: "space-between", borderBottomColor: 'white', borderBottomWidth: 1, marginTop: 5, marginBotton: 5 }}>
+                    <View style={{ flexDirection: 'row', alignItems: 'center', width: 380, display: "flex", justifyContent: "space-between", borderBottomColor: 'gray', borderBottomWidth: 1, marginTop: 5, marginBotton: 5 }}>
 
                         <Text style={styles.text1}>QA</Text>
 

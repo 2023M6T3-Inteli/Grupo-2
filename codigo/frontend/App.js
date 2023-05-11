@@ -6,7 +6,7 @@ import CreateProject from './pages/CreateProject';
 export default function App() {
   return (
     <View>
-     {/* <CreateProject></CreateProject> */}
+     {/* { <CreateProject></CreateProject> } */}
     </View>
   );
 }
