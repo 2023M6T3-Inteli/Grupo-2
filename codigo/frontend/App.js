@@ -1,14 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
-import { FeedProject } from './pages/feedprojects';
+import { FeedProject } from './pages/Feedprojects';
 import { FeedPost } from './pages/feedposts';
 import { Profile } from './pages/pofile';
 
 export default function App() {
   return (
     <View>
-      <FeedProject />
+      <Profile />
     </View>
   );
 }

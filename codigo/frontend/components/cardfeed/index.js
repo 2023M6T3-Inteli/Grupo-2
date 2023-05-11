@@ -2,6 +2,19 @@ import { StyleSheet, Text, View, Button, Image } from 'react-native';
 
 import styles from './style'
 
+ export function SwapComponent(){
+    return(
+        <View style={styles.swapCompBase}>
+            <View style={styles.swapCompDiv}>
+                <Text style={styles.swapCompLetter}>Posts</Text>
+            </View>
+            <View style={styles.swapCompDiv}>
+                <Text style={styles.swapCompLetter}>Projects</Text>
+            </View>
+        </View>
+    )
+}
+
 function PostTop(){
     return(
         <View style={styles.topPostBase}>
@@ -15,14 +28,14 @@ function PostTop(){
                    <Text style={styles.topPostColor}>10</Text>
                 </View>
             </View>
-            <View>
+            <View style={styles.topPosAlign}>
                 <Image style={styles.topPostImg} source={require('../../assets/profileExample.png')}/>
             </View>
-            <View>
+            <View style={styles.topPosAlign}>
                 <Text style={styles.topPostName}>Alice Wong</Text>
                 <Text style={styles.topPostTime}>4 minutes ago</Text>
             </View>
-            <View>
+            <View style={styles.topPosAlign}>
                 <Image style={styles.topPostDots} source={require('../../assets/dots.png')} />
             </View>
         </View>
@@ -68,6 +81,7 @@ function PostBotton(){
 export function FeedCard(){
     return(
         <View>
+            <SwapComponent/>
             <PostTop />
             <PostMid />
             <PostBotton />

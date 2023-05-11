@@ -5,14 +5,19 @@ export default styles = StyleSheet.create({
         backgroundColor: '#000',
         width: '100%',
         height: 100,
-        flexDirection: 'row',   
+        flexDirection: 'row', 
     },
     topPostVote: {
+        justifyContent: 'center',
         flexDirection: 'column',
         height: 35,
         width: 35,
         alignSelf: 'center',
         marginLeft: 10,
+        gap: 15,
+    },
+    topPosAlign: {
+        justifyContent: 'center',
     },
     topPostPos: {
         flexDirection: 'row',
@@ -76,5 +81,23 @@ export default styles = StyleSheet.create({
     },
     botPostRow: {
         flexDirection: 'row',
+    },
+    swapCompBase: {
+        height: 70,
+        width: '100%',
+        backgroundColor: '#000',
+        flexDirection: 'row',
+        borderStyle: 'solid',
+        borderBottomColor: '#808080'
+    },
+    swapCompDiv: {
+        width: '50%',
+        justifyContent: 'center',
+        alignItems: 'center', 
+    },
+    swapCompLetter: {
+        color: '#fff',
+        fontSize: 20,
+        fontWeight: 'bold',
     }
 });

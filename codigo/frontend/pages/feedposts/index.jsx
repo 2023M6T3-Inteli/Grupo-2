@@ -8,7 +8,6 @@ export function FeedPost(){
         <View style={styles.align}>
             <FeedCard/>
             <View style={styles.blackSpace}></View>
-            <FeedCard />
         </View>
     )
 }

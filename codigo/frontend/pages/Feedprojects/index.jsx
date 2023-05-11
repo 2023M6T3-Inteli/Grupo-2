@@ -9,6 +9,7 @@ export function FeedProject() {
     return (
       <View style={styles.alignCardProject}>
         <CardProject/>
+        <CardProject/>
       </View>
     );
 }
