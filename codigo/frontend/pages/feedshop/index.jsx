@@ -6,11 +6,12 @@ import { styles } from "../feedshop/style";
 
 export function Shop() {
     return (
-        <SafeAreaView>
+        <SafeAreaView >
 
             <ScrollView>
 
                 <View>
+
                     <View style={styles.top}>
                         <Image source={require('../../assets/coins.png')} style={styles.coin} ></Image>
                         <Text style={styles.value}>

@@ -3,11 +3,11 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
 
     cardBackground: {
-        backgroundColor: '#31A2E3',
-        width: 350,
-        height: 270,
-        borderRadius: 17,
-        marginTop:80,
+        // backgroundColor: '#31A2E3',
+        // width: 350,
+        // height: 270,
+        // borderRadius: 17,
+        // marginTop:80,
     },
     foto:{
         marginTop: 50,        
@@ -18,7 +18,8 @@ export const styles = StyleSheet.create({
     },
     text1:{
         justifyContent:"flex-end",
-        color:"white"
+        alignItems:"center"
+
 
         
     },
@@ -29,19 +30,27 @@ export const styles = StyleSheet.create({
         marginTop: 30,
         gap:10,
         color:"#31A2E3"
-
-
     },
+
     coin:{
-        width:18,
-        height:18,
+        width:32,
+        height:32,
     },
+
     background:{
         color:'#31A2E3',
 
     },
+
     textcolor:{
-        color:"white"
+        color:"white",
+        fontSize:20,
+    },
+
+    textcolor2:{
+        color:"#CDCDCD",
+        fontSize:13,
 
     },
+
 })

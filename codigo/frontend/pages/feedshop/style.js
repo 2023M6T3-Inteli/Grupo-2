@@ -13,12 +13,13 @@ export const styles = StyleSheet.create({
 
     },
     coin: {
-        width: 20,
-        height: 20,
+        width: 32,
+        height: 32,
     },
     value: {
         color: "#31A2E3",
         fontSize:20,
 
     },
+
 })

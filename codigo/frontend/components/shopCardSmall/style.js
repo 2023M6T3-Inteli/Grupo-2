@@ -11,8 +11,8 @@ export const styles = StyleSheet.create({
 
     },
     coin:{
-        width:20,
-        height:20
+        width:32,
+        height:32,
     },
     text:{
         flexDirection:"row",
@@ -31,8 +31,9 @@ export const styles = StyleSheet.create({
     },
     
     textcolor:{
-        color:"white"
-
+        color:"white",
+        fontSize:20,
     },
+    
 
 })
