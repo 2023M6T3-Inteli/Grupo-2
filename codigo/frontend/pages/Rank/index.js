@@ -8,21 +8,22 @@ export default function Ranking() {
 
     const dataUsers = [
         {
-            position:1, name: "Mariana Almeida", user: "@mariana", points:450
-        },{
-            position:2, name: "Mariana Almeida", user: "@mariana", points:450
-        },{
-            position:3, name: "Mariana Almeida", user: "@mariana", points:350
+            position: 1, name: "Mariana Almeida", user: "@mariana", points: 450
+        }, {
+            position: 2, name: "Mariana Almeida", user: "@mariana", points: 450
+        }, {
+            position: 3, name: "Mariana Almeida", user: "@mariana", points: 350
         },
     ]
     const lastUsers = [
         {
-            position:10, name: "Mariana Almeida", user: "@mariana", points:450
+            position: 10, name: "Mariana Almeida", user: "@mariana", points: 450
         },
     ]
 
 
     return (
+
         <View style={styles.container}>
             <View style={styles.heading}>
                 <Text style={styles.headingTitle}>Season ends in :</Text>
@@ -33,16 +34,17 @@ export default function Ranking() {
                     <Text style={styles.shop}>Shop</Text>
                     <Text style={styles.new}>new</Text>
                 </View>
-                {dataUsers.map((item,index)=>(
-                    <CardRanking item={item}/>
+                {dataUsers.map((item, index) => (
+                    <CardRanking item={item} />
                 ))}
             </View>
             <View style={styles.barraDeitada}></View>
             <View style={styles.shopNew}>
-                <CardRanking item={lastUsers[0]}/>
+                <CardRanking item={lastUsers[0]} />
             </View>
             <StatusBar style="auto" />
         </View>
+
     );
 }
 
@@ -51,8 +53,8 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#000',
         alignItems: 'center',
-        paddingTop: 48
-
+        paddingTop: 48,
+        justifyContent: 'center',
     },
     heading: {
         display: "flex",
@@ -105,5 +107,5 @@ const styles = StyleSheet.create({
         fontSize: 13,
 
     },
-    
+
 });

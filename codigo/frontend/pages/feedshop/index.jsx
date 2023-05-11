@@ -7,9 +7,7 @@ import { styles } from "../feedshop/style";
 export function Shop() {
     return (
         <SafeAreaView >
-
             <ScrollView>
-
                 <View>
 
                     <View style={styles.top}>
@@ -18,17 +16,16 @@ export function Shop() {
                             3000
                         </Text>
                     </View>
-                    {/* <Text style={styles.text}>Oi</Text> */}
+
                     <ShopCard />
 
                     <View>
                         <SmallShopCard />
                     </View>
-                </View>
 
+                </View>
             </ScrollView>
         </SafeAreaView>
-
     )
 
 }

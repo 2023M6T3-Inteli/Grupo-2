@@ -4,20 +4,33 @@ import { FeedPost } from './pages/feedposts';
 import Login from './pages/Login';
 import Label from './pages/CreateProject';
 import CreateProject from './pages/CreateProject';
-import {ShopCard} from './components/shopCard'
+import { ShopCard } from './components/shopCard'
 import { Shop } from './pages/feedshop';
 import Ranking from './pages/Rank';
+import { Profile } from './pages/pofile';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Login></Login>
-      <Shop/>
-      <Ranking></Ranking>
-       <FeedPost />    
-      <StatusBar style="auto" />
-  </View>
+      {/* 
+      
+      
+      <FeedPost /> */}
+      {/* <Shop /> */}
+      {/* <Ranking></Ranking> */}
+      {/* <StatusBar style="auto" /> */}
+      {/* <CreateProject /> */}
+      {/* <Profile /> */}
+      {/* <Login /> */}
+      {/* <Ranking /> */}
+    </View>
   );
 }
 
+const styles = StyleSheet.create({
 
+
+  container: {
+    flex: 1,
+  },
+})

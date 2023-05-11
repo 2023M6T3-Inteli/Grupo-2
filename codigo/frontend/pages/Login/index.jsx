@@ -1,6 +1,6 @@
 import { useCallback, useState, useEffect } from "react";
 
-import { View, Text, TextInput, Image, Button, Pressable } from "react-native";
+import { View, Text, TextInput, Image, Button, Pressable, ScrollView } from "react-native";
 import { SafeAreaView } from "react-native";
 
 import { useFonts } from "expo-font"
@@ -49,61 +49,65 @@ export default function Login() {
 
     return (
         <SafeAreaView onLayout={onLayoutRootView}>
-            <View style={{}}>
-                <Image
-                    source={require("../../assets/imageLogin.png")}
-                    style={{ width: "100%" }}
-                />
-            </View>
-            <View style={{}}>
-                <LinearGradient colors={['#3069AE', '#295480', '#295A95']} style={{ height: 550 }}>
-                    <Text style={styles.hello}>{text}</Text>
+            <ScrollView>
 
 
-                    <View style={{ flex: 1, alignSelf: "center", marginTop: 90, flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
-                        <Image
-                            source={require("../../assets/Icons/user.png")}
-                            style={{ position: "absolute", top: 8, left: 13, resizeMode: "contain", width: 25 }} />
-
-                        <Image
-                            source={require("../../assets/Icons/key.png")}
-                            style={{ position: "absolute", top: 83, left: 13, resizeMode: "contain", width: 25 }} />
-
-                        <View>
-                            <TextInput style={styles.inputText} placeholder="Username" placeholderTextColor="white" />
-                            <TextInput style={styles.inputText} placeholder="Password" placeholderTextColor="white" secureTextEntry={true} />
-                        </View>
-                    </View>
-
-                    <View style={{ marginTop: 50 }}>
-                        <LinearGradient colors={['#3EACDB', '#4164E1']}
-                            style={{
-                                width: 240,
-                                height: 56,
-                                borderRadius: 30,
-                                padding: 5,
-
-                                alignSelf: "center",
-                                alignItems: "center",
-                                justifyContent: "center"
-
-                            }} >
-
-
-                            <Pressable onPress={() => { console.log("clique") }}>
-                                <Text style={{ color: "white", fontSize: 20 }}>Login</Text>
-                            </Pressable>
-                        </LinearGradient>
-                    </View>
-
+                <View style={{}}>
                     <Image
-                        source={require("../../assets/DELLTech.png")}
-                        style={styles.imageDell}
+                        source={require("../../assets/imageLogin.png")}
+                        style={{ width: "100%" }}
                     />
+                </View>
+                <View style={{}}>
+                    <LinearGradient colors={['#3069AE', '#295480', '#295A95']} style={{ height: 550 }}>
+                        <Text style={styles.hello}>{text}</Text>
 
 
-                </LinearGradient>
-            </View>
+                        <View style={{ flex: 1, alignSelf: "center", marginTop: 90, flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
+                            <Image
+                                source={require("../../assets/Icons/user.png")}
+                                style={{ position: "absolute", top: 8, left: 13, resizeMode: "contain", width: 25 }} />
+
+                            <Image
+                                source={require("../../assets/Icons/key.png")}
+                                style={{ position: "absolute", top: 83, left: 13, resizeMode: "contain", width: 25 }} />
+
+                            <View>
+                                <TextInput style={styles.inputText} placeholder="Username" placeholderTextColor="white" />
+                                <TextInput style={styles.inputText} placeholder="Password" placeholderTextColor="white" secureTextEntry={true} />
+                            </View>
+                        </View>
+
+                        <View style={{ marginTop: 50 }}>
+                            <LinearGradient colors={['#3EACDB', '#4164E1']}
+                                style={{
+                                    width: 240,
+                                    height: 56,
+                                    borderRadius: 30,
+                                    padding: 5,
+
+                                    alignSelf: "center",
+                                    alignItems: "center",
+                                    justifyContent: "center"
+
+                                }} >
+
+
+                                <Pressable onPress={() => { console.log("clique") }}>
+                                    <Text style={{ color: "white", fontSize: 20 }}>Login</Text>
+                                </Pressable>
+                            </LinearGradient>
+                        </View>
+
+                        <Image
+                            source={require("../../assets/DELLTech.png")}
+                            style={styles.imageDell}
+                        />
+
+
+                    </LinearGradient>
+                </View>
+            </ScrollView>
         </SafeAreaView>
     )
 }
