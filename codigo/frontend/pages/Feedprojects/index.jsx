@@ -1,18 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
+import { CardProject } from '../../components/cardproject';
 
-import {CardProject} from '../../components/cardproject';
 import styles from './style'
 
-export function Projects() {
+export function FeedProject() {
     return (
-      <View style={styles.page}>
-        <Text style={styles.text}>Teste de cardproject</Text>
-
+      <View style={styles.alignCardProject}>
         <CardProject/>
-        
-        <StatusBar style="auto" />
       </View>
     );
 }

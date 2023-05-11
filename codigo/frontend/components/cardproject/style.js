@@ -1,70 +1,41 @@
 import { StyleSheet } from "react-native";
 
 export default styles = StyleSheet.create({
-    container: {
-        flexShrink: 1,
+    cardTopBase: {
+        marginTop: 80,
+        height: 200,
+        width: '85%',
+        alignSelf: 'center',
         backgroundColor: '#192028',
-        width: 350,
-        height: 325,
-        borderRadius: 10,
-        padding: 10,
-        margin: 50,
+        borderTopLeftRadius: 15,
+        borderTopRightRadius: 15,
+        flexDirection: 'column',
     },
+    cardBotBase: {
+        height: 60,
+        width: '85%',
+        alignSelf: 'center',
+        backgroundColor: '#232C35',
+        borderBottomLeftRadius: 15,
+        borderBottomRightRadius: 15,
 
-    title: {
-        color: '#fff',
-        fontSize: 20,
-        fontWeight: 'bold',
-        marginLeft: 10,
-        marginTop: 10,
-        padding: 5,
     },
-
-    leadersDiv:{
+    cardTopFirst: {
         flexDirection: 'row',
-        marginTop: 10,
-        padding: 5,
     },
-
-    leadersText:{
-        color: '#fff',
-        fontSize: 13,
-        marginLeft: 25,
-        padding: 5,
+    cardTopSecond: {
+        flexDirection: 'row',
     },
-
-    text: {
-        fontFamily: 'Roboto',
-        color: '#fff',
-        fontSize: 16,
-        margin: 10,
-        padding: 5,
-
+    cardTopThird: {
+        flexDirection: 'row',
     },
-
-    tags: {
+    cardTopFourth: {
+        flexDirection: 'row',
+    },  
+    cardTittle: {
         color: '#fff',
         fontSize: 15,
-        marginLeft: 10,
-        color: '#31A2E3',
-        backgroundColor: '#272E38',
-        borderRadius: 10,
-        marginTop: 5,
-        padding: 5,
+        fontWeight: 'bold'
     },
 
-    tagDiv: {
-        flexDirection: 'row',
-        padding: 5,
-    },
-
-    button: {
-        fontFamily: 'Roboto',
-        color: '#31A2E3',
-        alignSelf: 'flex-end',
-        marginRight: 10,
-        marginTop: 10,
-        padding: 5,
-        
-    },
-  });
+});
