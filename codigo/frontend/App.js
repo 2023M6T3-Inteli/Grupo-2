@@ -3,11 +3,12 @@ import { StyleSheet, Text, View } from 'react-native';
 
 import {Projects} from './pages/feedprojects';
 import { FeedPost } from './pages/feedposts';
+import { Profile } from './pages/pofile';
 
 export default function App() {
   return (
     <View>
-      <FeedPost/>
+      <Projects />
     </View>
   );
 }
