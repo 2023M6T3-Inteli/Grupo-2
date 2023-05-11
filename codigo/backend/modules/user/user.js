@@ -1,5 +1,6 @@
 import express from 'express';
 
+import {controllerGetProjects} from './getProjects/controller.js';
 
 // create a class User with a router / with res send hello world
 class User {
@@ -10,9 +11,7 @@ class User {
 
     get loadRoutes() {
 
-        this.router.get("/getProject", (req, res) => {
-            res.send("Hello world");
-        });
+        this.router.get("/getProject",controllerGetProjects.exec )
 
         this.router.get("/test2", (req, res) => {
             res.send("Hello world 2");

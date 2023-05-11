@@ -2,9 +2,9 @@ import express from "express"
 const app = express()
 
 //health check
-import {health} from "./entities/health/health.js"
+import {health} from "./modules/health/health.js"
 
-import {user} from "./entities/user/user.js"
+import {user} from "./modules/user/user.js"
 
 
 app.use('/health' , health.loadRoutes)
