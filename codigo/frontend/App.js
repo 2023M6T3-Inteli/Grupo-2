@@ -8,21 +8,21 @@ import { ShopCard } from './components/shopCard'
 import { Shop } from './pages/feedshop';
 import Ranking from './pages/Rank';
 import { Profile } from './pages/pofile';
+import { FeedProject } from './pages/Feedprojects';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      {/* 
       
-      
-      <FeedPost /> */}
+      {/* <FeedPost /> */}
       {/* <Shop /> */}
       {/* <Ranking></Ranking> */}
       {/* <StatusBar style="auto" /> */}
       {/* <CreateProject /> */}
-      {/* <Profile /> */}
+      {/* <Profile /> }
       {/* <Login /> */}
       {/* <Ranking /> */}
+      {/* <FeedProject /> */}
     </View>
   );
 }

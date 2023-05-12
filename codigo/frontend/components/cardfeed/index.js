@@ -32,7 +32,7 @@ function PostTop(){
                 <Image style={styles.topPostImg} source={require('../../assets/profileExample.png')}/>
             </View>
             <View style={styles.topPosAlign}>
-                <Text style={styles.topPostName}>Alice Wong</Text>
+                <Text style={styles.topPostName}>Mariana Almeida</Text>
                 <Text style={styles.topPostTime}>4 minutes ago</Text>
             </View>
             <View style={styles.topPosAlign}>
@@ -81,7 +81,6 @@ function PostBotton(){
 export function FeedCard(){
     return(
         <View>
-            <SwapComponent/>
             <PostTop />
             <PostMid />
             <PostBotton />

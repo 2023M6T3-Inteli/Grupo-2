@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 
 export default styles = StyleSheet.create({
     cardTopBase: {
-        marginTop: 80,
+        marginTop: 10,
         height: 200,
         width: '95%',
         alignSelf: 'center',
@@ -32,6 +32,7 @@ export default styles = StyleSheet.create({
         flexDirection: 'row',
         height: '25%',
         justifyContent: 'center',
+        gap: 15,
         alignItems: "center",
     },
     cardTopThird: {
