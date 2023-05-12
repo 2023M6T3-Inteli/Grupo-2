@@ -259,6 +259,14 @@ Arquitetura do sistema 1.0
 Diagrama de fluxo 1.0
 </center>
 
+## Arquitetura de Mensageria
+
+<p>A arquitetura de mensageria é um modelo de design para sistemas que se comunicam por meio de mensagens. A ideia por trás dessa arquitetura é separar as partes do sistema que produzem mensagens das partes que as consomem, permitindo que elas se comuniquem de maneira assíncrona e desacoplada.</p>
+
+<center>
+<img src="./img/Arquitetura_de_Mensageria.png">
+</center>
+
 # UX e UI Design
 
 Aborda o design e a funcionalidade da aplicação ou sistema em questão. Ela fornece informações sobre como o software é projetado para ser fácil de usar e intuitivo para os usuários. Nesta seção, deve ser possível encontrar descrições detalhadas sobre as principais características e recursos da interface do usuário, como botões, menus, ícones e outros elementos que são utilizados para facilitar a interação do usuário com o software. Além disso, são fornecidos exemplos de como as funcionalidades do software são acessadas e usadas pelos usuários, incluindo informações sobre os passos necessários para realizar tarefas específicas. Esta seção também aborda as principais preocupações de UX, como acessibilidade, usabilidade, consistência e simplicidade. São apresentados exemplos de como o software é projetado para atender às necessidades dos usuários com diferentes tipos de habilidades e recursos.
@@ -343,15 +351,13 @@ Documento contendo diagrama de entidades e relacionamentos do banco de dados
 
 ## Modelo Conceitual
 
-O modelo conceitual deve garantir uma conexão com a realidade. Os 4 tipos de conexões com a realidade são:
-conceitos
-atributos
-identificações
-associações
-O Modelo Entidade-Relacionamento - MER
-entidades e tipos de entidades
-atributos e tipos de atributos
-relacionamentos e tipos de relacionamentos
+<p>O modelo lógico de um banco de dados é uma representação abstrata dos dados que serão armazenados e gerenciados pelo sistema de banco de dados. Ele descreve a estrutura dos dados e as relações entre eles, sem se preocupar com a implementação física do banco de dados.
+
+O modelo lógico é importante porque permite que os desenvolvedores de banco de dados projetem e construam sistemas de banco de dados que atendam às necessidades dos usuários de maneira eficiente e eficaz. Ele ajuda a garantir que os dados sejam organizados de maneira coerente e que as informações sejam facilmente acessíveis quando necessário.</p>
+
+<center>
+<img src="./img/diagramDB_Logico.png">
+</center>
 
 ## Modelo Lógico
 
