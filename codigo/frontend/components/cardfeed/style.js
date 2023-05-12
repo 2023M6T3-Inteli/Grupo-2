@@ -5,7 +5,7 @@ export default styles = StyleSheet.create({
         backgroundColor: '#000',
         width: '100%',
         height: 100,
-        flexDirection: 'row', 
+        flexDirection: 'row',
     },
     topPostVote: {
         justifyContent: 'center',
@@ -44,7 +44,7 @@ export default styles = StyleSheet.create({
     },
     topPostDots: {
         alignSelf: 'center',
-        justifyContent: 'screenLeft',
+        // justifyContent: 'screenLeft',
     },
     midPostImg: {
         width: '100%',
@@ -93,7 +93,7 @@ export default styles = StyleSheet.create({
     swapCompDiv: {
         width: '50%',
         justifyContent: 'center',
-        alignItems: 'center', 
+        alignItems: 'center',
     },
     swapCompLetter: {
         color: '#fff',
