@@ -6,10 +6,6 @@ export default styles = StyleSheet.create({
         width: '100%',
         backgroundColor: '#000'
     },
-    alignTopComponents: {
-        flexDirection: 'row',
-        marginBottom: 20,
-    },
     profilePicAlign: {
         alignSelf: "center"
     },

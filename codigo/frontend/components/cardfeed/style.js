@@ -44,7 +44,7 @@ export default styles = StyleSheet.create({
     },
     topPostDots: {
         alignSelf: 'center',
-        // justifyContent: 'screenLeft',
+        // justifyContent: 'screenLeft,
     },
     midPostImg: {
         width: '100%',
