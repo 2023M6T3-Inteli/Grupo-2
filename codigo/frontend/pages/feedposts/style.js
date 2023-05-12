@@ -5,7 +5,7 @@ export default styles = StyleSheet.create({
         justifyContent: 'center',
     },
     blackSpace: {
-        height: 50,
+        height: 10,
         width: '100%',
         backgroundColor: '#000'
     }

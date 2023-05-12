@@ -9,21 +9,22 @@ import { Shop } from './pages/feedshop';
 import Ranking from './pages/Rank';
 import { Profile } from './pages/pofile';
 
+import { Routes } from './route';
+
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+
 export default function App() {
+
   return (
-    <View style={styles.container}>
-      {/* 
-      
-      
-      <FeedPost /> */}
-      {/* <Shop /> */}
-      {/* <Ranking></Ranking> */}
-      {/* <StatusBar style="auto" /> */}
-      {/* <CreateProject /> */}
-      {/* <Profile /> */}
-      {/* <Login /> */}
-      {/* <Ranking /> */}
-    </View>
+
+    <NavigationContainer>
+      <View style={styles.container}>
+        <Routes />
+      </View>
+    </NavigationContainer>
+
   );
 }
 
