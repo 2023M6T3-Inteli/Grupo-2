@@ -1,20 +1,19 @@
 import { prisma } from "../../../database/connection.js";
 
 class ServicePostPost {
-    async exec( article, time, ups, downs, idUser, image, qntLikes ) {
-        const newPost = await prisma.post.create({
+    async exec(data) {
+        const post = await prisma.post.create ({
             data: {
-                article: article,
-                time: time,
-                ups: ups,
-                downs: downs,
-                idUser: idUser,
-                image: image,
-                qntLikes: qntLikes
+                article: data.article,
+                time: data.time,
+                ups: data.ups,
+                downs: data.downs,
+                idUser: data.idUser,
+                image: data.image,
+                qntLikes: data.qntLikes
             }
         });
-
-        return newPost;
+        return post;
     }
 };
 
