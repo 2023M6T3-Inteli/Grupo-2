@@ -14,7 +14,7 @@ export function Profile(){
                 <ScrollView>
                     <ProfileTop />
                     <SwapComponent />
-                    <FeedCard />
+                    <CardProject />
                 </ScrollView>
             </SafeAreaView>
         </View>

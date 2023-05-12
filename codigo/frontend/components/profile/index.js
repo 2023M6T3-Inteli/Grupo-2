@@ -6,10 +6,6 @@ import styles from './style'
 function TopProfileInfo(){
     return(
         <View style={styles.topProfileBase}>
-            <View style={styles.alignTopComponents}>
-                <Image source={require('../../assets/backarrow.png')} />
-                <Image source={require('../../assets/infolines.png')} />
-            </View>
             <Image style={styles.profilePicAlign} source={require('../../assets/profilePic.png')} />
             <View style={styles.topInfosPos}>
                 <Text style={styles.topProfileName}>Mariana Almeida</Text>

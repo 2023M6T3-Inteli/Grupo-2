@@ -9,8 +9,10 @@ function CardTop(){
         <View style={styles.cardTopBase}>
             <View style={styles.cardTopFirst}>
                 <Text style={styles.cardTittle}>Desenvolvimento Web</Text>
-                <Image source={require('../../assets/nocp.png')}/>
-                <Image source={require('../../assets/save.png')} />
+                <View style={{flexDirection: 'row', gap:10}}>
+                    <Image source={require('../../assets/nocp.png')}/>
+                    <Image source={require('../../assets/save.png')} />
+                </View>
             </View>
             <View style={styles.cardTopSecond}>
                 <Image source={require('../../assets/user.png')}/>
@@ -35,12 +37,14 @@ function CardTop(){
 function CardBot(){
     return(
         <View style={styles.cardBotBase}>
-            <View style={styles.alignBotCard}>
-                <Image style={styles.cardBotImg} source={require('../../assets/profilePic.png')} />
-            </View>
-            <View style={styles.applicantsAlign}>
-                <Text style={styles.applicantsLetter}>20 Applicants</Text>
-                <Image style={styles.cardBotArrow} source={require('../../assets/bluearrow.png')} />
+            <View style={styles.cardBotOrder}>
+                <View style={styles.alignBotCard}>
+                    <Image style={styles.cardBotImg} source={require('../../assets/profilePic.png')} />
+                </View>
+                <View style={styles.applicantsAlign}>
+                    <Text style={styles.applicantsLetter}>20 Applicants</Text>
+                    <Image style={styles.cardBotArrow} source={require('../../assets/bluearrow.png')} />
+                </View>
             </View>
         </View>
     )
