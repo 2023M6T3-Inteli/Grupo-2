@@ -27,9 +27,9 @@ export default styles = StyleSheet.create({
         color: '#fff'
     },
     topPostImg: {
-        borderRadius: 4,
-        height: 70,
-        width: 70,
+        borderRadius: 8,
+        height: 50,
+        width: 50,
         marginLeft: 10,
     },
     topPostName: {

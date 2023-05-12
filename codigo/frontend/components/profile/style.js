@@ -2,7 +2,6 @@ import { StyleSheet, Text, View, Button, Image } from 'react-native';
 
 export default styles = StyleSheet.create({
     topProfileBase: {
-        marginTop: 60,
         height: 250,
         width: '100%',
         backgroundColor: '#000'
