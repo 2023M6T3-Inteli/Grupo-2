@@ -186,7 +186,7 @@ Esta seção da documentação do software fornece uma descrição detalhada dos
 ## Requisitos não Funcionais
 
 Descreve os recursos necessários para sua execução, os requisitos de segurança e privacidade.
-  
+
 - O sistema deve seguir as normas da LGPD, permitindo o acesso apenas para funcionários da Dell.
 - O sistema deve seguir a paleta de cores e fontes da Dell.
 - O sistema deve ter a aplicação em inglês
@@ -196,9 +196,9 @@ Descreve os recursos necessários para sua execução, os requisitos de seguran�
 - O sistema deve ser capaz de enviar notificações para o usuário de eventos desejados.
 - O sistema deve fornecer uma área de visualização de todos os participantes que se candidataram às vagas dos projetos gerindo de forma eficiente.
 - O sistema deve notificar o lider de projetos caso o projeto tenha sido aprovado
-- O sistema deve fornecer a opção de ver os comandos de aprovar ou desaprovar todas as propostas de projetos da equipe gerindo de forma segura. 
-- O sistema deve armazenar e mostrar todo o histórico de projetos cadastrados na plataforma 
-- O sistema deve  oferecer a opção de cadastrar o projeto na plataforma para atingir novos participantes de forma simples e rápida.
+- O sistema deve fornecer a opção de ver os comandos de aprovar ou desaprovar todas as propostas de projetos da equipe gerindo de forma segura.
+- O sistema deve armazenar e mostrar todo o histórico de projetos cadastrados na plataforma
+- O sistema deve oferecer a opção de cadastrar o projeto na plataforma para atingir novos participantes de forma simples e rápida.
 
 ## Perfis de Usuários
 
@@ -208,35 +208,37 @@ A seção de perfil de usuário da documentação de software é responsável po
 
 A seção de casos de uso da documentação de software é uma parte crucial que descreve as funcionalidades
 do software e como elas serão utilizadas pelos usuários. Aqui, são listados todos os cenários possíveis de uso do software, incluindo as ações que o usuário pode realizar, as interações com o sistema e os resultados esperados. Os casos de uso são descritos em detalhes, incluindo a descrição do objetivo da funcionalidade, as entradas de dados, as ações do usuário e os resultados esperados. Além disso, também são incluídos os critérios de aceitação, que são os padrões que o software precisa atender para ser considerado como funcionando corretamente.
-  
-  - Eu como funcionário da Dell, quero fazer postagens na plataforma.
-  - Eu como funcionário da Dell, quero me inscrever em novos projetos.
-  - Eu como funcionário da Dell, quero ler postagens dos temas que tenho interesse.
-  - Eu como funcionário da Dell, quero receber feedback do gestor do projeto no qual participei.
-  - Eu como líder de projeto, quero saber o interesse dos colaboradores que se inscreveram no meu projeto. 
-  - Eu como funcionário da Dell, quero denunciar postagens que não fazem sentido pro aplicativo. 
-  - Como funcionária da Dell, quero receber notificações sobre projetos de assuntos que tenho interesse.
-  - Como líder do projeto quero poder visualizar as vagas que já foram preenchidas.
-  - Como funcionário, desejo desmarcar como salvo por não ter mais interesse.
-  - Como usuário, quero visualizar minha posição em relação aos meus colegas, dentro do ranking geral de usuários
-  - Como usuário, quero buscar um projeto específico em uma barra de pesquisas
-  - Como funcionário da Dell, quero ter acesso a um tutorial, para aprender a usar a plataforma
-  - Como funcionário da Dell, quero visualizar o perfil de outros usuários.
-  - Como funcionário, desejo receber e visualizar as minhas notificação se fui aprovado para participar do projeto
-  - Como funcionário, quero vizualizar meu rank.
-  - Como funcionário da Dell, quero visualizar o meu perfil com as minhas informações registradas
-  - Como funcionário da Dell, quero ter acesso a opção de acessar o dashboard de projetos para gerenciar.
-  - Como funcionário da Dell, desejo visualizar todos os candidatos às vagas dos projetos que estou gerindo.
-  - Como funcionário da Dell, desejo editar o status do projetos criados por mim.
-  - Como funcionário da Dell, desejo excluir meus projetos criados
-  - Como funcionário da Dell , desejo vizualizar somente os projetos criados por mim.
-  - Como funcionário da Dell, desejo aprovar ou rejeitar a participação dos candidatos.
-  - Como funcionário da Dell, desejo  receber e visualizar as minhas notificação se o meu projeto foi aprovado ou rejeitado
-  
+
+- Eu como funcionário da Dell, quero fazer postagens na plataforma.
+- Eu como funcionário da Dell, quero me inscrever em novos projetos.
+- Eu como funcionário da Dell, quero ler postagens dos temas que tenho interesse.
+- Eu como funcionário da Dell, quero receber feedback do gestor do projeto no qual participei.
+- Eu como líder de projeto, quero saber o interesse dos colaboradores que se inscreveram no meu projeto.
+- Eu como funcionário da Dell, quero denunciar postagens que não fazem sentido pro aplicativo.
+- Como funcionária da Dell, quero receber notificações sobre projetos de assuntos que tenho interesse.
+- Como líder do projeto quero poder visualizar as vagas que já foram preenchidas.
+- Como funcionário, desejo desmarcar como salvo por não ter mais interesse.
+- Como usuário, quero visualizar minha posição em relação aos meus colegas, dentro do ranking geral de usuários
+- Como usuário, quero buscar um projeto específico em uma barra de pesquisas
+- Como funcionário da Dell, quero ter acesso a um tutorial, para aprender a usar a plataforma
+- Como funcionário da Dell, quero visualizar o perfil de outros usuários.
+- Como funcionário, desejo receber e visualizar as minhas notificação se fui aprovado para participar do projeto
+- Como funcionário, quero vizualizar meu rank.
+- Como funcionário da Dell, quero visualizar o meu perfil com as minhas informações registradas
+- Como funcionário da Dell, quero ter acesso a opção de acessar o dashboard de projetos para gerenciar.
+- Como funcionário da Dell, desejo visualizar todos os candidatos às vagas dos projetos que estou gerindo.
+- Como funcionário da Dell, desejo editar o status do projetos criados por mim.
+- Como funcionário da Dell, desejo excluir meus projetos criados
+- Como funcionário da Dell , desejo vizualizar somente os projetos criados por mim.
+- Como funcionário da Dell, desejo aprovar ou rejeitar a participação dos candidatos.
+- Como funcionário da Dell, desejo receber e visualizar as minhas notificação se o meu projeto foi aprovado ou rejeitado
+
 ## Matriz de rastreabilidade
-  A seção de matriz de rastreabilidade tem como função auxiliar a visualização da relação entre os requisitos funcionais e não funcionais e os casos de uso.
-  
-  (https://docs.google.com/spreadsheets/d/12dbTVegm-uH6M-8SOcBtjQVkdFnjaft-R1v4uMoWH3o/edit?usp=sharing)
+
+A seção de matriz de rastreabilidade tem como função auxiliar a visualização da relação entre os requisitos funcionais e não funcionais e os casos de uso.
+
+(https://docs.google.com/spreadsheets/d/12dbTVegm-uH6M-8SOcBtjQVkdFnjaft-R1v4uMoWH3o/edit?usp=sharing)
+
 <center>
 
 </center>
@@ -300,9 +302,6 @@ Telas de baixa fidelidade das áreas do usuário, conectados, demonstrando a dia
 <h2>Fluxo de navegação</h2>
 <img src="./img/wireframe_02.png">
 
-<h2>Style Guide</h2>
-<img src="./img/wireframe_03.png">
-
 <h3>Link Figma:</h3>
 
 https://www.figma.com/file/DUPhcHeSxuH0VSe4csEKtS/mobile?node-id=1%3A2&t=lskHFxYTPBXZzf2U-1
@@ -311,8 +310,32 @@ https://www.figma.com/file/DUPhcHeSxuH0VSe4csEKtS/mobile?node-id=1%3A2&t=lskHFxY
 
 Refere-se ao design visual, cores, tipografia, imagens, logotipos, ou seja, os elementos visuais que compõem o produto.
 
-<h3>Versão 1.0</h3>
-<img src="./img/wireframe_03.png">
+<h3>Versão 2.0</h3>
+<center>
+<img src="./img/style_guide2.0.png">
+</center>
+
+<br>
+<br>
+<br>
+
+<h4>Color Palette</h4>
+<p>O campo de palheta de cor é uma ferramenta importante para o projeto, pois é através dele que as cores são selecionadas e combinadas de forma harmoniosa para transmitir uma mensagem visual coerente. A palheta de cor é composta por um conjunto de cores que são utilizadas no projeto, e sua escolha deve ser feita com cuidado para que as cores escolhidas se complementem e sejam adequadas ao propósito do projeto.</p>
+<center>
+<img src="./img/Color_Palette.png">
+</center>
+
+<h4>Tipografia</h4>
+<p>A tipografia se refere ao estilo, tamanho, espaçamento e disposição das letras e dos caracteres utilizados em um projeto. A escolha da fonte deve ser feita com cuidado para que a tipografia seja legível e adequada ao propósito do projeto. Uma fonte mal escolhida pode prejudicar a legibilidade do texto, dificultando a leitura e a compreensão da mensagem.</p>
+<center>
+<img src="./img/Typography.png">
+</center>
+
+<h4>Componentes UI</h4>
+<p>Os componentes de interface do usuário (UI) representam as partes interativas de um projeto de design, como botões, menus, barras de rolagem, campos de entrada, entre outros. Esses componentes são fundamentais para a funcionalidade do projeto, pois permitem que os usuários interajam com a interface de forma clara e intuitiva.</p>
+<center>
+<img src="./img/UI_Components.png">
+</center>
 
 # Projeto de Banco de Dados
 
