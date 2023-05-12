@@ -1,6 +1,8 @@
 import express from "express"
 const app = express()
 
+app.use(express.json())
+
 //health check
 import {health} from "./modules/health/health.js"
 
