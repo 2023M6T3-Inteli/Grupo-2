@@ -367,7 +367,10 @@ O modelo lógico de banco de dados é uma representação abstrata e simplificad
 
 ## Teste Unitário
 
-Link ou imagem da tabela com dados organizados dos testes realizados
+<strong>Teste GET posts</strong>
+<center>
+<img src="./img/test-trial.png">
+</center>
 
 ## Teste de Integração
 
