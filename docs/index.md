@@ -259,12 +259,18 @@ Arquitetura do sistema 1.0
 Diagrama de fluxo 1.0
 </center>
 
+<<<<<<< Updated upstream
 ## Arquitetura de Mensageria
 
 <p>A arquitetura de mensageria é um modelo de design para sistemas que se comunicam por meio de mensagens. A ideia por trás dessa arquitetura é separar as partes do sistema que produzem mensagens das partes que as consomem, permitindo que elas se comuniquem de maneira assíncrona e desacoplada.</p>
 
 <center>
 <img src="./img/Arquitetura_de_Mensageria.png">
+=======
+<center>
+<img src="./img/arquitetura-do-sistema-V2.png" alt="arq" border="0" width="100%">
+Arquitetura do sistema 1.0
+>>>>>>> Stashed changes
 </center>
 
 # UX e UI Design
