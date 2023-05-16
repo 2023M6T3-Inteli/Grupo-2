@@ -9,6 +9,10 @@ import { controllerGetPosts } from './getPosts/controller.js';
 //post controllers
 import { controllerPostPost } from './postPost/controller.js';
 
+import {controllerPostComplain} from './postComplain/controller.js'
+
+import {controllerProjectComplain} from './projectComplain/controller.js'
+
 // create a class User with a router / with res send hello world
 class User {
 
@@ -26,6 +30,10 @@ class User {
       
         //post protocol
         this.router.post("/postPost", controllerPostPost.exec)
+
+        this.router.post("/postComplain", controllerPostComplain.exec)
+
+        this.router.post("/projectComplain", controllerProjectComplain.exec)
 
         return this.router;
     }
