@@ -16,6 +16,8 @@ class User {
     get loadRoutes() {
         this.router.get("/getProject",controllerGetProjects.exec );
         this.router.get("/getPosts",controllerGetPosts.exec ); 
+        this.router.get("/getProjectById",controllerGetProjects.exec );
+        
         //post protocol
         this.router.post("/postPost", controllerPostPost.exec)
 
