@@ -1,5 +1,8 @@
 import express from 'express';
 
+//login controller
+import { controllerLogin } from './login/controller.js';
+//get controllers
 import { controllerGetProjects } from './getProjects/controller.js';
 import { controllerGetPosts } from './getPosts/controller.js';
 
@@ -14,9 +17,13 @@ class User {
     }
 
     get loadRoutes() {
+        //login protocol
+        this.router.post("/login", controllerLogin.exec);
+
+        //get protocol
         this.router.get("/getProject",controllerGetProjects.exec );
         this.router.get("/getPosts",controllerGetPosts.exec ); 
-        
+      
         //post protocol
         this.router.post("/postPost", controllerPostPost.exec)
 
