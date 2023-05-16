@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 
 export default styles = StyleSheet.create({
     cardTopBase: {
-        marginTop: 80,
+        marginTop: 10,
         height: 200,
         width: '95%',
         alignSelf: 'center',
@@ -27,11 +27,13 @@ export default styles = StyleSheet.create({
         height: '25%',
         width: '85%',
         alignItems: "center",
+        gap: 180,
     },
     cardTopSecond: {
         flexDirection: 'row',
         height: '25%',
         justifyContent: 'center',
+        gap: 15,
         alignItems: "center",
     },
     cardTopThird: {
@@ -67,6 +69,7 @@ export default styles = StyleSheet.create({
     cardBotImg: {
         height: 40,
         width: 40,
+        marginLeft: 5,
     },
     applicantsLetter: {
         color: '#31A2E3',
@@ -81,4 +84,10 @@ export default styles = StyleSheet.create({
         flexDirection: 'row',
         
     },
+    cardBotOrder: {
+        flexDirection: 'row',
+        justifyContent: 'space-evenly',
+        gap: 220,
+        justifyContent: 'center',
+    }
 });

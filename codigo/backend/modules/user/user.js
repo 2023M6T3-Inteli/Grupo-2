@@ -23,7 +23,7 @@ class User {
         //get protocol
         this.router.get("/getProject",controllerGetProjects.exec );
         this.router.get("/getPosts",controllerGetPosts.exec ); 
-
+      
         //post protocol
         this.router.post("/postPost", controllerPostPost.exec)
 

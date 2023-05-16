@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import CardRanking from '../../components/cardRank';
+import { useNavigation } from "@react-navigation/native";
 
 
 
@@ -21,29 +22,35 @@ export default function Ranking() {
         },
     ]
 
+    const navigation = useNavigation()
+
 
     return (
 
-        <View style={styles.container}>
-            <View style={styles.heading}>
-                <Text style={styles.headingTitle}>Season ends in :</Text>
-                <Text style={styles.headingText}>24:10:25</Text>
-            </View>
-            <View style={styles.shopNew}>
-                <View style={styles.text1}>
-                    <Text style={styles.shop}>Shop</Text>
-                    <Text style={styles.new}>new</Text>
+        <ScrollView>
+            <View style={styles.container}>
+
+
+                <View style={styles.heading}>
+                    <Text style={styles.headingTitle}>Season ends in :</Text>
+                    <Text style={styles.headingText}>24:10:25</Text>
                 </View>
-                {dataUsers.map((item, index) => (
-                    <CardRanking item={item} />
-                ))}
+                <View style={styles.shopNew}>
+                    <View style={styles.text1}>
+                        <Text onPress={() => navigation.navigate("Shop")} style={styles.shop}>Shop</Text>
+                        <Text style={styles.new}>new</Text>
+                    </View>
+                    {dataUsers.map((item, index) => (
+                        <CardRanking item={item} />
+                    ))}
+                </View>
+                <View style={styles.barraDeitada}></View>
+                <View style={styles.shopNew}>
+                    <CardRanking item={lastUsers[0]} />
+                </View>
+                <StatusBar style="auto" />
             </View>
-            <View style={styles.barraDeitada}></View>
-            <View style={styles.shopNew}>
-                <CardRanking item={lastUsers[0]} />
-            </View>
-            <StatusBar style="auto" />
-        </View>
+        </ScrollView>
 
     );
 }
@@ -55,6 +62,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         paddingTop: 48,
         justifyContent: 'center',
+        height: 800,
     },
     heading: {
         display: "flex",
