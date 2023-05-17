@@ -6,6 +6,7 @@ import { controllerGetPosts } from './getPosts/controller.js';
 //post controllers
 import { controllerPostPost } from './postPost/controller.js';
 import  { controllerCommentPost} from './commentPost/controller.js'
+import { controllerPutLike } from './likePut/controller.js';
 
 // create a class User with a router / with res send hello world
 class User {
@@ -21,7 +22,8 @@ class User {
         //post protocol
         this.router.post("/postPost", controllerPostPost.exec);
         this.router.post("/commentPost", controllerCommentPost.exec)
-
+        //put protocol
+        this.router.put("/like", controllerPutLike.exec)
         return this.router;
     }
 
