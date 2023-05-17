@@ -1,8 +1,8 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, Text, View, Button, Image } from 'react-native';
 
 export default styles = StyleSheet.create({
     cardTopBase: {
-        marginTop: 80,
+        marginTop: 10,
         height: 200,
         width: '95%',
         alignSelf: 'center',
@@ -11,27 +11,18 @@ export default styles = StyleSheet.create({
         borderTopRightRadius: 15,
         flexDirection: 'column',
     },
-    cardBotBase: {
-        height: 60,
-        width: '95%',
-        alignSelf: 'center',
-        backgroundColor: '#232C35',
-        borderBottomLeftRadius: 15,
-        borderBottomRightRadius: 15,
-        flexDirection: 'row',
-        alignItems: 'center',
-
-    },
     cardTopFirst: {
         flexDirection: 'row',
         height: '25%',
         width: '85%',
         alignItems: "center",
+        gap: 180,
     },
     cardTopSecond: {
         flexDirection: 'row',
         height: '25%',
         justifyContent: 'center',
+        gap: 15,
         alignItems: "center",
     },
     cardTopThird: {
@@ -64,21 +55,4 @@ export default styles = StyleSheet.create({
         width: '80%'
         
     },
-    cardBotImg: {
-        height: 40,
-        width: 40,
-    },
-    applicantsLetter: {
-        color: '#31A2E3',
-        fontSize: 15,
-        fontWeight: 'bold',
-    },
-    cardBotArrow: {
-        height: 12,
-        width: 12,
-    },
-    applicantsAlign: {
-        flexDirection: 'row',
-        
-    },
-});
+})

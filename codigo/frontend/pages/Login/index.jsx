@@ -6,10 +6,14 @@ import { SafeAreaView } from "react-native";
 import { useFonts } from "expo-font"
 import * as SplashScreen from 'expo-splash-screen';
 import { LinearGradient } from 'expo-linear-gradient';
+import { useNavigation } from "@react-navigation/native";
 
 import { styles } from "./style"
 
 export default function Login() {
+
+    const navigation = useNavigation()
+
 
     // state for text
     const [text, setText] = useState("Hello Again !")
@@ -93,7 +97,7 @@ export default function Login() {
                                 }} >
 
 
-                                <Pressable onPress={() => { console.log("clique") }}>
+                                <Pressable onPress={() => navigation.navigate("Start")}>
                                     <Text style={{ color: "white", fontSize: 20 }}>Login</Text>
                                 </Pressable>
                             </LinearGradient>

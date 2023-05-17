@@ -12,13 +12,9 @@ export function CreateProject() {
 
     return (
         <SafeAreaView style={styles.body}>
-
             <ScrollView>
-
-
-
                 <Text style={styles.text}>Create Project</Text>
-                <View style={{ marginLeft: 12.5 }}>
+                <View style={{ marginLeft: 4.5 }}>
                     <View>
                         <Text style={styles.text2}>  Project Name <Text style={{ color: "red" }}>*</Text></Text>
 
