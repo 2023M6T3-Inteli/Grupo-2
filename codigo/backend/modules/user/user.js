@@ -12,6 +12,8 @@ import { controllerGetProjectById } from './getProjectById/controller.js';
 
 //post controllers
 import { controllerPostPost } from './postPost/controller.js';
+import  { controllerCommentPost} from './commentPost/controller.js'
+import { controllerPutLike } from './likePut/controller.js';
 
 //complaint controllers
 import {controllerPostComplain} from './postComplain/controller.js'
@@ -33,11 +35,15 @@ class User {
         //get by id protocols
         this.router.get("/getProjectById/:id",controllerGetProjectById.exec );
         
+
+        //post protocol
+        this.router.post("/postPost", controllerPostPost.exec);
+        this.router.post("/commentPost", controllerCommentPost.exec)
+        //put protocol
+        this.router.put("/like", controllerPutLike.exec)
+
         //login protocol
         this.router.post("/login", controllerLogin.exec);
-
-        //post
-        this.router.post("/postPost", controllerPostPost.exec)
       
         //complain
         this.router.post("/postComplain", controllerPostComplain.exec)
