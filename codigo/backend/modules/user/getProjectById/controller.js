@@ -3,8 +3,9 @@ class ControllerGetProjectById {
     async exec(req, res){
         let { id } = req.params;
         id = parseInt(id);
-        const posts = await serviceGetProjectById.exec(id);
-        res.send(posts);
+
+        const project = await serviceGetProjectById.exec(id);
+        res.send(project);
     }
 }
 
