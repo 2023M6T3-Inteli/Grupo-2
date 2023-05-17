@@ -2,7 +2,8 @@ import { servicePutLike } from "./service.js";
 
 class ControllerPutLike {
     async exec(req, res) {
-        const { idPost, isLike } = req.body
+        let { idPost, isLike } = req.body
+        idPost = parseInt(idPost)
 
         if (idPost) {
             if (typeof(isLike) == "boolean") {
