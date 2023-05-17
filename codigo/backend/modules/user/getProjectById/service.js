@@ -4,7 +4,7 @@ class ServiceGetProjectById {
     async exec(id) {
         const project = await prisma.project.findUnique({
             where: {
-                id: id
+                idProject: id
             }
         });
         return project;

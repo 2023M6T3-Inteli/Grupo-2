@@ -1,10 +1,11 @@
-import { serviceGetPosts } from "../getPosts/services.js";
-
-class ControllerGetPosts {
+import { serviceGetProjectById } from "./service.js";
+class ControllerGetProjectById {
     async exec(req, res){
-        const posts = await serviceGetPosts.exec();
+        let { id } = req.params;
+        id = parseInt(id);
+        const posts = await serviceGetProjectById.exec(id);
         res.send(posts);
     }
 }
 
-export const controllerGetPosts = new ControllerGetPosts();
+export const controllerGetProjectById  = new ControllerGetProjectById();
