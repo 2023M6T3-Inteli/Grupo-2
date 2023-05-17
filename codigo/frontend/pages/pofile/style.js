@@ -6,4 +6,11 @@ export default styles = StyleSheet.create({
         backgroundColor: '#000',
         height: '100%',
     },
+    tagsProfileBase: {
+        height: 40,
+        width: '100%',
+        backgroundColor: '#000',
+        flexDirection: 'row',
+        justifyContent: 'center'
+    },
 });
