@@ -2,18 +2,22 @@ import express from 'express';
 
 //login controller
 import { controllerLogin } from './login/controller.js';
+
 //get controllers
 import { controllerGetProjects } from './getProjects/controller.js';
 import { controllerGetPosts } from './getPosts/controller.js';
 
+//get by id controllers
+import { controllerGetProjectById } from './getProjectById/controller.js';
+
 //post controllers
 import { controllerPostPost } from './postPost/controller.js';
 
+//complaint controllers
 import {controllerPostComplain} from './postComplain/controller.js'
-
 import {controllerProjectComplain} from './projectComplain/controller.js'
 
-// create a class User with a router / with res send hello world
+
 class User {
 
     constructor() {
@@ -21,18 +25,22 @@ class User {
     }
 
     get loadRoutes() {
+
+        //get protocols
+        this.router.get("/getProject",controllerGetProjects.exec );
+        this.router.get("/getPosts",controllerGetPosts.exec ); 
+
+        //get by id protocols
+        this.router.get("/getProjectById/:id",controllerGetProjectById.exec );
+        
         //login protocol
         this.router.post("/login", controllerLogin.exec);
 
-        //get protocol
-        this.router.get("/getProject",controllerGetProjects.exec );
-        this.router.get("/getPosts",controllerGetPosts.exec ); 
-      
-        //post protocol
+        //post
         this.router.post("/postPost", controllerPostPost.exec)
-
+      
+        //complain
         this.router.post("/postComplain", controllerPostComplain.exec)
-
         this.router.post("/projectComplain", controllerProjectComplain.exec)
 
         return this.router;
