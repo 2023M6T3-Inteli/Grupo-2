@@ -8,17 +8,10 @@ import {health} from "./modules/health/health.js"
 
 import {user} from "./modules/user/user.js"
 
-app.use('/', () => {
-    console.log("Hello World")
-})
-
 
 app.use('/health' , health.loadRoutes)
 
-
-
 app.use('/user' , user.loadRoutes)
-
 
 
 app.listen(3000,()=>{

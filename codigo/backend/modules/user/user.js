@@ -6,6 +6,8 @@ import { controllerGetPosts } from './getPosts/controller.js';
 //post controllers
 import { controllerPostPost } from './postPost/controller.js';
 
+import {controllergetRanking} from './Ranking/controller.js';
+
 // create a class User with a router / with res send hello world
 class User {
 
@@ -18,7 +20,10 @@ class User {
         this.router.get("/getPosts",controllerGetPosts.exec ); 
         
         //post protocol
-        this.router.post("/postPost", controllerPostPost.exec)
+        this.router.post("/postPost", controllerPostPost.exec);
+
+
+        this.router.get("/Ranking/:id", controllergetRanking.exec);
 
         return this.router;
     }
