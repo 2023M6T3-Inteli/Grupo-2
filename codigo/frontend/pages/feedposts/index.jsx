@@ -2,14 +2,9 @@ import { StyleSheet, Text, View, Button, Image, ScrollView, SafeAreaView, } from
 import styles from './style'
 
 import { FeedCard } from '../../components/cardfeed';
-import { SwapComponent } from '../../components/cardfeed';
+import { BlackSpace } from '../../components/BlackSpace';
+import { SwapComponent } from '../../components/swapComponent';
 
-export function BlackSpace(){
-    return(
-        <View style={styles.blackSpace}>
-        </View>
-    )
-}
 
 export function FeedPost(){
     return(
@@ -17,7 +12,9 @@ export function FeedPost(){
             <SafeAreaView>
                 <ScrollView>
                     <SwapComponent />
-                    <FeedCard/>
+                    <FeedCard />
+                    <BlackSpace />
+                    <FeedCard />
                     <BlackSpace />
                     <FeedCard />
                 </ScrollView>
