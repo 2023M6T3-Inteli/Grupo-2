@@ -1,9 +1,4 @@
-// import { FeedPost } from "../feedposts";
-// import { FeedProject } from "../Feedprojects";
+import { SafeAreaView, Text, TextInput, View, text, Image, Button, Pressable, ScrollView } from 'react-native';
 
-
-// function Home(){
-//     return(
-        
-//     )
-// }
+import { FeedProject } from '../Feedprojects';
+import { FeedPost } from '../feedposts';    

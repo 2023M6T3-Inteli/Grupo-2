@@ -4,6 +4,7 @@ import styles from './style'
 import { FeedCard } from '../../components/cardfeed';
 import { BlackSpace } from '../../components/BlackSpace';
 import { SwapComponent } from '../../components/swapComponent';
+import { SelecPosts } from '../../components/selectionPosts';
 
 
 export function FeedPost(){
@@ -12,6 +13,7 @@ export function FeedPost(){
             <SafeAreaView>
                 <ScrollView>
                     <SwapComponent />
+                    <SelecPosts />
                     <FeedCard />
                     <BlackSpace />
                     <FeedCard />

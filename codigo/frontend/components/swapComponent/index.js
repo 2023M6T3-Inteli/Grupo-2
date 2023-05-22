@@ -1,16 +1,17 @@
 import { StyleSheet, Text, View, Button, Image } from 'react-native';
+import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 
 import styles from './style'
+import TabBarTop from '@react-navigation/material-top-tabs/lib/typescript/src/views/MaterialTopTabBar';
+const Tab = createMaterialTopTabNavigator();
 
 export function SwapComponent(){
+
     return(
         <View style={styles.swapCompBase}>
-            <View style={styles.swapCompDiv}>
-                <Button style={styles.swapCompLetter} title='Posts' onPress={()=> status="true"} />
-            </View>
-            <View style={styles.swapCompDiv}>
-                <Button style={styles.swapCompLetter} title='Projects'onPress={()=> status="true"} />
-            </View>
+            <Tab.Navigator>
+                <Tab.Screen />               
+            </Tab.Navigator>
         </View>
     )
 }
