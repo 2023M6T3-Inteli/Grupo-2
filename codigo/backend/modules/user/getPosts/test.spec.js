@@ -1,9 +1,12 @@
-import app from "../../../index.js"
-import supertest from "supertest";
+import {assert,describe,it,expect} from "vitest"
+import { serviceGetPosts } from "./services"
 
-describe("GET /user/getPosts", () => {
-    test("should get all posts", async () => {
-        const response = await supertest(app).get("/user/getPosts")
-        expect(response.status).toBe(200)
+
+
+describe("GetPosts", () => {
+    it("should get all posts", async () => {
+        const result = await serviceGetPosts.exec()
+        expect(result).toHaveLength(0)
+
     })
 })
