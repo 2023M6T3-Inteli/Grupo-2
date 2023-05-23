@@ -1,12 +1,12 @@
 import { describe, it, expect } from "vitest";
 import { servicePostComplain } from "./service.js";
 
-describe("ProjectComplain", () => {
+describe("PostComplain", () => {
     it("should post a project complain !", async () => {
         const request = await servicePostComplain.exec({
             complaintReason: "Teste",
             feedback: "Teste",
-            idProject: 1,
+            idPost: 1,
         });
 
         console.log(request);
