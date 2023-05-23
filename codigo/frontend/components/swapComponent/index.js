@@ -10,7 +10,9 @@ export function SwapComponent(){
     return(
         <View style={styles.swapCompBase}>
             <Tab.Navigator>
-                <Tab.Screen />               
+                <Tab.Screen
+                 
+                />               
             </Tab.Navigator>
         </View>
     )
