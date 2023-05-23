@@ -7,7 +7,7 @@ export default styles = StyleSheet.create({
         backgroundColor: '#000',
         flexDirection: 'row',
         borderStyle: 'solid',
-        borderBottomColor: '#808080'
+        borderBottomColor: '#808080',
     },
     swapCompDiv: {
         width: '50%',

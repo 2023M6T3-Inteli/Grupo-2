@@ -9,6 +9,7 @@ import { Shop } from "./feedshop";
 import { Home } from "./Home";
 import { NewComer } from "./newcomer";
 import { Thread } from "./thread";
+import { NewPost } from "./newPost";
 
 import { Entypo, Feather, Ionicons } from "@expo/vector-icons"
 import { ButtonNav } from "../components/buttonNav";
