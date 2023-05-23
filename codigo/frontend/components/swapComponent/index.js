@@ -12,7 +12,7 @@ const Tab = createMaterialTopTabNavigator();
 export function SwapComponent(){
     return(
         <View style={styles.swapCompBase}>
-            <Tab.Navigator>
+            <Tab.Navigator screenOptions={({tabBarStyle: {backgroundColor: '#000'}, tabBarActiveTintColor: "#fff", tabBarInactiveTintColor: "#fff"})}>
                 <Tab.Screen name='Posts' component={FeedPost}/>
                 <Tab.Screen name='Projects' component={FeedProject} />
             </Tab.Navigator>
