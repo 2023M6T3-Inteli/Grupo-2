@@ -1,10 +1,9 @@
 import { StyleSheet, Text, View, Button, Image, ScrollView, SafeAreaView, } from 'react-native';
 
 export default styles = StyleSheet.create({
-    selectionPostsBase: {
+    inputSize: {
+        width: '100%',
         backgroundColor: '#000',
-        height: 150,   
-        justifyContent: 'center',
-        width: '100%'
-    },
-});
+        height: '40%',
+    }
+})

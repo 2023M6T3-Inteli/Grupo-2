@@ -10,6 +10,8 @@ export function FeedProject() {
         <SafeAreaView>
           <ScrollView>
               <CardProject />
+              <CardProject />
+              <CardProject />
           </ScrollView>
         </SafeAreaView>
       </View>

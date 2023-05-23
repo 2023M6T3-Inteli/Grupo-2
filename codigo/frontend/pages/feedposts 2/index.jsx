@@ -11,7 +11,6 @@ export function FeedPost(){
         <View style={styles.align}>
             <SafeAreaView>
                 <ScrollView>
-                    <SwapComponent />
                     <FeedCard />
                     <BlackSpace />
                     <FeedCard />
