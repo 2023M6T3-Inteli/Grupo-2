@@ -3,8 +3,9 @@ import styles from './style'
 
 export function HtmlTag(){
     return(
-        <View>
-            
+        <View style={styles.tagBase}>
+            <Image style={styles.iconSize} source={require('../../../assets/Icons/htmlicon.png')}/>
+            <Text style={styles.nameSize}>HTML</Text>
         </View>
     )
 }

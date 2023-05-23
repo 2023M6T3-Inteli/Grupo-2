@@ -4,6 +4,6 @@ export default styles = StyleSheet.create({
     align: {
         height: '100%',
         backgroundColor: '#000',
-        justifyContent: 'center',
+       
     },
 });

@@ -3,8 +3,9 @@ import styles from './style'
 
 export function CssTag(){
     return(
-        <View>
-            
+        <View style={styles.tagBase}>
+            <Image style={styles.iconSize} source={require('../../../assets/Icons/cssicon.png')}/>
+            <Text style={styles.nameSize}>CSS</Text>
         </View>
     )
 }

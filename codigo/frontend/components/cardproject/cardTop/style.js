@@ -2,7 +2,7 @@ import { StyleSheet, Text, View, Button, Image } from 'react-native';
 
 export default styles = StyleSheet.create({
     cardTopBase: {
-        marginTop: 10,
+        marginTop: 20,
         height: 200,
         width: '95%',
         alignSelf: 'center',

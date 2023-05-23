@@ -4,8 +4,21 @@ export default styles = StyleSheet.create({
     replyInputBase: {
         width: '100%',
         backgroundColor: '#000',
-        height: 70,
+        height: 150,
         flexDirection: 'row',
+        justifyContent: 'center',
         
+    },
+
+    replyImg: {
+        height: 50,
+        width: 50,
+        borderRadius: 8,
+    },
+
+    inputStyle: {
+        height: 50,
+        width: 120,
+        color: '#fff',
     }
 })

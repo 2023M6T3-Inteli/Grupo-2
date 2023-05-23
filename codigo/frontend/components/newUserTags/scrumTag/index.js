@@ -3,8 +3,9 @@ import styles from './style'
 
 export function ScrumTag(){
     return(
-        <View>
-            
+        <View style={styles.tagBase}>
+            <Image style={styles.iconSize} source={require('../../../assets/Icons/scrumicon.png')}/>
+            <Text style={styles.nameSize}>SCRUM</Text>
         </View>
     )
 }

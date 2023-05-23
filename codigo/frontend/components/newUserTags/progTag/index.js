@@ -3,8 +3,9 @@ import styles from './style'
 
 export function ProgTag(){
     return(
-        <View>
-            
+        <View style={styles.tagBase}>
+            <Image style={styles.iconSize} source={require('../../../assets/Icons/progicon.png')}/>
+            <Text style={styles.nameSize}>Programing</Text>
         </View>
     )
 }
