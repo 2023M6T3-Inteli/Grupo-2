@@ -1,9 +1,27 @@
-import app from "../../../index.js"
-import supertest from "supertest";
+import { describe, it, expect } from "vitest";
+import { serviceCommentPost } from "./service.js";
+import { prisma } from "../../../database/connection.js";
 
-describe("POST /user/commentPost", () => {
-    test("should comment the post", async () => {
-        const response = await supertest(app).get("/user/commentPost")
-        expect(response.status).toBe(200)
-    })
-})
+describe("Comment", () => {
+    it("should return comment !", async () => {
+        const request = await serviceCommentPost.exec({
+            comment: "Teste",
+            idUser: 1,
+            idPost: 1,
+        });
+
+        expect(request).toEqual({
+            idComment: request.idComment,
+            comment: "Teste",
+            idUser: 1,
+            idPost: 1,
+        });
+
+        await prisma.comment.delete({
+            where: {
+                idComment: request.idComment,
+            },
+        });
+
+    });
+});
