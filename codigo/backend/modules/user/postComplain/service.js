@@ -6,7 +6,7 @@ class ServicePostComplain {
             data: {
                 complaintReason: data.complaintReason,
                 feedback: data.feedback,
-                idPost: data.idProject,
+                idPost: data.idPost,
             }
         });
         return post;
