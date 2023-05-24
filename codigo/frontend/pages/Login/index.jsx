@@ -1,4 +1,4 @@
-import { useCallback, useState, useEffect } from "react";
+import { useCallback, useState, useEffect, useRef } from "react";
 
 import { View, Text, TextInput, Image, Button, Pressable, ScrollView } from "react-native";
 import { SafeAreaView } from "react-native";
@@ -10,6 +10,7 @@ import { useNavigation } from "@react-navigation/native";
 
 import { styles } from "./style"
 
+// npx expo install @react-native-async-storage/async-storage
 export default function Login() {
 
     const navigation = useNavigation()
@@ -48,6 +49,12 @@ export default function Login() {
 
     if (!fontsLoaded) {
         return null;
+    }
+
+    // function for implements integration login
+    const loginFunction = () => {
+
+        navigation.navigate("Start")
     }
 
 
@@ -97,7 +104,7 @@ export default function Login() {
                                 }} >
 
 
-                                <Pressable onPress={() => navigation.navigate("Start")}>
+                                <Pressable onPress={loginFunction}>
                                     <Text style={{ color: "white", fontSize: 20 }}>Login</Text>
                                 </Pressable>
                             </LinearGradient>

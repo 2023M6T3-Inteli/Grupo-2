@@ -5,8 +5,8 @@ import { PostMid } from './postMid';
 import { PostBotton } from './postBotton';
 
 
-export function FeedCard(){
-    return(
+export function FeedCard() {
+    return (
         <View>
             <PostTop />
             <PostMid />

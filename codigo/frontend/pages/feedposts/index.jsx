@@ -3,14 +3,14 @@ import styles from './style'
 
 import { FeedCard } from '../../components/cardfeed';
 import { BlackSpace } from '../../components/BlackSpace';
-import { SwapComponent } from '../../components/swapComponent';
 
-
-export function FeedPost(){
-    return(
+// props: infos the feed
+export function FeedPost({ test }) {
+    return (
         <View style={styles.align}>
             <SafeAreaView>
                 <ScrollView>
+                    <Text>{test}</Text>
                     <FeedCard />
                     <BlackSpace />
                     <FeedCard />

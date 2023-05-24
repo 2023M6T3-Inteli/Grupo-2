@@ -4,17 +4,18 @@ import styles from './style'
 
 import { CardProject } from '../../components/cardproject';
 
+// props: infos the cardsProjects
 export function FeedProject() {
-    return (
-      <View style={styles.align}>
-        <SafeAreaView>
-          <ScrollView>
-              <CardProject />
-              <CardProject />
-              <CardProject />
-          </ScrollView>
-        </SafeAreaView>
-      </View>
-    );
+  return (
+    <View style={styles.align}>
+      <SafeAreaView>
+        <ScrollView>
+          <CardProject />
+          <CardProject />
+          <CardProject />
+        </ScrollView>
+      </SafeAreaView>
+    </View>
+  );
 }
 
