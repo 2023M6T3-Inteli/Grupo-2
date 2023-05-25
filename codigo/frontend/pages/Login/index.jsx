@@ -7,13 +7,18 @@ import { useFonts } from "expo-font"
 import * as SplashScreen from 'expo-splash-screen';
 import { LinearGradient } from 'expo-linear-gradient';
 import { useNavigation } from "@react-navigation/native";
+import { storeData } from "../../scripts/setStorageUser"
+import { getData } from "../../scripts/getStorageUser"
 
 import { styles } from "./style"
+import { URL_API } from "../../api";
 
-// npx expo install @react-native-async-storage/async-storage
 export default function Login() {
 
     const navigation = useNavigation()
+
+    const [nameInput, setNameInput] = useState("")
+    const [passwordInput, setPasswordInput] = useState("")
 
 
     // state for text
@@ -51,10 +56,36 @@ export default function Login() {
         return null;
     }
 
-    // function for implements integration login
-    const loginFunction = () => {
+    const loginAPI = async () => {
+        try {
+            const response = await fetch(`${URL_API}/user/login`, {
+                method: "POST",
+                headers: {
+                    Accept: 'application/json',
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    email: nameInput,
+                    password: passwordInput
+                })
+            })
+            const json = await response.json();
+            storeData(json)
 
-        navigation.navigate("Start")
+            navigation.navigate("Start")
+
+
+        } catch (error) {
+            console.error(error);
+        }
+    };
+
+    // function for implements integration login
+    const loginFunction = async () => {
+
+        loginAPI()
+
+        // navigation.navigate("Start")
     }
 
 
@@ -84,8 +115,8 @@ export default function Login() {
                                 style={{ position: "absolute", top: 83, left: 13, resizeMode: "contain", width: 25 }} />
 
                             <View>
-                                <TextInput style={styles.inputText} placeholder="Username" placeholderTextColor="white" />
-                                <TextInput style={styles.inputText} placeholder="Password" placeholderTextColor="white" secureTextEntry={true} />
+                                <TextInput value={nameInput} onChangeText={setNameInput} style={styles.inputText} placeholder="Username" placeholderTextColor="white" />
+                                <TextInput value={passwordInput} onChangeText={setPasswordInput} style={styles.inputText} placeholder="Password" placeholderTextColor="white" secureTextEntry={true} />
                             </View>
                         </View>
 

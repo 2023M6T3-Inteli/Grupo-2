@@ -5,17 +5,24 @@ import { FeedCard } from '../../components/cardfeed';
 import { BlackSpace } from '../../components/BlackSpace';
 
 // props: infos the feed
-export function FeedPost({ test }) {
+export function FeedPost({ posts }) {
+
+
+
     return (
         <View style={styles.align}>
             <SafeAreaView>
                 <ScrollView>
-                    <Text>{test}</Text>
-                    <FeedCard />
-                    <BlackSpace />
-                    <FeedCard />
-                    <BlackSpace />
-                    <FeedCard />
+                    {posts.map((items) => (
+
+
+                        <FeedCard
+                            key={items.idPost}
+                            datas={items} />
+
+                    ))}
+
+
                 </ScrollView>
             </SafeAreaView>
         </View>

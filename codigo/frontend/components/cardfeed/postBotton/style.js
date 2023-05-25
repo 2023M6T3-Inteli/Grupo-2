@@ -3,11 +3,12 @@ import { StyleSheet, Text, View, Button, Image } from 'react-native';
 export default styles = StyleSheet.create({
     botPostBg: {
         backgroundColor: '#000',
-        height: 40,
+        height: 50,
         width: '100%',
         flexDirection: 'row',
-        justifyContent: 'center',
-        alignSelf: 'center',
+        alignItems: "center",
+        justifyContent: "center",
+
     },
     botPostInfo: {
         color: '#83BAEC',

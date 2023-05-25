@@ -3,12 +3,12 @@ import { StyleSheet, Text, View, Button, Image, Pressable } from 'react-native';
 import styles from './style'
 
 // modifier for the like is a button of r do a request
-export function PostBotton() {
+export function PostBotton({ likes }) {
     return (
         <View style={styles.botPostBg}>
             <View style={styles.botPostRow}>
                 <Image source={require('../../../assets/like.png')} />
-                <Text style={styles.botPostInfo}>9,5k Like</Text>
+                <Text style={styles.botPostInfo}>{likes} Like</Text>
             </View>
             <View style={styles.botPostRow}>
                 <Image source={require('../../../assets/comment.png')} />
