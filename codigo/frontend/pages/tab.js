@@ -45,12 +45,14 @@ export function Tabs() {
             />
             <Tab.Screen
                 name="+"
-                component={CreateProject}
+                component={NewPost}
                 options={{
                     tabBarLabel: "",
+                    tabBarStyle: { display: "none" },
                     headerShown: false, tabBarIcon: ({ size, color }) => (
                         <ButtonNav size={size} color={"white"} />
                     )
+
                 }} />
 
             <Tab.Screen

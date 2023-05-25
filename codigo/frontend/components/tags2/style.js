@@ -5,15 +5,15 @@ export default styles = StyleSheet.create({
         height: 30,
         width: 95,
         borderRadius: 20,
-        backgroundColor: '#272E38',
+        backgroundColor: '#E39C31',
         justifyContent: 'center',
         margin: 2
 
     },
     tagText: {
-        color: '#31A2E3',
+        color: '#FFFFFF',
         fontWeight: 'bold',
-        fontSize: 13,
+        fontSize: 16,
         alignSelf: 'center',
     },
 })

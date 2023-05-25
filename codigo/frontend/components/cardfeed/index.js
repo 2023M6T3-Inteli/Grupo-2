@@ -7,12 +7,11 @@ import { PostBotton } from './postBotton';
 
 export function FeedCard({ datas }) {
 
-    console.log(datas)
     return (
         <View style={{ backgroundColor: "black" }}>
             <PostTop timer={datas.time} />
             <PostMid article={datas.article} imageURL={datas.image} />
-            <PostBotton likes={datas.qntLikes} />
+            <PostBotton likes={datas.qntLikes} idPost={datas.idPost} />
         </View>
     )
 }

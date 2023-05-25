@@ -8,6 +8,7 @@ export default styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: "center",
         justifyContent: "center",
+        marginBottom: 20
 
     },
     botPostInfo: {
@@ -19,5 +20,6 @@ export default styles = StyleSheet.create({
     },
     botPostRow: {
         flexDirection: 'row',
+        alignItems: "center"
     },
 });
