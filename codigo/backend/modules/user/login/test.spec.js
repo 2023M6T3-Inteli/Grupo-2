@@ -2,20 +2,24 @@ import { describe, it, expect } from "vitest";
 import { serviceLogin } from "./services.js";
 import { prisma } from "../../../database/connection.js";
 
+const emailUser = "test@testterewdcxsttest.com";
+
 describe("Login", () => {
     it("should return user logged !", async () => {
-        await prisma.user.create({
+        const user = await prisma.user.create({
             data: {
                 fullName: "Teste",
                 idManager: 1,
                 subName: "@teste",
-                email: "tests@deeeeeeeeeeeelllll.com",
+                email: emailUser,
                 password: "123456",
+                isManager: false,
+
             },
         });
 
         const request = await serviceLogin.exec({
-          email: "tests@deeeeeeeeeeeelllll.com",
+          email: emailUser,
           password: "123456",
         });
 
@@ -24,7 +28,7 @@ describe("Login", () => {
         expect(request).toEqual({
           idUser: request.idUser,
           fullName: "Teste",
-          email: "tests@deeeeeeeeeeeelllll.com",
+          email: emailUser,
           password: "123456",
           subName: "@teste",
           isManager: false,
@@ -33,7 +37,7 @@ describe("Login", () => {
 
         await prisma.user.delete({
             where: {
-                idUser: request.idUser,
+                idUser: user.idUser,
             },
         })
 
