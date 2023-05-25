@@ -9,8 +9,10 @@ class ServicePutLike {
             data: {
                 qntLikes: {increment:1}
             }
-            
+
         });
+
+        console.log(put);
         return put;
     }
     async decrementing(idPost){

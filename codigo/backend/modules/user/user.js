@@ -34,36 +34,31 @@ class User {
     }
 
     get loadRoutes() {
+      //get protocols
+      this.router.get("/getProject", controllerGetProjects.exec);
+      this.router.get("/getPosts", controllerGetPosts.exec);
 
-        //get protocols
-        this.router.get("/getProject",controllerGetProjects.exec );
-        this.router.get("/getPosts",controllerGetPosts.exec ); 
+      //get by id protocols
+      this.router.get("/getProjectById/:id", controllerGetProjectById.exec);
+      this.router.get("/getPostById/:id", controllerGetPostById.exec);
 
-        //get by id protocols
-        this.router.get("/getProjectById/:id",controllerGetProjectById.exec );
-        this.router.get("/getPostById/:id", controllerGetPostById.exec );
-        
-
-        //post protocol
-        this.router.post("/postPost", controllerPostPost.exec);
-
-
-
-        this.router.get("/Ranking/:id", controllergetRanking.exec);
-
-        this.router.post("/commentPost", controllerCommentPost.exec)
-        //put protocol
-        this.router.put("/like", controllerPutLike.exec)
-
-        //login protocol
-        this.router.post("/login", controllerLogin.exec);
+      //login protocol
+      this.router.post("/login", controllerLogin.exec);
       
-        //complain
-        this.router.post("/postComplain", controllerPostComplain.exec)
-        this.router.post("/projectComplain", controllerProjectComplain.exec)
+      //post protocol
+      this.router.post("/postPost", controllerPostPost.exec);
 
+      this.router.get("/Ranking/:id", controllergetRanking.exec);
 
-        return this.router;
+      this.router.post("/commentPost", controllerCommentPost.exec);
+      //put protocol
+      this.router.put("/like", controllerPutLike.exec);
+
+      //complain
+      this.router.post("/postComplain", controllerPostComplain.exec);
+      this.router.post("/projectComplain", controllerProjectComplain.exec);
+
+      return this.router;
     }
 
 }
