@@ -1,9 +1,8 @@
 import express from "express"
 
-
 class Health {
 
-    constructor(){
+    constructor() {
         this.router = express.Router();
     }
 

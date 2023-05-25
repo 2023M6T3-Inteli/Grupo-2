@@ -3,20 +3,26 @@ import styles from './style'
 
 import { FeedCard } from '../../components/cardfeed';
 import { BlackSpace } from '../../components/BlackSpace';
-import { SwapComponent } from '../../components/swapComponent';
+
+// props: infos the feed
+export function FeedPost({ posts }) {
 
 
-export function FeedPost(){
-    return(
+
+    return (
         <View style={styles.align}>
             <SafeAreaView>
                 <ScrollView>
-                    <SwapComponent />
-                    <FeedCard />
-                    <BlackSpace />
-                    <FeedCard />
-                    <BlackSpace />
-                    <FeedCard />
+                    {posts.map((items) => (
+
+
+                        <FeedCard
+                            key={items.idPost}
+                            datas={items} />
+
+                    ))}
+
+
                 </ScrollView>
             </SafeAreaView>
         </View>

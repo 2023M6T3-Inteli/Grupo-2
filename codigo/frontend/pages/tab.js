@@ -6,6 +6,10 @@ import { Profile } from "./pofile";
 import { View, Text } from "react-native";
 import { Search } from "./Search";
 import { Shop } from "./feedshop";
+import { Home } from "./Home";
+import { NewComer } from "./newcomer";
+import { Thread } from "./thread";
+import { NewPost } from "./newPost";
 
 import { Entypo, Feather, Ionicons } from "@expo/vector-icons"
 import { ButtonNav } from "../components/buttonNav";
@@ -21,7 +25,7 @@ export function Tabs() {
         })}>
             <Tab.Screen
                 name="Home"
-                component={FeedPost}
+                component={Home}
                 options={{
                     headerShown: false, tabBarIcon: ({ size, color }) => (
                         <Entypo name="home" size={size} color={color} />
@@ -41,12 +45,14 @@ export function Tabs() {
             />
             <Tab.Screen
                 name="+"
-                component={CreateProject}
+                component={NewPost}
                 options={{
                     tabBarLabel: "",
+                    tabBarStyle: { display: "none" },
                     headerShown: false, tabBarIcon: ({ size, color }) => (
                         <ButtonNav size={size} color={"white"} />
                     )
+
                 }} />
 
             <Tab.Screen
