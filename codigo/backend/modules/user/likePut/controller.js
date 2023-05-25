@@ -11,9 +11,10 @@ class ControllerPutLike {
                     const posts = await servicePutLike.increment(idPost);
                     res.send(posts);
                     
-                }
+                } else {
                 const posts = await servicePutLike.decrementing(idPost);
                 res.send(posts);
+                }
     
             }
             else {
