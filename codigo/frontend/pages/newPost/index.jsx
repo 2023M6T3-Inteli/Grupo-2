@@ -3,11 +3,16 @@ import { useNavigation } from '@react-navigation/native';
 import { ImgNewPost } from '../../components/newPost/newPostBot';
 import { NewPostInput } from '../../components/newPost/newPostInput';
 import { NewPostTop } from '../../components/newPost/newPostTop';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import { Context } from '../../context/context';
 
 export function NewPost() {
+    const context = useContext(Context)
     const [input, setInput] = useState("")
     const navigation = useNavigation()
+
+    const { account, setAccount } = context
+
     return (
         <View style={{ width: '100%', backgroundColor: '#000' }} >
             <SafeAreaView>
@@ -22,7 +27,7 @@ export function NewPost() {
                 <View style={{ padding: 15 }}>
                     <NewPostTop />
                     <NewPostInput input={input} setInput={setInput} />
-                    <ImgNewPost inputText={input} />
+                    <ImgNewPost account={account} inputText={input} setInputText={setInput} />
                 </View>
             </SafeAreaView>
         </View>

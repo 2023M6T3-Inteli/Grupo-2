@@ -1,4 +1,4 @@
-import { useCallback, useState, useEffect, useRef } from "react";
+import { useCallback, useState, useEffect, useRef, useContext } from "react";
 
 import { View, Text, TextInput, Image, Button, Pressable, ScrollView } from "react-native";
 import { SafeAreaView } from "react-native";
@@ -12,13 +12,18 @@ import { getData } from "../../scripts/getStorageUser"
 
 import { styles } from "./style"
 import { URL_API } from "../../api";
+import { Context } from "../../context/context";
 
 export default function Login() {
 
+    const context = useContext(Context)
     const navigation = useNavigation()
 
     const [nameInput, setNameInput] = useState("")
     const [passwordInput, setPasswordInput] = useState("")
+
+    const { account, setAccount } = context
+
 
 
     // state for text
@@ -70,6 +75,8 @@ export default function Login() {
                 })
             })
             const json = await response.json();
+
+            setAccount(json)
             storeData(json)
 
             navigation.navigate("Start")
