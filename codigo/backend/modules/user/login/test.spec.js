@@ -23,6 +23,7 @@ describe("Login", () => {
 
     console.log(request);
 
+
     await prisma.user.delete({
       where: {
         idUser: userTest.idUser,
@@ -32,3 +33,21 @@ describe("Login", () => {
     expect(1).toEqual(1);
   });
 });
+
+        expect(request).toEqual({
+          idUser: request.idUser,
+          fullName: "Teste",
+          email: emailUser,
+          password: "123456",
+          subName: "@teste",
+          isManager: false,
+          idManager: 1,
+        });
+
+        await prisma.user.delete({
+            where: {
+                idUser: user.idUser,
+            },
+        })
+
+    

@@ -7,13 +7,14 @@ export default styles = StyleSheet.create({
     },
     midPostBg: {
         backgroundColor: '#000',
-        height: 150,
         width: '100%',
     },
     midPostDesc: {
         marginTop: 15,
         color: '#fff',
         fontSize: 15,
+        marginBottom: 5
+
     },
     midPostHash: {
         color: '#808080',

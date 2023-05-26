@@ -5,12 +5,13 @@ import { PostMid } from './postMid';
 import { PostBotton } from './postBotton';
 
 
-export function FeedCard() {
+export function FeedCard({ datas }) {
+
     return (
-        <View>
-            <PostTop />
-            <PostMid />
-            <PostBotton />
+        <View style={{ backgroundColor: "black" }}>
+            <PostTop timer={datas.time} />
+            <PostMid article={datas.article} imageURL={datas.image} />
+            <PostBotton likes={datas.qntLikes} idPost={datas.idPost} />
         </View>
     )
 }

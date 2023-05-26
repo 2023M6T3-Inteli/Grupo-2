@@ -8,9 +8,9 @@ export default styles = StyleSheet.create({
     },
     tagsProfileBase: {
         height: 40,
-        width: '100%',
         backgroundColor: '#000',
         flexDirection: 'row',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        padding: 2
     },
 });

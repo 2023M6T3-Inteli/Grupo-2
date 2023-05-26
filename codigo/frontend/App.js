@@ -13,6 +13,7 @@ import { Routes } from './route';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { ContextProvider } from './context/context';
 
 
 export default function App() {
@@ -20,9 +21,11 @@ export default function App() {
   return (
 
     <NavigationContainer>
-      <View style={styles.container}>
-        <Routes />
-      </View>
+      <ContextProvider>
+        <View style={styles.container}>
+          <Routes />
+        </View>
+      </ContextProvider>
     </NavigationContainer>
 
   );

@@ -4,19 +4,20 @@ export default styles = StyleSheet.create({
     cardTopBase: {
         marginTop: 20,
         height: 200,
-        width: '95%',
+        width: "90%",
         alignSelf: 'center',
         backgroundColor: '#192028',
         borderTopLeftRadius: 15,
         borderTopRightRadius: 15,
         flexDirection: 'column',
+        padding: 15,
     },
     cardTopFirst: {
         flexDirection: 'row',
-        height: '25%',
-        width: '85%',
+
         alignItems: "center",
-        gap: 180,
+        gap: 120,
+        marginBottom: 15
     },
     cardTopSecond: {
         flexDirection: 'row',
@@ -30,13 +31,14 @@ export default styles = StyleSheet.create({
         height: '25%',
         justifyContent: 'center',
         alignItems: "center",
+        marginBottom: 10
     },
     cardTopFourth: {
         flexDirection: 'row',
         height: '25%',
         justifyContent: 'center',
         alignItems: "center",
-    },  
+    },
     cardTittle: {
         color: '#fff',
         fontSize: 15,
@@ -53,6 +55,6 @@ export default styles = StyleSheet.create({
     descriptionLetter: {
         color: '#9999',
         width: '80%'
-        
+
     },
 })

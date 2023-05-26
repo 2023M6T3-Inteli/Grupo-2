@@ -2,9 +2,10 @@ import { StyleSheet, Text, View, Button, Image } from 'react-native';
 
 export default styles = StyleSheet.create({
     topProfileBase: {
-        height: 250,
+        height: 200,
         width: '100%',
-        backgroundColor: '#000'
+        backgroundColor: '#000',
+        marginBottom: 14
     },
     profilePicAlign: {
         alignSelf: "center"

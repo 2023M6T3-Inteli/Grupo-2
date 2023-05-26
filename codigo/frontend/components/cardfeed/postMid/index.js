@@ -2,13 +2,15 @@ import { StyleSheet, Text, View, Button, Image } from 'react-native';
 
 import styles from './style'
 
-export function PostMid(){
-    return(
-        <View>
-            <Image style={styles.midPostImg} source={require('../../../assets/feedpostimg.png')} />
+export function PostMid({ imageURL, article }) {
+    return (
+        <View style={{ marginBottom: 10 }}>
+            <Image style={styles.midPostImg} source={{
+                uri: imageURL
+            }} />
             <View style={styles.midPostBg}>
                 <Text style={styles.midPostDesc}>
-                    This an text of example, this is how am drescription of a post will look like on the feed of posts
+                    {article}
                 </Text>
                 <Text style={styles.midPostHash}>
                     #Technologie

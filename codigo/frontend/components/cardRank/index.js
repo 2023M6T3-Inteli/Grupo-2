@@ -1,18 +1,25 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image} from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 
 export default function CardRanking({ item }) {
+
+
+
+
     return (
         <View style={styles.num}>
             {/* <View style={styles.text2}> */}
             <View style={styles.barra1}>
-            <Text style={styles.first}>{item.position}º</Text>
+                {item.position == 1 && <Text style={styles.first}>{item.position}º</Text>}
+                {item.position == 2 && <Text style={styles.second}>{item.position}º</Text>}
+                {item.position == 3 && <Text style={styles.third}>{item.position}º</Text>}
+                {item.position > 3 && <Text style={styles.normal}>{item.position}º</Text>}
             </View>
             <View style={styles.barra}></View>
-            <Image source={require("../../assets/FotoRanking.png")}/>
+            <Image source={require("../../assets/FotoRanking.png")} />
             <View style={styles.name}>
                 <Text style={styles.mariana}> {item.name}</Text>
-                <Text style={styles.mariana1}>{item.user}</Text>
+                <Text style={styles.mariana1}>@{item.name}</Text>
             </View>
             <View style={styles.numbPoints}>
                 <Text style={styles.numb}>{item.points}</Text>
@@ -39,6 +46,24 @@ const styles = StyleSheet.create({
         color: '#fff',
     },
     first: {
+        color: '#FFE600',
+        fontSize: 20,
+        alignSelf: "center",
+        marginLeft: 10
+    },
+    second: {
+        color: '#EBDCCD',
+        fontSize: 20,
+        alignSelf: "center",
+        marginLeft: 10
+    },
+    third: {
+        color: '#FF5C00',
+        fontSize: 20,
+        alignSelf: "center",
+        marginLeft: 10
+    },
+    normal: {
         color: '#fff',
         fontSize: 20,
         alignSelf: "center",
@@ -58,6 +83,9 @@ const styles = StyleSheet.create({
     name: {
         color: '#fff',
         justifyContent: "center",
+        alignItems: "center",
+        alignSelf: "center",
+        textAlign: "center"
     },
     mariana: {
         color: '#fff',
@@ -67,6 +95,7 @@ const styles = StyleSheet.create({
     },
     numbPoints: {
         justifyContent: "center",
+        alignItems: "center"
     },
     numb: {
         color: '#31A2E3',

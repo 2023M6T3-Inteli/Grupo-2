@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, Button, Image } from 'react-native';
 export default styles = StyleSheet.create({
     cardBotBase: {
         height: 60,
-        width: '95%',
+        width: '90%',
         alignSelf: 'center',
         backgroundColor: '#232C35',
         borderBottomLeftRadius: 15,
@@ -15,7 +15,12 @@ export default styles = StyleSheet.create({
     cardBotImg: {
         height: 40,
         width: 40,
-        marginLeft: 5,
+        marginLeft: 25,
+    },
+    cardBotImg2: {
+        height: 40,
+        width: 40,
+        marginLeft: -20,
     },
     applicantsLetter: {
         color: '#31A2E3',
@@ -28,12 +33,14 @@ export default styles = StyleSheet.create({
     },
     applicantsAlign: {
         flexDirection: 'row',
-        
+        alignContent: "center",
+        alignItems: "center",
+        gap: 10
+
     },
     cardBotOrder: {
         flexDirection: 'row',
-        justifyContent: 'space-evenly',
-        gap: 220,
-        justifyContent: 'center',
+        gap: 110
+
     }
 });
