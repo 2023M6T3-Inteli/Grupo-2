@@ -28,10 +28,6 @@ describe("Post", () => {
       qntLikes: 1,
     });
 
-    await prisma.post.delete({
-      where: {
-        idPost: request.idPost,
-      },
+
     });
   });
-});
