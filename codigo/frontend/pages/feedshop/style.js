@@ -7,7 +7,7 @@ export const styles = StyleSheet.create({
         flexDirection: "row",
         alignSelf: "center",
         marginTop: 50,
-        gap: 15,
+        gap:15,
 
 
 
@@ -18,7 +18,7 @@ export const styles = StyleSheet.create({
     },
     value: {
         color: "#31A2E3",
-        fontSize: 20,
+        fontSize:20,
 
     },
 
