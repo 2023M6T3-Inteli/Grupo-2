@@ -47,10 +47,11 @@ export function ImgNewPost({ inputText, setInputText, account }) {
         body: JSON.stringify({
           article: inputText,
           time: new Date(timeNow),
+
           ups: 0,
           downs: 0,
           idUser: account.idUser,
-          image: "https://www.gupy.io/hubfs/HR-tech.jpg",
+          image: "https://wallpaperaccess.com/full/829014.jpg",
           qntLikes: 0
         })
       })
@@ -114,10 +115,10 @@ export function ImgNewPost({ inputText, setInputText, account }) {
 
       </Modal>
 
-      <View style={{ flexDirection: 'row', marginBottom: 20 }}>
+      <View style={{ flexDirection: 'row', marginBottom: 13 }}>
         <Tags2 techText={"JS"} />
       </View>
-      <View style={{ marginBottom: 20 }}>
+      <View style={{ marginBottom: 20, marginLeft: 10 }}>
         {image && <Image source={{ uri: image }} style={{ width: 80, height: 80 }} />}
       </View>
       <View style={styles.botLine}></View>
