@@ -65,6 +65,7 @@
 - [UX e UI Design](#ux-e-ui-design) -[Benchmarking](#benchmarking-e-revisão-de-design-systems)
   - [Wireframes](#wireframes)
   - [Design de Interface - Guia de Estilos](#design-de-interface---guia-de-estilos)
+- [Gameficação](#gameficação)
 - [Projeto de Banco de Dados](#projeto-de-banco-de-dados)
   - [Modelo Conceitual](#modelo-conceitual)
   - [Modelo Lógico](#modelo-conceitual)
@@ -350,7 +351,10 @@ Refere-se ao design visual, cores, tipografia, imagens, logotipos, ou seja, os e
 <center>
 <img src="./img/UI_Components.png">
 </center>
-
+## Gameficação
+ <p> A gameficação é uma metodologia que utiliza elementos de jogos para atrair os usuarios em ambientes que não se resumem a entreterimento. O TINAM App vai utilizar a gameficação para gerar engajameno com  usuario.
+Os pontos vão ser distribuidos da seginte forma: a cada projeto participado o usuario ganha 30 pontos e 15 coins. A cada like recebido no post aumenta 2 pontos e a cada comentario 3 pontos. Já na temporada, os pontos de receber like e comentario sao dobrados caso o post seja sobre o assunto que está em alta.
+Os pontos vão impactar na posição do jogador no ranking. E as moedas podem ser usadas para comprar itens no shop do aplicativo. </p>
 # Projeto de Banco de Dados
 
 Documento contendo diagrama de entidades e relacionamentos do banco de dados
