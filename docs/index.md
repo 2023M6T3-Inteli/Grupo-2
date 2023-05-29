@@ -271,11 +271,9 @@ Diagrama de fluxo 1.0
 ##Arquitetura V2
 <center>
 <img src="./img/arquitetura-do-sistema-V2.png" alt="arq" border="0" width="100%">
-Arquitetura do sistema 2.0
->>>>>>> Stashed changes
 </center>
   
-  ##Arquitetura versão 3
+ ##Arquitetura V3
 
   ![image](https://github.com/2023M6T3-Inteli/Grupo-2/assets/99216420/337480af-bc03-4847-b3ad-bfad38f11d5e)
 
