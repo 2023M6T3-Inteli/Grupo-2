@@ -267,6 +267,7 @@ Diagrama de fluxo 1.0
 
 <center>
 <img src="./img/Arquitetura_de_Mensageria.png">
+  
 ##Arquitetura V2
 <center>
 <img src="./img/arquitetura-do-sistema-V2.png" alt="arq" border="0" width="100%">
