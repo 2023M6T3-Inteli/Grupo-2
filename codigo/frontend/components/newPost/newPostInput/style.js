@@ -5,7 +5,7 @@ export default styles = StyleSheet.create({
         width: '100%',
         backgroundColor: '#000',
         height: '40%',
-        marginBottom: 20
+        marginBottom: 5
 
     }
 })

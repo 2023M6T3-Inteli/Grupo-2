@@ -95,7 +95,7 @@ export default function Ranking() {
                             (<CardRanking key={index} item={item} />)
                             :
                             (<View style={{}}>
-                                <CardRanking key={index + 1} item={item} />
+                                <CardRanking item={item} />
                                 <View style={styles.barraDeitada}></View>
                             </View>)
                     ))}

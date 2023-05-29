@@ -1,11 +1,13 @@
-import { StyleSheet, Text, View, Button, Image, ScrollView, SafeAreaView, } from 'react-native';
+import { StyleSheet, Text, View, Button, Image, ScrollView, SafeAreaView, RefreshControl } from 'react-native';
 import styles from './style'
 
 import { FeedCard } from '../../components/cardfeed';
 import { BlackSpace } from '../../components/BlackSpace';
 
+import { useState, useCallback } from 'react';
+
 // props: infos the feed
-export function FeedPost({ posts }) {
+export function FeedPost({ posts, setUpdate, updateValue }) {
 
 
 
@@ -28,3 +30,4 @@ export function FeedPost({ posts }) {
         </View>
     )
 }
+
