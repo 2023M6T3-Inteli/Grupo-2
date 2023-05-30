@@ -3,14 +3,14 @@ import { prisma } from "../../../database/connection.js";
 class ServiceLogin {
   async exec(data) {
     try {
-      const request = await prisma.user.findUnique({
+      const response = await prisma.user.findUnique({
         where: {
           email: data.email,
         },
       });
-      if (request) {
-        if (request.password === data.password) {
-          return request;
+      if (response) {
+        if (response.password === data.password) {
+          return response;
         } else {
           throw new Error("Could not authenticate user");
         }

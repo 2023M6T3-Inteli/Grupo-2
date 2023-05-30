@@ -3,13 +3,13 @@ import { prisma } from "../../../database/connection.js";
 class ServiceGetPostById {
     async exec(id) {
         try {
-            const request = await prisma.post.findUnique({
+            const response = await prisma.post.findUnique({
                 where: {
                     idPost: id
                 }
             });
             
-        return request;
+        return response;
 
         } catch (error) {
             throw new Error("Could not find post");
