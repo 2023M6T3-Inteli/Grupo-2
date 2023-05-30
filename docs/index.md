@@ -269,14 +269,14 @@ Diagrama de fluxo 1.0
 <center>
 <img src="./img/Arquitetura_de_Mensageria.png">
   
-##Arquitetura V2
+## Arquitetura V2
 <center>
 <img src="./img/arquitetura-do-sistema-V2.png" alt="arq" border="0" width="100%">
 </center>
   
- ##Arquitetura V3
+## Arquitetura V3
 
-  ![image](https://github.com/2023M6T3-Inteli/Grupo-2/assets/99216420/337480af-bc03-4847-b3ad-bfad38f11d5e)
+  <img src="./img/ArquiteturaV3.jpg" alt="arq" border="0" width="100%">
 
 # UX e UI Design
 
@@ -413,7 +413,7 @@ Link ou imagem da tabela com dados organizados dos testes realizados
 Apresentar a documentação no formato Swagger ou aplicação equivalente com todas as requisições dos endpoints desenvolvidos e funcionando.
 
 # Pipeline de Dados 
-  
+  <img src="./img/Pipeline.jpg" alt="arq" border="0" width="100%">
 # Manual do Usuário
 
 Fornecer instruções detalhadas sobre como usar o software corretamente. É uma ferramenta valiosa para ajudar os usuários a compreender as funções do software, instalar o software, configurar as preferências do usuário, entre outras tarefas. O manual do usuário geralmente inclui screenshots, animações e outros recursos visuais para tornar a experiência do usuário mais clara e intuitiva. Além disso, ele também pode incluir informações sobre solução de problemas, dicas e truques, bem como informações de contato para suporte técnico. É importante que a seção de manual do usuário seja atualizada frequentemente para garantir que os usuários tenham acesso à informação mais recente e precisa sobre o software.
