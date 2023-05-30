@@ -2,8 +2,8 @@ import { serviceGetPosts } from "./service.js";
 
 class ControllerGetPosts {
   async exec(req, res) {
-    const posts = await serviceGetPosts.exec();
-    res.send(posts);
+    const request = await serviceGetPosts.exec();
+    res.send(request);
   }
 }
 
