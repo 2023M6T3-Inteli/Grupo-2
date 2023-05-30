@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { serviceLogin } from "./services.js";
+import { serviceLogin } from "./service.js";
 import { prisma } from "../../../database/connection.js";
 
 const emailUserTest = "test234@rkj.com";
@@ -22,7 +22,6 @@ describe("Login", () => {
     });
 
     console.log(request);
-
 
     await prisma.user.delete({
       where: {
