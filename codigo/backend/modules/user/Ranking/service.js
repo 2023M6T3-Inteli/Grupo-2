@@ -39,17 +39,22 @@ class ServicegetRanking {
     }
 
     async verifyUserById(id) {
-        const response = await prisma.user.findUnique({
-            where: {
-                idUser: id
+        try {
+            const response = await prisma.user.findUnique({
+                where: {
+                    idUser: id
+                }
+            })
+            if (response) {
+                return true
+            } else {
+                return false
             }
-        })
-
-        if (response) {
-            return true
-        } else {
-            return false
+            
+        } catch (error) {
+            return error;
         }
+
     }
 }
 
