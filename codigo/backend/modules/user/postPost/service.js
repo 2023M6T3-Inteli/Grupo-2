@@ -2,7 +2,7 @@ import { prisma } from "../../../database/connection.js";
 
 class ServicePostPost {
     async exec(data) {
-        const request = await prisma.post.create ({
+        const response = await prisma.post.create ({
             data: {
                 article: data.article,
                 time: data.time,
@@ -13,7 +13,7 @@ class ServicePostPost {
                 qntLikes: data.qntLikes
             }
         });
-        return request;
+        return response;
     }
 };
 
