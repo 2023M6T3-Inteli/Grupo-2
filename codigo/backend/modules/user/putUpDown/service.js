@@ -3,7 +3,7 @@ import { prisma } from "../../../database/connection.js";
 class ServiceputUpDown {
     async increment(idPost) {
 
-        const putUP = await prisma.post.update({
+        const request = await prisma.post.update({
             where: {
                 idPost: idPost
             },
@@ -12,10 +12,10 @@ class ServiceputUpDown {
             }
 
         });
-        return putUP;
+        return request;
     }
     async decrementing(idPost) {
-        const putUP = await prisma.post.update({
+        const request = await prisma.post.update({
             where: {
                 idPost: idPost
             },
@@ -25,7 +25,7 @@ class ServiceputUpDown {
         })
     }
     async increment(idPost) {
-        const putDown = await prisma.post.update({
+        const request = await prisma.post.update({
             where: {
                 idPost: idPost
             },
@@ -34,11 +34,11 @@ class ServiceputUpDown {
             }
 
         });
-        return putDown;
+        return request;
     }
 
     async decrementing(idPost) {
-        const putDown = await prisma.post.update({
+        const request = await prisma.post.update({
             where: {
                 idPost: idPost
             },
