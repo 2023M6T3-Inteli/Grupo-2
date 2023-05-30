@@ -22,7 +22,7 @@ class ServicePutLike {
   }
 
   async decrementing(idPost, idUser) {
-    const put = await prisma.post.update({
+    const request = await prisma.post.update({
       where: {
         idPost: idPost,
       },
@@ -40,7 +40,7 @@ class ServicePutLike {
       },
     });
 
-    return put;
+    return request;
   }
 }
 
