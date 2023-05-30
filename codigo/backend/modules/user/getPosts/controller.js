@@ -2,8 +2,13 @@ import { serviceGetPosts } from "./service.js";
 
 class ControllerGetPosts {
   async exec(req, res) {
-    const request = await serviceGetPosts.exec();
-    res.send(request);
+    try {
+      const request = await serviceGetPosts.exec();
+      res.send(request);
+      
+    } catch (error) {
+      res.send(error);
+    }
   }
 }
 

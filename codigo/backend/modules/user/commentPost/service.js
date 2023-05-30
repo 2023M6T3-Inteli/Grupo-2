@@ -2,14 +2,19 @@ import { prisma } from "../../../database/connection.js";
 
 class ServiceCommentPost {
     async exec(data) {
-        const response = await prisma.comment.create({
-            data: {
-                comment: data.comment,
-                idPost : data.idPost,
-                idUser : data.idUser,
-            }
-        });
-        return response;
+        try {
+            const response = await prisma.comment.create({
+                data: {
+                    comment: data.comment,
+                    idPost : data.idPost,
+                    idUser : data.idUser,
+                }
+            });
+            return response;
+            
+        } catch (error) {
+            return error;
+        }
     }
 };
 
