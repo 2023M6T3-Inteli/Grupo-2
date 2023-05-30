@@ -3,8 +3,12 @@ import { prisma } from "../../../database/connection.js";
 
 class ServiceGetProjects {
     async exec() {
-        const response = await prisma.project.findMany();
-        return response;
+        try {
+            const response = await prisma.project.findMany();
+            return response;
+        } catch (error) {
+            return error;
+        }
     }
 }
 

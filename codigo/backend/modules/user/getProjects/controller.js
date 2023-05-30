@@ -3,8 +3,13 @@ import { serviceGetProjects } from "./service.js";
 
 class ControllerGetProjects {
   async exec(req, res) {
-    const projects = await serviceGetProjects.exec();
-    res.send(projects);
+    try {
+      const projects = await serviceGetProjects.exec();
+      res.send(projects);
+      
+    } catch (error) {
+      res.send(error);
+    }
   }
 }
 
