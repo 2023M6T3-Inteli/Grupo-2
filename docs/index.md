@@ -77,6 +77,7 @@
   - [Teste de Funcionalidade](#teste-de-funcionalidade)
   - [Teste de API](#teste-de-api)
 - [Documentação da API](#documentação-da-api)
+- [Construção da Base de Dados](#construção-da-base-de-dados)
 - [Pipeline de Dados](#pipeline-de-dados)
 - [Manual do Usuário](#Manual-do-usuário)
 - [Referências](#referências)
@@ -412,7 +413,24 @@ Link ou imagem da tabela com dados organizados dos testes realizados
 
 Apresentar a documentação no formato Swagger ou aplicação equivalente com todas as requisições dos endpoints desenvolvidos e funcionando.
 
+# Construção da Base de Dados
+Para a construção da Base de Dados o grupo decidiu pegar o dataset "Sistemas de Recomendação ICMC-USP" do Kaggle. Desse dataset  foram usadas duas tabelas, a "Movies" e a "Ratings". Na tabela "Movies" estavam presentes as colunas: movieId, title e genres. Já na Tabela "Ratings", as colunas presentes eram: movieId, userId, ratings e timestamp.
+Ademais, após extrair essas duas tabelas do dataset, nós começamos a parte de transformação dos dados, para que eles ficassem mais apropriados para o nosso modelo. Dessa forma, o primeiro passo foi  realizar um "merge" dessas tabelas e logo em seguida retirar as colunas "title e "timestamp". 
+Além disso, foi necessário a retirada dos filmes com o gênero "children", pois não faz sentido para o contexto atual a utilização de filmes infantis para o treinamento do modelo. Por fim, a coluna de gênero também foi extraida da Base de Dados.
+Portanto, para fins estatísticos, o grupo fez dois gráficos para analisar melhor os dados presentes no dataset. O primeiro gráfico é respectivo à classificação dos filmes realizadas pelos usuários. Já o segundo, faz referência a quantidade de avaliações que cada filme possui.
+
+<img src="./img/grafico1.png">
+
+O gráfico "Índice de Rating" nos mostra no eixo x as classificações dadas pelos usuários de 1-5. Já no eixo y, ele mostra a quantidade de avaliações realizadas. Dessa maneira, é possível concluir que as classificações que mais foram dadas aos filmes, foram as classificações 4 e 5.
+
+<img src="./img/grafico2.png">
+ 
+ Por outro lado, o gráfico "Índice de MovieId" nos mostra no eixo x algums fimes que foram avaliados, e apresenta no eixo y a quantidade de vezes que esse filme foi avaliado. Portanto, é possível afirmar quea Base de Dados possui alguns filmes que foram muito mais avaliados do que outros, dessa forma esse é um ponto a ser observado durante o treinamento do modelo, pois esses outliers correm o risco de prejudicar a acurácia do Sistema de Recomendações.
+
 # Pipeline de Dados 
+A Pipeline de Dados segue o modelo ETL (Extração, Transformação e Carga). Esse moldelo é um método amplamente utilizado na área de tecnologia da informação para extrair dados de diversas fontes, transformá-los em um formato adequado e carregá-los em um sistema de destino, como um data warehouse ou um banco de dados.
+ Dessa forma, é possível afirmar que a extração dos dados foi realizada de um dataset do Kaggle (Sistemas de Recomendação ICMC-USP), em que foram utilizada duas tabelas: a "movies" e a "ratings". Depois desse processo de extração, o grupo realizou um processo de transformação desses dados para que eles se tornassem mais favoráveis para o treinamento do modelo. E por fim, nós transformamos essa Base de Dados em um arquilo csv para que se torne possível a transferência desses dados para o banco de dados "MySQL"
+
   <img src="./img/Pipeline.jpg" alt="arq" border="0" width="100%">
 # Manual do Usuário
 
