@@ -2,50 +2,70 @@ import { prisma } from "../../../database/connection.js";
 
 class ServiceputUpDown {
     async increment(idPost) {
+        try {
+            const response = await prisma.post.update({
+                where: {
+                    idPost: idPost
+                },
+                data: {
+                    qntUp: { increment: 1 }
+                }
+    
+            });
+            return response;
+            
+        } catch (error) {
+            return error;
+        }
 
-        const request = await prisma.post.update({
-            where: {
-                idPost: idPost
-            },
-            data: {
-                qntUp: { increment: 1 }
-            }
-
-        });
-        return request;
     }
     async decrementing(idPost) {
-        const request = await prisma.post.update({
-            where: {
-                idPost: idPost
-            },
-            data: {
-                qntUp: { increment: -1 }
-            }
-        })
+        try {
+            const response = await prisma.post.update({
+                where: {
+                    idPost: idPost
+                },
+                data: {
+                    qntUp: { increment: -1 }
+                }
+            })
+            
+        } catch (error) {
+            return error;
+        }
     }
     async increment(idPost) {
-        const request = await prisma.post.update({
-            where: {
-                idPost: idPost
-            },
-            data: {
-                qntUp: { increment: 1 }
-            }
-
-        });
-        return request;
+        try {
+            const response = await prisma.post.update({
+                where: {
+                    idPost: idPost
+                },
+                data: {
+                    qntUp: { increment: 1 }
+                }
+    
+            });
+            return response;
+            
+        } catch (error) {
+            return error;
+        }
     }
 
     async decrementing(idPost) {
-        const request = await prisma.post.update({
-            where: {
-                idPost: idPost
-            },
-            data: {
-                qntUp: { increment: -1 }
-            }
-        })
+        try {
+            const response = await prisma.post.update({
+                where: {
+                    idPost: idPost
+                },
+                data: {
+                    qntUp: { increment: -1 }
+                }
+            })
+            
+        } catch (error) {
+            return error;
+        }
     }
 
 

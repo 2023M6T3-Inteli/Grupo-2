@@ -2,9 +2,14 @@ import { servicePostComplain } from "./service.js";
 
 class ControllerPostComplain {
     async exec(req, res) {
-        //console.log(req.body);
-        const post = await servicePostComplain.exec(req.body);
-        res.json(post);
+        try {
+            //console.log(req.body);
+            const post = await servicePostComplain.exec(req.body);
+            res.json(post);
+            
+        } catch (error) {
+            res.send(error)
+        }
     }
 }
 

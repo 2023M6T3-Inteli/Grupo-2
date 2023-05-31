@@ -3,13 +3,13 @@ import { prisma } from "../../../database/connection.js";
 class ServiceGetProjectById {
     async exec(id) {
         try {
-            const project = await prisma.project.findUnique({
+            const response = await prisma.project.findUnique({
                 where: {
                     idProject: id
                 }
             });
             
-        return project;
+        return response;
 
         } catch (error) {
             throw new Error("Could not find project");
