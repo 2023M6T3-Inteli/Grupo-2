@@ -2,13 +2,17 @@ import { StyleSheet, Text, View, Button, Image, Pressable } from 'react-native';
 import { URL_API } from '../../../api';
 
 import styles from './style'
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
+import LottieView from 'lottie-react-native'
 
 // modifier for the like is a button of r do a request
 export function PostBotton({ likes, idPost }) {
 
     const [state, setState] = useState(false)
     const [likesAPI, setLikesAPI] = useState(0)
+
+    const animation = useRef(null)
+    const firstRun = useRef(true)
 
     const likeFunction = async () => {
         try {
@@ -43,7 +47,14 @@ export function PostBotton({ likes, idPost }) {
         <View style={styles.botPostBg}>
             <View style={styles.botPostRow}>
                 <Pressable style={{ flexDirection: "row", alignItems: "center" }} onPress={likeFunction}>
-                    <Image source={require('../../../assets/like.png')} />
+                    <LottieView 
+                        source={require('../../../assets/like.json')}
+                        autoPlay={false}
+                        loop={false}
+                        style={styles.likeIcon}
+                        resizeMode='cover'
+                        ref={animation}
+                    />
                     <Text style={styles.botPostInfo}>{likesAPI} Like</Text>
                 </Pressable>
             </View>

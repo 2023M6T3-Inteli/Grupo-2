@@ -79,7 +79,7 @@ export default function Login() {
             setAccount(json)
             storeData(json)
 
-            navigation.navigate("Start")
+            navigation.navigate("NewComer")
 
 
         } catch (error) {
