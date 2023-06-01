@@ -14,6 +14,7 @@ import { styles } from "./style"
 import { URL_API } from "../../api";
 import { Context } from "../../context/context";
 
+
 export default function Login() {
 
     const context = useContext(Context)
@@ -70,10 +71,11 @@ export default function Login() {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
-                    email: nameInput,
-                    password: passwordInput
+                    email: String(nameInput),
+                    password: String(passwordInput)
                 })
             })
+
             const json = await response.json();
 
             setAccount(json)
