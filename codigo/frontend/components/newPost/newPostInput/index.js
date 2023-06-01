@@ -7,7 +7,6 @@ export function NewPostInput({ setInput, input }) {
         <View style={styles.inputSize}>
             <TextInput
                 editable
-                multiline
                 numberOfLines={15}
 
                 value={input}

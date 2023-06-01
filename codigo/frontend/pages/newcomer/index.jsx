@@ -1,5 +1,6 @@
-import { StyleSheet, Text, View, Button, Image, ScrollView, SafeAreaView, } from 'react-native';
+import { StyleSheet, Text, View, Button, Image, ScrollView, SafeAreaView, Pressable, } from 'react-native';
 import styles from './style'
+import { useNavigation } from "@react-navigation/native";
 
 import { NewUserButton } from '../../components/newUserButton';
 import { BlackSpace } from '../../components/BlackSpace';
@@ -13,6 +14,9 @@ import { UxTag } from '../../components/newUserTags/uxTag';
 import style from './style';
 
 export function NewComer(){
+
+    const navigation = useNavigation()
+
     return(
         <View style={styles.base}>
             <SafeAreaView>
@@ -69,7 +73,11 @@ export function NewComer(){
                         </View>
                     </View>
                     <View>
-                        <NewUserButton />
+                        <Pressable onPress={() => [
+                            navigation.navigate('Start')
+                        ]}>
+                            <NewUserButton />
+                        </Pressable>
                     </View>   
                 </ScrollView>
             </SafeAreaView>
