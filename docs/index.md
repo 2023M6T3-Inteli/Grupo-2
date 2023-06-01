@@ -383,11 +383,39 @@ O modelo lógico de banco de dados é uma representação abstrata e simplificad
 # Testes de Software
 
 ## Teste Unitário
+Teste unitário é uma técnica de teste de software que tem como objetivo verificar o comportamento correto e isolado de unidades individuais de código, como funções, métodos ou classes. Essas unidades são testadas de forma independente, em um ambiente controlado, para garantir que elas funcionem corretamente e produzam os resultados esperados.
+
+Dessa forma, o grupo TINAM fez diversos arquivos de testes unitários para garantir que a aplicação está funcionando. Logo, a escolha do grupo foi realizar um arquivo de teste para cada funcionalidade do aplicativo. Nas imagens abaixo estão as evidências dos testes realizados.
 
 <strong>Teste GET posts</strong>
 <center>
 <img src="./img/test-trial.png">
 </center>
+
+<strong> Teste GET Projects </strong>
+<img src="./img/getProjects.png">
+
+<strong> Teste GET Post By Id </strong>
+<img src="./img/getPostbyId.png">
+
+<strong> Teste Comment Post  </strong>
+<img src="./img/commentPost.png">
+
+<strong> Teste Post Complain  </strong>
+<img src="./img/postComplain.png">
+
+<strong> Teste Project Complain  </strong>
+<img src="./img/projectComplain.png">
+
+<strong> Login </strong>
+<img src="./img/login.png">
+
+
+<strong> Ranking </strong>
+<img src="./img/Ranking.png">
+
+
+
 
 ## Teste de Integração
 
