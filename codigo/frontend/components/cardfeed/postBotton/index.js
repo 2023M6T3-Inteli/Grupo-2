@@ -5,6 +5,7 @@ import styles from './style'
 import { useEffect, useState, useRef, useContext } from 'react';
 import LottieView from 'lottie-react-native'
 import { Context } from '../../../context/context';
+import * as Sharing from 'expo-sharing';
 
 // modifier for the like is a button of r do a request
 export function PostBotton({ likes, idPost , idArray }) {
@@ -77,10 +78,10 @@ export function PostBotton({ likes, idPost , idArray }) {
                 <Image source={require('../../../assets/comment.png')} />
                 <Text style={styles.botPostInfo}>2k Comment</Text>
             </View>
-            <View style={styles.botPostRow}>
+            <Pressable style={styles.botPostRow} onPress={console.log("share")}>
                 <Image source={require('../../../assets/share.png')} />
                 <Text style={styles.botPostInfo}>Share</Text>
-            </View>
+            </Pressable>
         </View>
     )
 }
