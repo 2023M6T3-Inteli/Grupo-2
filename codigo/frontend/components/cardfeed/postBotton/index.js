@@ -6,10 +6,12 @@ import { useEffect, useState, useRef, useContext } from 'react';
 import LottieView from 'lottie-react-native'
 import { Context } from '../../../context/context';
 import * as Sharing from 'expo-sharing';
+import { useNavigation } from "@react-navigation/native";
 
 // modifier for the like is a button of r do a request
 export function PostBotton({ likes, idPost , idArray }) {
 
+    const navigation = useNavigation()
     const context = useContext(Context)
 
     const {account} = context
@@ -17,6 +19,7 @@ export function PostBotton({ likes, idPost , idArray }) {
     const [state, setState] = useState(false)
     const [likesAPI, setLikesAPI] = useState(0)
     const [isLike, setIsLike] = useState(true)
+    const [save, setSave] = useState(false)
 
     const animation = useRef(null)
     const firstRun = useRef(true)
@@ -56,13 +59,21 @@ export function PostBotton({ likes, idPost , idArray }) {
         if(idArray.includes(account.idUser)){
             setIsLike(false)
         }
-    }, [])
+
+        if(firstRun.current){
+            if(save){
+                animation.current.play();
+            }
+            firstRun.current = false
+        }
+    }, [save])
+
 
 
     return (
         <View style={styles.botPostBg}>
             <View style={styles.botPostRow}>
-                <Pressable style={{ flexDirection: "row", alignItems: "center" }} onPress={likeFunction}>
+                <Pressable style={{ flexDirection: "row", alignItems: "center" }} onPress={() => {likeFunction; setSave(!save)}}>
                     <LottieView 
                         source={require('../../../assets/like.json')}
                         autoPlay={false}
@@ -74,10 +85,10 @@ export function PostBotton({ likes, idPost , idArray }) {
                     <Text style={styles.botPostInfo}>{likesAPI} Like</Text>
                 </Pressable>
             </View>
-            <View style={styles.botPostRow}>
+            <Pressable style={styles.botPostRow} onPress={() => [navigation.navigate('Thread')]}>
                 <Image source={require('../../../assets/comment.png')} />
                 <Text style={styles.botPostInfo}>2k Comment</Text>
-            </View>
+            </Pressable>
             <Pressable style={styles.botPostRow} onPress={console.log("share")}>
                 <Image source={require('../../../assets/share.png')} />
                 <Text style={styles.botPostInfo}>Share</Text>

@@ -3,6 +3,7 @@ import { Tabs } from "./pages/tab";
 import Login from "./pages/Login";
 import { Shop } from "./pages/feedshop";
 import { NewComer } from "./pages/newcomer";
+import { Thread } from "./pages/thread";
 
 const Stack = createNativeStackNavigator()
 
@@ -15,6 +16,7 @@ export function Routes() {
             <Stack.Screen name="NewComer" component={NewComer} options={{headerShown: false}} />
             <Stack.Screen name="Shop" component={Shop} />
             <Stack.Screen name="Start" component={Tabs} options={{ headerStyle: { backgroundColor: "black" }, headerTintColor: "white" }} />
+            <Stack.Screen name="Thread" component={Thread} options={{headerShown: false}} />
         </Stack.Navigator>
     )
 }
