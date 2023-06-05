@@ -9,12 +9,12 @@ import * as Sharing from 'expo-sharing';
 import { useNavigation } from "@react-navigation/native";
 
 // modifier for the like is a button of r do a request
-export function PostBotton({ likes, idPost , idArray }) {
+export function PostBotton({ likes, idPost, idArray }) {
 
     const navigation = useNavigation()
     const context = useContext(Context)
 
-    const {account} = context
+    const { account } = context
 
     const [state, setState] = useState(false)
     const [likesAPI, setLikesAPI] = useState(0)
@@ -26,6 +26,7 @@ export function PostBotton({ likes, idPost , idArray }) {
 
     const likeFunction = async () => {
         try {
+
             const response = await fetch(`${URL_API}/user/like`, {
                 method: "PUT",
                 headers: {
@@ -36,14 +37,18 @@ export function PostBotton({ likes, idPost , idArray }) {
                     idPost: idPost,
                     isLike: isLike,
                     idUser: account.idUser
-                  
+
                 })
 
             })
-            console.log(response)
+
+            setIsLike(!isLike)
+
             const json = await response.json();
+            console.log(json)
 
             setLikesAPI(json.qntLikes)
+            //setSave(!save)
 
 
         } catch (error) {
@@ -54,14 +59,12 @@ export function PostBotton({ likes, idPost , idArray }) {
     useEffect(() => {
         setLikesAPI(likes)
 
-        console.log(account)
-
-        if(idArray.includes(account.idUser)){
+        if (idArray.includes(account.idUser)) {
             setIsLike(false)
         }
 
-        if(firstRun.current){
-            if(save){
+        if (firstRun.current) {
+            if (save) {
                 animation.current.play();
             }
             firstRun.current = false
@@ -73,8 +76,8 @@ export function PostBotton({ likes, idPost , idArray }) {
     return (
         <View style={styles.botPostBg}>
             <View style={styles.botPostRow}>
-                <Pressable style={{ flexDirection: "row", alignItems: "center" }} onPress={() => {likeFunction; setSave(!save)}}>
-                    <LottieView 
+                <Pressable style={{ flexDirection: "row", alignItems: "center" }} onPress={likeFunction}>
+                    <LottieView
                         source={require('../../../assets/like.json')}
                         autoPlay={false}
                         loop={false}
