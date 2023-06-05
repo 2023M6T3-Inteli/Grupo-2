@@ -1,12 +1,8 @@
 import express from "express"
-
 import swaggerJsdoc from "swagger-jsdoc"
-import swaggerUi from "swagger-ui-express"
+import  swaggerUi from "swagger-ui-express"
 
 const app = express()
-// const bodyParser = require("body-parser")
-// const swaggerJsdoc = require("swagger-jsdoc")
-// const swaggerUi = require("swagger-ui-express");
 
 app.use(express.json())
 
