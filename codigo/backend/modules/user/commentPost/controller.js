@@ -1,5 +1,4 @@
 import { serviceCommentPost } from "./service.js";
-
 class ControllerCommentPost {
     async exec(req, res) {
         console.log(req.body);

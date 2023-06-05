@@ -1,14 +1,17 @@
-import express from "express"
+// import express from "express"
 
-import swaggerJsdoc from "swagger-jsdoc"
-import swaggerUi from "swagger-ui-express"
+// // import swaggerJsdoc from "swagger-jsdoc"
+// // import swaggerUi from "swagger-ui-express"
 
-const app = express()
-// const bodyParser = require("body-parser")
-// const swaggerJsdoc = require("swagger-jsdoc")
-// const swaggerUi = require("swagger-ui-express");
+// // const express = require('express');
+// const app = express();
+// const swaggerUi = require('swagger-ui-express');
+// // const swaggerDocument = require('./swagger.json');
 
-app.use(express.json())
+// app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+
+
+// app.use(express.json())
 
 //health check
 import {health} from "./modules/health/health.js"
@@ -49,6 +52,7 @@ const options = {
   },
   apis: ["./routes/*.js"],
 };
+
 
 const specs = swaggerJsdoc(options);
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(specs));
