@@ -10,6 +10,7 @@ import { controllerGetPosts } from './getPosts/controller.js';
 //get by id controllers
 import { controllerGetProjectById } from './getProjectById/controller.js';
 import { controllerGetPostById } from './getPostById/controller.js';
+import { controllerGetUserById } from './getUser/controller.js';
 
 //post controllers
 import { controllerPostPost } from './postPost/controller.js';
@@ -41,6 +42,7 @@ class User {
       //get by id protocols
       this.router.get("/project/:id", controllerGetProjectById.exec);
       this.router.get("/post/:id", controllerGetPostById.exec);
+      this.router.get("/:id", controllerGetUserById.exec);
 
       //login protocol
       this.router.post("/login", controllerLogin.exec);
