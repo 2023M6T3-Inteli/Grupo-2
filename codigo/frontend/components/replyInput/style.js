@@ -4,7 +4,7 @@ export default styles = StyleSheet.create({
     replyInputBase: {
         width: '100%',
         backgroundColor: '#000',
-        height: 150,
+        height: 300,
         flexDirection: 'row',
         justifyContent: 'center',
         

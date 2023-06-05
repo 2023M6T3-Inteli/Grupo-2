@@ -17,9 +17,7 @@ export function NewUserButton(){
                     justifyContent: "center"
 
                 }} >
-                <Pressable onPress={() => navigation.navigate("Start")}>
-                    <Text style={{ color: "white", fontSize: 20 }}>Explore</Text>
-                </Pressable>
+                <Text style={{ color: "white", fontSize: 20 }}>Explore</Text>
             </LinearGradient>
         </View>
     )
