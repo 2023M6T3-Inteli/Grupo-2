@@ -10,7 +10,7 @@ const Stack = createNativeStackNavigator()
 export function Routes() {
     return (
         <Stack.Navigator initialRouteName="Login" screenOptions={({ route }) => ({
-            headerShown:false
+            headerBackVisible: false, title: ''
         })}>
             <Stack.Screen name="Login" component={Login} options={{ headerShown: false }} />
             <Stack.Screen name="NewComer" component={NewComer} options={{headerShown: false}} />

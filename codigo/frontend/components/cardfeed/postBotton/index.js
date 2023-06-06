@@ -8,6 +8,7 @@ import { Context } from '../../../context/context';
 import * as Sharing from 'expo-sharing';
 import { useNavigation } from "@react-navigation/native";
 
+
 // modifier for the like is a button of r do a request
 export function PostBotton({ likes, idPost, idArray }) {
 
@@ -16,10 +17,10 @@ export function PostBotton({ likes, idPost, idArray }) {
 
     const { account } = context
 
-    const [state, setState] = useState(false)
+    const [save, setSave] = useState(false)
     const [likesAPI, setLikesAPI] = useState(0)
     const [isLike, setIsLike] = useState(true)
-    const [save, setSave] = useState(false)
+    
 
     const animation = useRef(null)
     const firstRun = useRef(true)
@@ -56,27 +57,23 @@ export function PostBotton({ likes, idPost, idArray }) {
         }
     };
 
+    
+
     useEffect(() => {
         setLikesAPI(likes)
 
         if (idArray.includes(account.idUser)) {
             setIsLike(false)
         }
-
-        if (firstRun.current) {
-            if (save) {
-                animation.current.play();
-            }
-            firstRun.current = false
-        }
-    }, [save])
-
+      
+    }, [])
 
 
     return (
         <View style={styles.botPostBg}>
             <View style={styles.botPostRow}>
                 <Pressable style={{ flexDirection: "row", alignItems: "center" }} onPress={likeFunction}>
+
                     <LottieView
                         source={require('../../../assets/like.json')}
                         autoPlay={false}
@@ -92,7 +89,7 @@ export function PostBotton({ likes, idPost, idArray }) {
                 <Image source={require('../../../assets/comment.png')} />
                 <Text style={styles.botPostInfo}>2k Comment</Text>
             </Pressable>
-            <Pressable style={styles.botPostRow} onPress={console.log("share")}>
+            <Pressable style={styles.botPostRow} onPress={() => Sharing.shareAsync("youtube.com",'UTI')}>
                 <Image source={require('../../../assets/share.png')} />
                 <Text style={styles.botPostInfo}>Share</Text>
             </Pressable>

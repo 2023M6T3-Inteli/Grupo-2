@@ -49,12 +49,8 @@ export function Home() {
                 refreshControl={
                     <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
                 }>
-                <BlackSpace />
-                <BlackSpace />
-                <BlackSpace />
-                <BlackSpace />
-                <BlackSpace />
-                <SwapComponent posts={posts} />
+             
+                  <SwapComponent posts={posts} />
             </ScrollView>
         </View>
     )
