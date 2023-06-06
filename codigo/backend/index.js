@@ -1,4 +1,5 @@
 import express from "express"
+
 import  Log4js  from "log4js"
 
 import swaggerJsdoc from "swagger-jsdoc";
@@ -11,10 +12,8 @@ import {health} from "./modules/health/health.js"
 
 import {user} from "./modules/user/user.js"
 
+
 const app = express()
-// const bodyParser = require("body-parser")
-// const swaggerJsdoc = require("swagger-jsdoc")
-// const swaggerUi = require("swagger-ui-express");
 
 //configuring logger
 Log4js.configure({

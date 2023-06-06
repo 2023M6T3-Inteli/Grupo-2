@@ -18,7 +18,7 @@ export function SwapComponent({ state }) {
 
     const getPosts = async () => {
         try {
-            const response = await fetch(`${URL_API}/user/getPosts`)
+            const response = await fetch(`${URL_API}/user/posts`)
             const json = await response.json();
 
             setPosts(json)

@@ -38,7 +38,7 @@ export function ImgNewPost({ inputText, setInputText, account }) {
 
   const createPost = async () => {
     try {
-      const response = await fetch(`${URL_API}/user/postPost`, {
+      const response = await fetch(`${URL_API}/user/post`, {
         method: "POST",
         headers: {
           Accept: 'application/json',

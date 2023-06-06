@@ -5,6 +5,8 @@ import { FeedPost } from '../feedposts';
 import { SwapComponent } from '../../components/swapComponent';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useEffect, useState, useCallback } from 'react';
+import { BlackSpace } from '../../components/BlackSpace';
+
 
 
 
@@ -27,6 +29,11 @@ export function Home() {
                 refreshControl={
                     <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
                 }>
+                <BlackSpace />
+                <BlackSpace />
+                <BlackSpace />
+                <BlackSpace />
+                <BlackSpace />
                 <SwapComponent state={refreshing} />
             </ScrollView>
         </View>
