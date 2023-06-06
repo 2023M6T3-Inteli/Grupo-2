@@ -6,6 +6,7 @@ import { SwapComponent } from '../../components/swapComponent';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useEffect, useState, useCallback } from 'react';
 import { BlackSpace } from '../../components/BlackSpace';
+import { URL_API } from '../../api';
 
 
 
@@ -13,6 +14,7 @@ import { BlackSpace } from '../../components/BlackSpace';
 export function Home() {
 
     const [refreshing, setRefreshing] = useState(false);
+    const [posts, setPosts] = useState([])
 
     const onRefresh = useCallback(() => {
         setRefreshing(true);
@@ -22,6 +24,24 @@ export function Home() {
     }, []);
 
 
+
+    const getPosts = async () => {
+        try {
+            const response = await fetch(`${URL_API}/user/posts`)
+            const json = await response.json();
+
+            setPosts(json)
+        } catch (error) {
+            console.error(error);
+        }
+    };
+
+    useEffect(() => {
+        setPosts([])
+        getPosts()
+    }, [refreshing])
+
+
     return (
         <View style={{ height: '100%' }}>
             <ScrollView
@@ -29,7 +49,8 @@ export function Home() {
                 refreshControl={
                     <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
                 }>
-                <SwapComponent state={refreshing} />
+             
+                  <SwapComponent posts={posts} />
             </ScrollView>
         </View>
     )
