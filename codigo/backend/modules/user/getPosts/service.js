@@ -1,4 +1,7 @@
 import { prisma } from "../../../database/connection.js";
+import Log4js from "log4js";
+
+const loggerUser = Log4js.getLogger("user");
 
 class ServiceGetPosts {
         async exec() {
@@ -30,9 +33,10 @@ class ServiceGetPosts {
                         idUserLike: item.UserLikePost.map(item => item.idUser)
                     }
                 })
-                
+                loggerUser.info("Get all posts");
                 return jsonResponse;
             } catch (error) {
+                loggerUser.error("Error getting all posts");
                 return error;
             }
         }

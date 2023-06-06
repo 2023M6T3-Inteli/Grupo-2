@@ -1,5 +1,5 @@
 import express from "express"
-import { Log4js } from "log4js"
+import  Log4js  from "log4js"
 
 import {health} from "./modules/health/health.js"
 
@@ -25,6 +25,9 @@ Log4js.configure({
     },
 });
 
+const logger = Log4js.getLogger("server");
+logger.info("Starting server");
+
 
 
 app.use(express.json())
@@ -37,7 +40,4 @@ app.listen(3000,()=>{
     console.log("Running on http://localhost:3000")
 })
 
-
-const specs = swaggerJsdoc(options);
-app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(specs));
 export default app
