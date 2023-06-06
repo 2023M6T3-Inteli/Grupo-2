@@ -1,5 +1,5 @@
 import { prisma } from "../../../database/connection.js";
-
+import loggerUser from "../logger.js";
 class ServiceProjectComplain {
     async exec(data) {
         try {
@@ -10,10 +10,11 @@ class ServiceProjectComplain {
                     idProject: data.idProject,
                 }
             });
-            
+            loggerUser.info(`User ${data.idUser} complained about project ${data.idProject}`);
             return response
             
         } catch (error) {
+            loggerUser.error(`Error complaining about project ${data.idProject}`);
             return error;
         }
     }
