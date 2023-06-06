@@ -1,7 +1,6 @@
 import { prisma } from "../../../database/connection.js";
 import loggerUser from "../logger.js";
 
-import loggerUser from "../logger.js");
 
 class ServiceCommentPost {
   async exec(data) {
