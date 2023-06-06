@@ -1,6 +1,7 @@
-import { StyleSheet, Text, View, Button, Image } from 'react-native';
+import { StyleSheet, Text, View, Button, Image, Pressable } from 'react-native';
 
 import styles from './style'
+import { ModalCompliance } from '../../modalReport';
 
 export function PostTop({ timer }) {
     return (
@@ -23,9 +24,9 @@ export function PostTop({ timer }) {
                     <Text style={styles.topPostName}>Trocar backend</Text>
                     <Text style={styles.topPostTime}>{timer}</Text>
                 </View>
-                <View style={styles.topPosAlign}>
+                <Pressable style={styles.topPosAlign}>
                     <Image style={styles.topPostDots} source={require('../../../assets/dots.png')} />
-                </View>
+                </Pressable>
             </View>
         </View>
     )
