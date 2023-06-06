@@ -64,82 +64,10 @@ class User {
 
 }
 //swagger
-const express = require('express');
-const router = express.Router();
-const { body, param } = require('express-validator');
+// const express = require('express');
+// const router = express.Router();
+// const { body, param } = require('express-validator');
 
 
-/**
- * @swagger
- * * /v1/login/create:
- *     description: Create new account
- *     parameters:
- *       - name: email
- *         description: User email
- *         in: body
- *         required: true
- *         type: string
- * */
-router.post("/login",
-  [body("email", "Email é necessário").exists({ checkFalsy: true })], controllerLogin
-);
-//Comment swagger
-
-/**
- * @swagger
- * /v1/comment/create:
- * description: Post a comment
- * parameters: 
- *  *      - name: comment
- *         description: comment
- *         in: body
- *         required: true
- *         type: string
- */
-router.post("/commentPost",
-[body("comment", "É necessario um comentario").exists({ checkFalsy: true })], controllerCommentPost
-);
-
-//Post swagger
-    /**
-     * @swagger
-     * /api/v1/users: -> ver oq é isso
-     *   get:
-     *     description: Get all posts
-     *     responses:
-     *       200:
-     *         description: Success
-     */
-    router.get("/getPostById/:id", controllerGetPostById);
-
-//like swagger
-/**
- * @swagger
- * /v1/content/update/{id}:
- *   put:
- *     description: Update a content by ID
- *     parameters:
- *       - name: id
- *         description: Post ID
- *         in: path -> ver aonde que tem isso
- *         required: true
- *         type: string
- *       - name: isLike
- *         description: Like status
- *         in: body -> ver aonde que tem isso
- *         required: true
- *         type: string
- *  *     responses:
- *       200:
- *         description: Success
- */
- router.put(
-  "/like",
-  [
-    param("id", "Id do projeto é necessário").exists({ checkFalsy: true }),
-    body("islike", "Status do like é necessário").exists({ checkFalsy: true }),
-  ]
-  controllerPutLike
-);
 
 export const user = new User();
