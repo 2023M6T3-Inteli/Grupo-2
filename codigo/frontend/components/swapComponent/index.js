@@ -12,24 +12,8 @@ import { useEffect, useState } from 'react';
 const Tab = createMaterialTopTabNavigator();
 
 // req here for distribue for pages
-export function SwapComponent({ state }) {
+export function SwapComponent({ posts }) {
 
-    const [posts, setPosts] = useState([])
-
-    const getPosts = async () => {
-        try {
-            const response = await fetch(`${URL_API}/user/posts`)
-            const json = await response.json();
-
-            setPosts(json)
-        } catch (error) {
-            console.error(error);
-        }
-    };
-
-    useEffect(() => {
-        getPosts()
-    }, [state])
 
     return (
         <View style={styles.swapCompBase}>
