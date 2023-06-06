@@ -1,4 +1,5 @@
 import { prisma } from "../../../database/connection.js";
+import loggerUser from "../logger.js";
 
 class ServicePostComplain {
     async exec(data) { 
@@ -10,9 +11,11 @@ class ServicePostComplain {
                     idPost: data.idPost,
                 }
             });
+            loggerUser.info(`User ${data.idUser} complained about post ${data.idPost}`);
             return response;
             
         } catch (error) {
+            loggerUser.error(`Error complaining about post ${data.idPost}`);
             return error;
         }
     }

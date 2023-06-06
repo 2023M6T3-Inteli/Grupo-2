@@ -1,5 +1,5 @@
 import { prisma } from "../../../database/connection.js";
-
+import loggerUser from "../logger.js";
 class ServicePostPost {
     async exec(data) {
         try {
@@ -14,9 +14,10 @@ class ServicePostPost {
                     qntLikes: data.qntLikes
                 }
             });
-            
+            loggerUser.info(`User ${data.idUser} posted`);
             return response;
         } catch (error) {
+            loggerUser.error(`Error posting`);
             return error;
         }
     }
