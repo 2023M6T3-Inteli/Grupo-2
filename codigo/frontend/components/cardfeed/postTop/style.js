@@ -6,19 +6,22 @@ export default styles = StyleSheet.create({
         width: '100%',
         height: 100,
         flexDirection: 'row',
+
     },
-    topPostVote: {
-        justifyContent: 'center',
-        flexDirection: 'column',
-        height: 35,
-        width: 35,
-        alignSelf: 'center',
-        marginLeft: 10,
-        gap: 15,
-    },
+
     topPosAlign: {
         justifyContent: 'center',
+            
     },
+
+    topPosAlign2: {
+        justifyContent: 'center',
+
+        width:40
+        
+    },
+
+
     topPostPos: {
         flexDirection: 'row',
     },
@@ -41,10 +44,11 @@ export default styles = StyleSheet.create({
         color: `#808080`,
         fontSize: 11,
         marginLeft: 10,
+        
     },
     topPostDots: {
         alignSelf: 'center',
-        // justifyContent: 'screenLeft,
+        
     },
 
 });
