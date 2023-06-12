@@ -462,7 +462,8 @@ A Pipeline de Dados segue o modelo ETL (Extração, Transformação e Carga). Es
 
   <img src="./img/Pipeline.jpg" alt="arq" border="0" width="100%">
   
-
+# Testes finais de envio e consumos das mensagens.
+Na imagem acima podemos ver o consumo de mensagens. O MQTT se comunica com o Colab que faz a análise de dados e gera uma lista de filmes mais recomendados para aquele usuário e depois retorna essa informação para o MQTT.
 
 # Manual do Usuário
 
