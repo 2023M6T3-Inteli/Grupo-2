@@ -439,8 +439,9 @@ Link ou imagem da tabela com dados organizados dos testes realizados
 
 # Documentação da API
 
-Apresentar a documentação no formato Swagger ou aplicação equivalente com todas as requisições dos endpoints desenvolvidos e funcionando.
-
+A documentação da API, disponibilizada por meio do Swagger, é útil para explorar e entender os endpoints, quais são seus parâmetros e respostas fornecidas pela API. 
+Para acessá-la, é necessário iniciar o backend executando o comando 'npm start dev' e, em seguida, acessar http://localhost:3000/api-docs para visualizar e testar toda a documentação gerada pelo Swagger.
+  
 # Construção da Base de Dados
 Para a construção da Base de Dados o grupo decidiu pegar o dataset "Sistemas de Recomendação ICMC-USP" do Kaggle. Desse dataset  foram usadas duas tabelas, a "Movies" e a "Ratings". Na tabela "Movies" estavam presentes as colunas: movieId, title e genres. Já na Tabela "Ratings", as colunas presentes eram: movieId, userId, ratings e timestamp.
 Ademais, após extrair essas duas tabelas do dataset, nós começamos a parte de transformação dos dados, para que eles ficassem mais apropriados para o nosso modelo. Dessa forma, o primeiro passo foi  realizar um "merge" dessas tabelas e logo em seguida retirar as colunas "title e "timestamp". 
@@ -460,6 +461,9 @@ A Pipeline de Dados segue o modelo ETL (Extração, Transformação e Carga). Es
  Dessa forma, é possível afirmar que a extração dos dados foi realizada de um dataset do Kaggle (Sistemas de Recomendação ICMC-USP), em que foram utilizada duas tabelas: a "movies" e a "ratings". Depois desse processo de extração, o grupo realizou um processo de transformação desses dados para que eles se tornassem mais favoráveis para o treinamento do modelo. E por fim, nós transformamos essa Base de Dados em um arquilo csv para que se torne possível a transferência desses dados para o banco de dados "MySQL"
 
   <img src="./img/Pipeline.jpg" alt="arq" border="0" width="100%">
+  
+
+
 # Manual do Usuário
 
 Fornecer instruções detalhadas sobre como usar o software corretamente. É uma ferramenta valiosa para ajudar os usuários a compreender as funções do software, instalar o software, configurar as preferências do usuário, entre outras tarefas. O manual do usuário geralmente inclui screenshots, animações e outros recursos visuais para tornar a experiência do usuário mais clara e intuitiva. Além disso, ele também pode incluir informações sobre solução de problemas, dicas e truques, bem como informações de contato para suporte técnico. É importante que a seção de manual do usuário seja atualizada frequentemente para garantir que os usuários tenham acesso à informação mais recente e precisa sobre o software.
