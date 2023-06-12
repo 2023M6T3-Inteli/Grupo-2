@@ -1,20 +1,12 @@
-import { StyleSheet, Text, View, Button, Image } from 'react-native';
+import { StyleSheet, Text, View, Button, Image, Pressable } from 'react-native';
 
 import styles from './style'
+import { ModalCompliance } from '../../modalReport';
 
-export function PostTop({ timer }) {
+export function PostTop({ timer , state, setState}) {
+    
     return (
         <View style={styles.topPostBase}>
-            <View style={styles.topPostVote}>
-                <View style={styles.topPostPos}>
-                    <Image source={require('../../../assets/upvote.png')} />
-                    <Text style={styles.topPostColor}>30</Text>
-                </View>
-                <View style={styles.topPostPos}>
-                    <Image source={require('../../../assets/downvote.png')} />
-                    <Text style={styles.topPostColor}>10</Text>
-                </View>
-            </View>
             <View style={styles.topPosAlign}>
                 <Image style={styles.topPostImg} source={require('../../../assets/profileExample.png')} />
             </View>
@@ -23,9 +15,9 @@ export function PostTop({ timer }) {
                     <Text style={styles.topPostName}>Trocar backend</Text>
                     <Text style={styles.topPostTime}>{timer}</Text>
                 </View>
-                <View style={styles.topPosAlign}>
+                <Pressable onPress={() => setState(!state)} style={styles.topPosAlign2}>
                     <Image style={styles.topPostDots} source={require('../../../assets/dots.png')} />
-                </View>
+                </Pressable>
             </View>
         </View>
     )

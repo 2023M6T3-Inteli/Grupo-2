@@ -20,8 +20,11 @@ export function Profile() {
 
     const getPosts = async () => {
         try {
-            const response = await fetch(`${URL_API}/user/getPostById/${account.idUser}`)
+            const response = await fetch(`${URL_API}/user/post/${account.idUser}`)
+            console.log(response)
             const json = await response.json();
+
+            
 
             setPosts(json)
         } catch (error) {
