@@ -8,8 +8,10 @@ export default styles = StyleSheet.create({
       marginTop: 22,
     },
     modalView: {
+      height: 500,
+      width: '95%',
       margin: 20,
-      backgroundColor: 'white',
+      backgroundColor: '#192028',
       borderRadius: 20,
       padding: 35,
       alignItems: 'center',
@@ -23,23 +25,31 @@ export default styles = StyleSheet.create({
       elevation: 5,
     },
     button: {
-      borderRadius: 20,
+      width: 130,
+      borderRadius: 15,
       padding: 10,
       elevation: 2,
+      backgroundColor: '#E4424D',
     },
-    buttonOpen: {
-      backgroundColor: '#F194FF',
-    },
-    buttonClose: {
-      backgroundColor: '#2196F3',
-    },
-    textStyle: {
+    closeTextStyle: {
       color: 'white',
       fontWeight: 'bold',
       textAlign: 'center',
     },
-    modalText: {
+    warnText: {
       marginBottom: 15,
       textAlign: 'center',
+      color: '#E4424D',
+      fontSize: 22,
     },
-  });
+    inputStyle: {
+      borderRadius: 20,
+      width: 300,
+      height: 150,
+      borderWidth: 1,
+      borderColor: 'gray'
+    },
+    checkbox: {
+      alignSelf: 'center',
+    },
+});
