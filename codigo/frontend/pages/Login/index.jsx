@@ -104,6 +104,7 @@ export default function Login() {
 
 
                 <View style={{}}>
+                    
                     <Image
                         source={require("../../assets/imageLogin.png")}
                         style={{ width: "100%" }}

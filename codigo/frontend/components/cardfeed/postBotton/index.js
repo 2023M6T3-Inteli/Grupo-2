@@ -5,23 +5,29 @@ import styles from './style'
 import { useEffect, useState, useRef, useContext } from 'react';
 import LottieView from 'lottie-react-native'
 import { Context } from '../../../context/context';
+import * as Sharing from 'expo-sharing';
+import { useNavigation } from "@react-navigation/native";
+
 
 // modifier for the like is a button of r do a request
-export function PostBotton({ likes, idPost , idArray }) {
+export function PostBotton({ likes, idPost, idArray }) {
 
+    const navigation = useNavigation()
     const context = useContext(Context)
 
-    const {account} = context
+    const { account } = context
 
-    const [state, setState] = useState(false)
+    const [save, setSave] = useState(false)
     const [likesAPI, setLikesAPI] = useState(0)
     const [isLike, setIsLike] = useState(true)
+    
 
     const animation = useRef(null)
     const firstRun = useRef(true)
 
     const likeFunction = async () => {
         try {
+
             const response = await fetch(`${URL_API}/user/like`, {
                 method: "PUT",
                 headers: {
@@ -32,14 +38,18 @@ export function PostBotton({ likes, idPost , idArray }) {
                     idPost: idPost,
                     isLike: isLike,
                     idUser: account.idUser
-                  
+
                 })
 
             })
-            console.log(response)
+
+            setIsLike(!isLike)
+
             const json = await response.json();
+            console.log(json)
 
             setLikesAPI(json.qntLikes)
+            //setSave(!save)
 
 
         } catch (error) {
@@ -47,14 +57,15 @@ export function PostBotton({ likes, idPost , idArray }) {
         }
     };
 
+    
+
     useEffect(() => {
         setLikesAPI(likes)
 
-        console.log(account)
-
-        if(idArray.includes(account.idUser)){
+        if (idArray.includes(account.idUser)) {
             setIsLike(false)
         }
+      
     }, [])
 
 
@@ -62,7 +73,8 @@ export function PostBotton({ likes, idPost , idArray }) {
         <View style={styles.botPostBg}>
             <View style={styles.botPostRow}>
                 <Pressable style={{ flexDirection: "row", alignItems: "center" }} onPress={likeFunction}>
-                    <LottieView 
+
+                    <LottieView
                         source={require('../../../assets/like.json')}
                         autoPlay={false}
                         loop={false}
@@ -73,14 +85,14 @@ export function PostBotton({ likes, idPost , idArray }) {
                     <Text style={styles.botPostInfo}>{likesAPI} Like</Text>
                 </Pressable>
             </View>
-            <View style={styles.botPostRow}>
+            <Pressable style={styles.botPostRow} onPress={() => [navigation.navigate('Thread')]}>
                 <Image source={require('../../../assets/comment.png')} />
                 <Text style={styles.botPostInfo}>2k Comment</Text>
-            </View>
-            <View style={styles.botPostRow}>
+            </Pressable>
+            <Pressable style={styles.botPostRow} onPress={() => Sharing.shareAsync("youtube.com",'UTI')}>
                 <Image source={require('../../../assets/share.png')} />
                 <Text style={styles.botPostInfo}>Share</Text>
-            </View>
+            </Pressable>
         </View>
     )
 }
