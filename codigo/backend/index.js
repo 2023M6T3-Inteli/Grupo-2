@@ -1,55 +1,72 @@
 import express from "express"
 
-import swaggerJsdoc from "swagger-jsdoc"
-import swaggerUi from "swagger-ui-express"
+import  Log4js  from "log4js"
 
-const app = express()
-// const bodyParser = require("body-parser")
-// const swaggerJsdoc = require("swagger-jsdoc")
-// const swaggerUi = require("swagger-ui-express");
+import swaggerJsdoc from "swagger-jsdoc";
+import swaggerUi from "swagger-ui-express";
 
-app.use(express.json())
+import userRouter from "./routes/user.js";
 
-//health check
+
 import {health} from "./modules/health/health.js"
 
 import {user} from "./modules/user/user.js"
+
+
+const app = express()
+
+//configuring logger
+Log4js.configure({
+    appenders: {
+      multi:{
+        type: "multiFile",
+        base: "logs/",
+        property: "categoryName",
+        extension: ".log",
+      },
+    },
+    categories: {
+      default: { appenders: ["multi"], level: "debug"},
+    },
+});
+
+const logger = Log4js.getLogger("server");
+logger.info("Starting server");
+
+app.use(express.json())
 
 app.use('/health' , health.loadRoutes)
 
 app.use('/user' , user.loadRoutes)
 
-app.listen(3000,()=>{
-    console.log("Running on http://localhost:3000")
-})
 
 const options = {
-  definition: {
-    openapi: "3.0.0",
+  swaggerDefinition: {
     info: {
-      title: "LogRocket Express API with Swagger",
-      version: "0.1.0",
-      description:
-        "This is a simple CRUD API application made with Express and documented with Swagger",
+      title: "API",
+      description: "API information",
+      constact: {
+        name: "TINAM APP developers",
+      },
       license: {
         name: "MIT",
         url: "https://spdx.org/licenses/MIT.html",
       },
-      contact: {
-        name: "LogRocket",
-        url: "https://logrocket.com",
-        email: "info@email.com",
-      },
     },
-    servers: [
-      {
-        url: "http://localhost:3000",
-      },
-    ],
+
+    servers: ["http://localhost:3000"],
   },
   apis: ["./routes/*.js"],
 };
 
 const specs = swaggerJsdoc(options);
+
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(specs));
+
+app.use("/v1/user", userRouter);
+
+app.listen(3000,()=>{
+    console.log("Running on http://localhost:3000")
+})
+
 export default app

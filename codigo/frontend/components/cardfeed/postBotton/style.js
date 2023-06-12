@@ -22,4 +22,8 @@ export default styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: "center"
     },
+    likeIcon: {
+        width: 30,
+        height: 30,
+    }
 });

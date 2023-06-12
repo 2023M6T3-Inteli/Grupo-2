@@ -11,7 +11,7 @@ export function FeedCard({ datas }) {
         <View style={{ backgroundColor: "black" }}>
             <PostTop timer={datas.time} />
             <PostMid article={datas.article} imageURL={datas.image} />
-            <PostBotton likes={datas.qntLikes} idPost={datas.idPost} />
+            <PostBotton likes={datas.qntLikes} idArray={datas.idUserLike} idPost={datas.idPost} />
         </View>
     )
 }

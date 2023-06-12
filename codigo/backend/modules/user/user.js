@@ -1,5 +1,6 @@
 import express from 'express';
 
+
 //login controller
 import { controllerLogin } from './login/controller.js';
 
@@ -10,6 +11,7 @@ import { controllerGetPosts } from './getPosts/controller.js';
 //get by id controllers
 import { controllerGetProjectById } from './getProjectById/controller.js';
 import { controllerGetPostById } from './getPostById/controller.js';
+import { controllerGetUserById } from './getUser/controller.js';
 
 //post controllers
 import { controllerPostPost } from './postPost/controller.js';
@@ -24,6 +26,7 @@ import {controllerProjectComplain} from './projectComplain/controller.js'
 
 import {controllergetRanking} from './Ranking/controller.js';
 
+
 // create a class User with a router / with res send hello world
 
 
@@ -35,28 +38,29 @@ class User {
 
     get loadRoutes() {
       //get protocols
-      this.router.get("/getProject", controllerGetProjects.exec);
-      this.router.get("/getPosts", controllerGetPosts.exec);
+      this.router.get("/project", controllerGetProjects.exec);
+      this.router.get("/posts", controllerGetPosts.exec);
 
       //get by id protocols
-      this.router.get("/getProjectById/:id", controllerGetProjectById.exec);
-      this.router.get("/getPostById/:id", controllerGetPostById.exec);
+      this.router.get("/project/:id", controllerGetProjectById.exec);
+      this.router.get("/post/:id", controllerGetPostById.exec);
+      this.router.get("/:id", controllerGetUserById.exec);
 
       //login protocol
       this.router.post("/login", controllerLogin.exec);
       
       //post protocol
-      this.router.post("/postPost", controllerPostPost.exec);
+      this.router.post("/post", controllerPostPost.exec);
 
-      this.router.get("/Ranking/:id", controllergetRanking.exec);
+      this.router.get("/ranking/:id", controllergetRanking.exec);
 
-      this.router.post("/commentPost", controllerCommentPost.exec);
+      this.router.post("/comment-post", controllerCommentPost.exec);
       //put protocol
       this.router.put("/like", controllerPutLike.exec);
 
       //complain
-      this.router.post("/postComplain", controllerPostComplain.exec);
-      this.router.post("/projectComplain", controllerProjectComplain.exec);
+      this.router.post("/complain-post", controllerPostComplain.exec);
+      this.router.post("/complain-project", controllerProjectComplain.exec);
 
       return this.router;
     }

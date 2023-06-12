@@ -2,50 +2,70 @@ import { prisma } from "../../../database/connection.js";
 
 class ServiceputUpDown {
     async increment(idPost) {
+        try {
+            const response = await prisma.post.update({
+                where: {
+                    idPost: idPost
+                },
+                data: {
+                    qntUp: { increment: 1 }
+                }
+    
+            });
+            return response;
+            
+        } catch (error) {
+            return error;
+        }
 
-        const putUP = await prisma.post.update({
-            where: {
-                idPost: idPost
-            },
-            data: {
-                qntUp: { increment: 1 }
-            }
-
-        });
-        return putUP;
     }
     async decrementing(idPost) {
-        const putUP = await prisma.post.update({
-            where: {
-                idPost: idPost
-            },
-            data: {
-                qntUp: { increment: -1 }
-            }
-        })
+        try {
+            const response = await prisma.post.update({
+                where: {
+                    idPost: idPost
+                },
+                data: {
+                    qntUp: { increment: -1 }
+                }
+            })
+            
+        } catch (error) {
+            return error;
+        }
     }
     async increment(idPost) {
-        const putDown = await prisma.post.update({
-            where: {
-                idPost: idPost
-            },
-            data: {
-                qntUp: { increment: 1 }
-            }
-
-        });
-        return putDown;
+        try {
+            const response = await prisma.post.update({
+                where: {
+                    idPost: idPost
+                },
+                data: {
+                    qntUp: { increment: 1 }
+                }
+    
+            });
+            return response;
+            
+        } catch (error) {
+            return error;
+        }
     }
 
     async decrementing(idPost) {
-        const putDown = await prisma.post.update({
-            where: {
-                idPost: idPost
-            },
-            data: {
-                qntUp: { increment: -1 }
-            }
-        })
+        try {
+            const response = await prisma.post.update({
+                where: {
+                    idPost: idPost
+                },
+                data: {
+                    qntUp: { increment: -1 }
+                }
+            })
+            
+        } catch (error) {
+            return error;
+        }
     }
 
 

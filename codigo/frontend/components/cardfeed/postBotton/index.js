@@ -2,13 +2,23 @@ import { StyleSheet, Text, View, Button, Image, Pressable } from 'react-native';
 import { URL_API } from '../../../api';
 
 import styles from './style'
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef, useContext } from 'react';
+import LottieView from 'lottie-react-native'
+import { Context } from '../../../context/context';
 
 // modifier for the like is a button of r do a request
-export function PostBotton({ likes, idPost }) {
+export function PostBotton({ likes, idPost , idArray }) {
+
+    const context = useContext(Context)
+
+    const {account} = context
 
     const [state, setState] = useState(false)
     const [likesAPI, setLikesAPI] = useState(0)
+    const [isLike, setIsLike] = useState(true)
+
+    const animation = useRef(null)
+    const firstRun = useRef(true)
 
     const likeFunction = async () => {
         try {
@@ -20,10 +30,13 @@ export function PostBotton({ likes, idPost }) {
                 },
                 body: JSON.stringify({
                     idPost: idPost,
-                    isLike: true
+                    isLike: isLike,
+                    idUser: account.idUser
+                  
                 })
 
             })
+            console.log(response)
             const json = await response.json();
 
             setLikesAPI(json.qntLikes)
@@ -36,6 +49,12 @@ export function PostBotton({ likes, idPost }) {
 
     useEffect(() => {
         setLikesAPI(likes)
+
+        console.log(account)
+
+        if(idArray.includes(account.idUser)){
+            setIsLike(false)
+        }
     }, [])
 
 
@@ -43,7 +62,14 @@ export function PostBotton({ likes, idPost }) {
         <View style={styles.botPostBg}>
             <View style={styles.botPostRow}>
                 <Pressable style={{ flexDirection: "row", alignItems: "center" }} onPress={likeFunction}>
-                    <Image source={require('../../../assets/like.png')} />
+                    <LottieView 
+                        source={require('../../../assets/like.json')}
+                        autoPlay={false}
+                        loop={false}
+                        style={styles.likeIcon}
+                        resizeMode='cover'
+                        ref={animation}
+                    />
                     <Text style={styles.botPostInfo}>{likesAPI} Like</Text>
                 </Pressable>
             </View>

@@ -1,10 +1,15 @@
-import { serviceGetPosts } from "./services.js";
+import { serviceGetPosts } from "./service.js";
 
 class ControllerGetPosts {
-    async exec(req, res){
-        const posts = await serviceGetPosts.exec();
-        res.send(posts);
+  async exec(req, res) {
+    try {
+      const request = await serviceGetPosts.exec();
+      res.send(request);
+      
+    } catch (error) {
+      res.send(error);
     }
+  }
 }
 
 export const controllerGetPosts = new ControllerGetPosts();
