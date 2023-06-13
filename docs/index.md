@@ -97,16 +97,33 @@ O Problema que a Dell tem enfrentado é a retenção de talentos e a desmotivaç
 
 Esse aplicativo, tem como objetivo motivar os funcionários da Dell por meio da oportunidade de fazer postagens, compartilhar conteúdos, participar de projetos oferecidos dentro da empresa e consequentemente, ser bonificado pde acordo com as interações feitas dentro do aplicativo.
 
-### Análise do Problema
+## Descritivo da Solução
+O aplicativo mobile de rede social para funcionários tem como objetivo engajar os colaboradores da Dell, fornecendo uma plataforma interna onde eles possam se conectar, compartilhar informações, colaborar, celebrar conquistas e fortalecer os laços dentro da organização. O aplicativo inclui recursos como perfis de usuários, feeds de notícias, processo de gameficação e até mesmo um ranking. 
 
-Nesta seção, serão apresentados os problemas identificados e as necessidades do usuário, bem como uma avaliação da situação atual e as possíveis soluções para cada questão. Além disso, serão identificados os obstáculos e limitações do projeto, a fim de assegurar que todas as preocupações sejam abordadas antes do início da implementação. A Análise do Problema é essencial para garantir que a solução do software seja eficaz e atenda às necessidades dos usuários. É importante que seja realizada uma pesquisa exaustiva e que todas as perspectivas sejam consideradas para garantir que a solução seja bem-sucedida.
+Os Benefícios que essa solução vai fornecer para a empresa são diversos, e entre eles é possível citar: 
+1- Aumento do engajamento dos funcionários, promovendo uma maior colaboração e um sentimento de pertencimento à empresa.
+2- Melhoria da comunicação interna, permitindo o compartilhamento rápido de informações e ideias.
+3- Facilitação da integração de novos funcionários, proporcionando uma forma mais fácil de se conectar com colegas.
+4- Identificação de talentos e líderes emergentes.
+5- Promoção de um ambiente de trabalho mais transparente e participativo.
+
+
+## Partes Interessadas
+As principais partes Interessadas nesse projeto são:
+
+1- Funcionários, pois o aplicativo permite que eles se conectem com colegas de empresa que atuam em áreas diferentes, compartilhem conhecimento, e colaborem em projetos. Por fim, pode-se dizer que a plataforma vai estimular o engajamento dos funcionários e permitir que eles colaborem entre si.
+
+2- Gestores: Os gestores da empresa também se beneficiam com o aplicativo, pois eles podem acompanhar as interações e o envolvimento dos funcionários, identificar talentos e líderes emergentes, promover a comunicação e o alinhamento de equipes, reconhecer e recompensar conquistas individuais e coletivas, além de obter insights valiosos por meio do feedback e das discussões realizadas na plataforma.
 
 ### Matriz de Oceano Azul
 
 A Matriz de Oceano Azul é uma ferramenta de estratégia empresarial criada para identificar oportunidades de negócios em mercados inexplorados. Ela gera oportunidade para as empresas criarem novos espaços de mercado e cresçam de forma significativa e sustentável.
-No Link abaixo, é possível acessar a matriz de oceano azul que o grupo TINAM Devs produziu.
+As imagens expõem a Matriz de Oceano Azul do grupo TINAM
 
-(https://docs.google.com/spreadsheets/d/1KIeyIy-Iuh03lGvlmdwfQv6QXbmrh3x-anDuJ2xkDOg/edit#gid=0)
+
+<img src="./img/oceanoazulT.png">
+<img src="./img/oceanoazulIMG.png">
+
 
 Dessa forma, depois de analisar a empresa Dell antes e depois do produto que foi desenvolvido pelo grupo, é possível tirar algumas conclusões:
 
@@ -120,7 +137,8 @@ Dessa forma, depois de analisar a empresa Dell antes e depois do produto que foi
 - O projeto vai criar inovação na empresa Dell.
 
 ### Proposta de Valor e Value Proposition Canvas
-
+O Canvas de Proposta de Valor é uma ferramenta visual que ajuda a entender as dores do público, auxilia na descoberta dos problemas que esse consumidor enfrenta e como o produto pode ajudar a resolvê-los. Ou seja, relaciona as necessidades e dores do perfil do cliente ao produto ou serviço criado de forma a apresentar as soluções como ‘aliviadores de dor’.
+Dessa forma, o grupo TINAM desenvolveu um Canva Proposta de Valor para medir o quanto o nosso aplicativo irá agregar na empresa Dell. É possível observar a Proposta de Valor na imagem abaixo:
 <img src="./img/Canvas.png">
 
 ### Matriz de Risco
@@ -143,27 +161,7 @@ Apresentar a modelagem do processo "to be", representando em alto nível o fluxo
 
 <img src="./img/mapeamento-de-processos-V2.png">
 
-## Descritivo da Solução
 
-Descrição da solução a ser desenvolvida (o que é, quais principais funcionalidades, como usar) . Caso ainda não esteja definida a solução na Sprint 1, o faça assim que possível.
-
-### Objetivos
-
-Descrever os objetivos do projeto, objetivos gerais e objetivos específicos.
-
-#### Objetivos gerais
-
-#### Objetivos específicos
-
-### Justificativa
-
-Qual o tipo de arquitetura de nuvem escolhida e sua justificativa
-Como arquitetura de nuvem escolhida deverá ser utilizada
-Quais os benefícios trazidos pela arquitetura de nuvem proposta
-
-## Partes Interessadas
-
-Descrever os principais stakeholders envolvidos no projeto e seus papéis.
 
 # Requisitos
 
