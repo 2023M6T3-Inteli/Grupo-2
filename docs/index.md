@@ -461,11 +461,17 @@ A Pipeline de Dados segue o modelo ETL (Extração, Transformação e Carga). Es
   <img src="./img/Pipeline.jpg" alt="arq" border="0" width="100%">
   
 # Testes finais de envio e consumos das mensagens.
-Na imagem acima podemos ver o consumo de mensagens. O MQTT se comunica com o Colab que faz a análise de dados e gera uma lista de filmes mais recomendados para aquele usuário e depois retorna essa informação para o MQTT.
+<img src="./img/mqtt.png">
+MQQT é um protocolo de mensagens que foi criado com o objetivo de oferecer um baixo consumo de rede, banda e também dos demais recursos de software.
+
+Nós conctamos nosso ambiente de trabalho (Colab) a um sistema MQTT. Dessa forma, nós pré-selecionamos um filme da base de dadis e utilizando o modelo KNN, foi calculado os dez filmes mais próximos.   
+Logo, essa abordagem é útil para recomendação de filmes, pois permite encontrar filmes com características semelhantes ao filme que o usuário gosta. Isso pode ajudar a descobrir novos filmes que possam ser do  interesse do usuário com base em padrões encontrados nos dados.
+
+Na imagem acima podemos ver o resultado dessa conexão.  
 
 # Manual do Usuário
 
-Fornecer instruções detalhadas sobre como usar o software corretamente. É uma ferramenta valiosa para ajudar os usuários a compreender as funções do software, instalar o software, configurar as preferências do usuário, entre outras tarefas. O manual do usuário geralmente inclui screenshots, animações e outros recursos visuais para tornar a experiência do usuário mais clara e intuitiva. Além disso, ele também pode incluir informações sobre solução de problemas, dicas e truques, bem como informações de contato para suporte técnico. É importante que a seção de manual do usuário seja atualizada frequentemente para garantir que os usuários tenham acesso à informação mais recente e precisa sobre o software.
+Fornecer instruções detalhadas sobre como usar o software corretamente. É uma ferramenta valiosa para ajudar os usuários a compreender as funções do software, instalar o software, configurar as preferências do usuário, entre outras tarefacom o modelo de recomendaçãs. O manual do usuário geralmente inclui screenshots, animações e outros recursos visuais para tornar a experiência do usuário mais clara e intuitiva. Além disso, ele também pode incluir informações sobre solução de problemas, dicas e truques, bem como informações de contato para suporte técnico. É importante que a seção de manual do usuário seja atualizada frequentemente para garantir que os usuários tenham acesso à informação mais recente e precisa sobre o software.
 
 # Referências
 
