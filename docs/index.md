@@ -58,7 +58,6 @@
   - [Mapeamento do processo em alto nível](#mapeamento-do-processo-em-alto-nível)
   - [Requisitos Funcionais](#requisitos-funcionais)
   - [Requisitos não Funcionais](#requisitos-não-funcionais)
-  - [Perfis de Usuários](#perfis-de-usuários)
   - [Casos de Uso](#casos-de-uso)
   - [Matriz de rastreabilidade](#matriz-de-rastreabilidade)
 - [Arquitetura do Sistema](#arquitetura-do-sistema)
@@ -71,11 +70,6 @@
   - [Modelo Lógico](#modelo-conceitual)
 - [Testes de Software](#testes-de-software)
   - [Teste Unitário](#teste-unitário)
-  - [Teste de Integração](#teste-de-integração)
-  - [Teste de Regressão](#teste-de-regressão)
-  - [Teste de Usabilidade](#teste-de-usabilidade)
-  - [Teste de Funcionalidade](#teste-de-funcionalidade)
-  - [Teste de API](#teste-de-api)
 - [Documentação da API](#documentação-da-api)
 - [Construção da Base de Dados](#construção-da-base-de-dados)
 - [Pipeline de Dados](#pipeline-de-dados)
@@ -156,8 +150,10 @@ A seguir, encontra-se o link para acessar a análise financeira realizada pelo g
 https://docs.google.com/document/d/16Y3fO-OvyRv0n_pdTYwdQThtXdSX4TZi7Df-IhWQdBc/edit
 
 ### Mapeamento do Processo
+O mapeamento de processos é uma técnica utilizada para representar visualmente e descrever de forma detalhada as etapas, atividades e interações envolvidas em um processo de negócio. Essa representação é feita através de diagramas ou fluxogramas, que mostram a sequência lógica das atividades, as entradas e saídas de cada etapa, os responsáveis pela execução de cada atividade, as decisões tomadas ao longo do processo, entre outras informações relevantes.
 
-Apresentar a modelagem do processo "to be", representando em alto nível o fluxo de trabalho a ser realizado dentro da solução.
+O objetivo principal do mapeamento de processo é compreender e analisar os processos existentes em uma organização, identificando possíveis gargalos, ineficiências ou oportunidades de melhoria. Ele também ajuda a padronizar a execução das tarefas, melhorar a comunicação entre as equipes, facilitar a gestão e o monitoramento dos processos, e promover a otimização contínua. 
+
 
 <img src="./img/mapeamento-de-processos-V2.png">
 
@@ -165,9 +161,6 @@ Apresentar a modelagem do processo "to be", representando em alto nível o fluxo
 
 # Requisitos
 
-Esta seção é importante porque permite que os desenvolvedores entendam claramente o que é esperado do software e quais serão as restrições e desafios enfrentados durante o desenvolvimento. Além disso, permite que os usuários finais saibam se o software atende às suas expectativas e se está adequado ao seu ambiente de trabalho.
-
-A seção de requisitos do sistema é atualizada constantemente durante o ciclo de desenvolvimento do software, garantindo que todas as necessidades e especificações estejam sempre atualizadas.
 
 ## Requisitos Funcionais
 
@@ -201,10 +194,6 @@ Descreve os recursos necessários para sua execução, os requisitos de seguran�
 - O sistema deve armazenar e mostrar todo o histórico de projetos cadastrados na plataforma
 - O sistema deve oferecer a opção de cadastrar o projeto na plataforma para atingir novos participantes de forma simples e rápida.
 
-## Perfis de Usuários
-
-A seção de perfil de usuário da documentação de software é responsável por descrever instruções detalhadas sobre o uso de cada opção e recursos relacionados ao perfil do usuário, garantindo uma experiência fácil e intuitiva para o usuário final.
-
 ## Casos de Uso
 
 A seção de casos de uso da documentação de software é uma parte crucial que descreve as funcionalidades
@@ -236,7 +225,7 @@ do software e como elas serão utilizadas pelos usuários. Aqui, são listados t
 
 ## Matriz de rastreabilidade
 
-A seção de matriz de rastreabilidade tem como função auxiliar a visualização da relação entre os requisitos funcionais e não funcionais e os casos de uso.
+A matriz de rastreabilidade, é uma ferramenta utilizada para acompanhar e documentar a relação entre diferentes itens ou elementos ao longo de um projeto ou processo. Essa matriz estabelece uma ligação entre os requisitos, funcionalidades, componentes, testes, casos de uso ou outros elementos relacionados, permitindo rastrear as interdependências e garantir que todas as partes estejam devidamente cobertas e atendidas.
 
 (https://docs.google.com/spreadsheets/d/12dbTVegm-uH6M-8SOcBtjQVkdFnjaft-R1v4uMoWH3o/edit?usp=sharing)
 
@@ -246,7 +235,7 @@ A seção de matriz de rastreabilidade tem como função auxiliar a visualizaç�
 
 # Arquitetura do Sistema
 
-Atualizar a cada revisão/atualização da arquitetura, mantendo todas as 3 versões no documento..
+A arquitetura da solução, é uma descrição abrangente da estrutura e organização de uma solução de software ou sistema, incluindo seus componentes, relacionamentos, interfaces, padrões de comunicação e fluxo de dados. Ela fornece uma visão de alto nível da solução e define a maneira como os diferentes elementos se conectam e interagem para atender aos requisitos do sistema.
 
 <center>
 <img src="./img/arquitetura-do-sistema-V1.png" alt="arq" border="0" width="100%">
@@ -278,8 +267,6 @@ Diagrama de fluxo 1.0
   <img src="./img/ArquiteturaV3.jpg" alt="arq" border="0" width="100%">
 
 # UX e UI Design
-
-Aborda o design e a funcionalidade da aplicação ou sistema em questão. Ela fornece informações sobre como o software é projetado para ser fácil de usar e intuitivo para os usuários. Nesta seção, deve ser possível encontrar descrições detalhadas sobre as principais características e recursos da interface do usuário, como botões, menus, ícones e outros elementos que são utilizados para facilitar a interação do usuário com o software. Além disso, são fornecidos exemplos de como as funcionalidades do software são acessadas e usadas pelos usuários, incluindo informações sobre os passos necessários para realizar tarefas específicas. Esta seção também aborda as principais preocupações de UX, como acessibilidade, usabilidade, consistência e simplicidade. São apresentados exemplos de como o software é projetado para atender às necessidades dos usuários com diferentes tipos de habilidades e recursos.
 
 ## Benchmarking e Revisão de Design Systems
 
@@ -357,7 +344,7 @@ Refere-se ao design visual, cores, tipografia, imagens, logotipos, ou seja, os e
   
 ## Gameficação
  <p> A gameficação é uma metodologia que utiliza elementos de jogos para atrair os usuarios em ambientes que não se resumem a entreterimento. O TINAM App vai utilizar a gameficação para gerar engajameno com  usuario.
-Os pontos vão ser distribuidos da seginte forma: a cada projeto participado o usuario ganha 30 pontos e 15 coins. A cada like recebido no post aumenta 2 pontos e a cada comentario 3 pontos. Já na temporada, os pontos de receber like e comentario sao dobrados caso o post seja sobre o assunto que está em alta.
+Os pontos vão ser distribuidos da seginte forma: a cada projeto participado o usuario ganha 30 pontos e 15 coins. A cada like recebido no post aumenta 2 pontos e a cada comentario 3 pontos. Já na temporada, os pontos de receber like e comentario são dobrados caso o post seja sobre o assunto que está em alta.
 Os pontos vão impactar na posição do jogador no ranking. E as moedas podem ser usadas para comprar itens no shop do aplicativo. </p>
   
 # Projeto de Banco de Dados
@@ -366,17 +353,14 @@ Documento contendo diagrama de entidades e relacionamentos do banco de dados
 
 ## Modelo Conceitual
 
-<p>O modelo lógico de um banco de dados é uma representação abstrata dos dados que serão armazenados e gerenciados pelo sistema de banco de dados. Ele descreve a estrutura dos dados e as relações entre eles, sem se preocupar com a implementação física do banco de dados.
+<p>O modelo Conceitual de um banco de dados é uma representação abstrata dos dados que serão armazenados e gerenciados pelo sistema de banco de dados. Ele descreve a estrutura dos dados e as relações entre eles, sem se preocupar com a implementação física do banco de dados.
 
-O modelo lógico é importante porque permite que os desenvolvedores de banco de dados projetem e construam sistemas de banco de dados que atendam às necessidades dos usuários de maneira eficiente e eficaz. Ele ajuda a garantir que os dados sejam organizados de maneira coerente e que as informações sejam facilmente acessíveis quando necessário.</p>
+O modelo Conceitual é importante porque permite que os desenvolvedores de banco de dados projetem e construam sistemas de banco de dados que atendam às necessidades dos usuários de maneira eficiente e eficaz. Ele ajuda a garantir que os dados sejam organizados de maneira coerente e que as informações sejam facilmente acessíveis quando necessário.</p>
 
 <center>
 <img src="./img/diagramDB_Logico.png">
 </center>
 
-## Modelo Lógico
-
-O modelo lógico de banco de dados é uma representação abstrata e simplificada dos dados armazenados no sistema. É utilizado para entender como os dados são relacionados e para garantir a integridade e consistência dos dados armazenados. Incluir uma descrição detalhada das tabelas, campos e relações presentes no modelo lógico de banco de dados. Também serão apresentadas as regras de negócio e as restrições aplicadas aos dados para garantir a integridade e a consistência dos dados armazenados.
 
 # Testes de Software
 
@@ -415,25 +399,12 @@ Dessa forma, o grupo TINAM fez diversos arquivos de testes unitários para garan
 
 
 
-## Teste de Integração
 
-Link ou imagem da tabela com dados organizados dos testes realizados
-
-## Teste de Regressão
-
-Link ou imagem da tabela com dados organizados dos testes realizados
 
 ## Teste de Usabilidade
 
 Link ou imagem da tabela com dados organizados dos testes realizados
 
-## Teste de Funcionalidade
-
-Link ou imagem da tabela com dados organizados dos testes realizados
-
-## Teste de API
-
-Link ou imagem da tabela com dados organizados dos testes realizados
 
 # Documentação da API
 
