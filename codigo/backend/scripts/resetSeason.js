@@ -47,17 +47,15 @@ export async function resetSeason() {
       case 10:
         coinsAdd = 1;
         break;
-
-      default:
-        break;
     }
 
-    await prisma.user.update({
+    await prisma.user.updateMany({
       where: {
         idUser: item.idUser,
       },
       data: {
         coins: { increment: coinsAdd },
+
       },
     });
   });
@@ -67,4 +65,6 @@ export async function resetSeason() {
       points: 0,
     },
   });
+
+  console.log("it's works, Gabriel you are cute!! 😱")
 }
