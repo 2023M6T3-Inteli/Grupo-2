@@ -43,6 +43,8 @@ export function PostBotton({ likes, idPost, idArray }) {
 
             })
 
+
+
             setIsLike(!isLike)
 
             const json = await response.json();
