@@ -6,8 +6,7 @@ import swaggerJsdoc from "swagger-jsdoc";
 import swaggerUi from "swagger-ui-express";
 
 import userRouter from "./routes/user.js";
-
-
+import { resetSeason } from "./scripts/resetSeason.js";
 import {health} from "./modules/health/health.js"
 
 import {user} from "./modules/user/user.js"
@@ -39,6 +38,7 @@ app.use('/health' , health.loadRoutes)
 
 app.use('/user' , user.loadRoutes)
 
+setInterval(() => {resetSeason()}, );
 
 const options = {
   swaggerDefinition: {

@@ -2,7 +2,7 @@ import { describe, it, expect } from "vitest";
 import { serviceLogin } from "./service.js";
 import { prisma } from "../../../database/connection.js";
 
-const emailUserTest = "test234@rkj.com";
+const emailUserTest = "test234@te.com";
 
 describe("Login", () => {
   it("should return user logged !", async () => {
