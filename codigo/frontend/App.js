@@ -4,7 +4,6 @@ import { FeedPost } from './pages/feedposts';
 import Login from './pages/Login';
 import Label from './pages/CreateProject';
 import CreateProject from './pages/CreateProject';
-import { ShopCard } from './components/shopCard'
 import { Shop } from './pages/feedshop';
 import Ranking from './pages/Rank';
 import { Profile } from './pages/pofile';

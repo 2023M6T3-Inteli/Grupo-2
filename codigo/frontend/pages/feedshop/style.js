@@ -2,24 +2,13 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
 
-    top: {
-        color: '#31A2E3',
-        flexDirection: "row",
-        alignSelf: "center",
-        marginTop: 50,
-        gap:15,
-
-
-
+    pageBase: {
+        backgroundColor: '#000',
+        width: '100%',
+        height: '100%',
+        justifyContent: "center",
+        alignItems: "center",
+        alignContent: 'center',
+        gap: 20,
     },
-    coin: {
-        width: 32,
-        height: 32,
-    },
-    value: {
-        color: "#31A2E3",
-        fontSize:20,
-
-    },
-
 })

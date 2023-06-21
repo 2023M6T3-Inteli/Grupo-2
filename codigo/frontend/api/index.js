@@ -1,2 +1,4 @@
-//integrates axios
-export const URL_API = "https://kolypc-3000.csb.app" 
+
+//integrações axios
+export const URL_API = "https://gfk6z6-3000.csb.app" 
+
