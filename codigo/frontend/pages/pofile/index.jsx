@@ -31,6 +31,8 @@ export function Profile() {
       const response = await fetch(
         `${URL_API}/user/postOwner/${account.idUser}`
       );
+
+      console.log(response)
       const json = await response.json();
 
       setPosts(json);

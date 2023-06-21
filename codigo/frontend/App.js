@@ -23,6 +23,7 @@ export default function App() {
       <ContextProvider>
         <View style={styles.container}>
           <Routes />
+          <StatusBar hidden={true}/>
         </View>
       </ContextProvider>
     </NavigationContainer>

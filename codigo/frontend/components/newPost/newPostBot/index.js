@@ -51,7 +51,7 @@ export function ImgNewPost({ inputText, setInputText, account }) {
           ups: 0,
           downs: 0,
           idUser: account.idUser,
-          image: "https://wallpaperaccess.com/full/829014.jpg",
+          image: "https://www.dell.com/community/image/serverpage/image-id/109718iACC23BBD497A29F7?v=v2",
           qntLikes: 0
         })
       })

@@ -20,6 +20,7 @@ export function PostBotton({ likes, idPost, idArray }) {
     const [save, setSave] = useState(false)
     const [likesAPI, setLikesAPI] = useState(0)
     const [isLike, setIsLike] = useState(true)
+    const [hearthFull, setHealthFull] = useState(false)
 
 
     const animation = useRef(null)
@@ -46,6 +47,7 @@ export function PostBotton({ likes, idPost, idArray }) {
 
 
             setIsLike(!isLike)
+            setHealthFull(true)
 
             const json = await response.json();
             console.log(json)
@@ -64,9 +66,9 @@ export function PostBotton({ likes, idPost, idArray }) {
     useEffect(() => {
         setLikesAPI(likes)
 
-        if (idArray.includes(account.idUser)) {
-            setIsLike(false)
-        }
+        // if (idArray.includes(account.idUser)) {
+        //     setIsLike(false)
+        // }
 
     }, [])
 
@@ -75,15 +77,8 @@ export function PostBotton({ likes, idPost, idArray }) {
         <View style={styles.botPostBg}>
             <View style={styles.botPostRow}>
                 <Pressable style={{ flexDirection: "row", alignItems: "center" }} onPress={likeFunction}>
-
-                    <LottieView
-                        source={require('../../../assets/like.json')}
-                        autoPlay={false}
-                        loop={false}
-                        style={styles.likeIcon}
-                        resizeMode='cover'
-                        ref={animation}
-                    />
+                    {hearthFull && <Image style={styles.likeIcon} source={require("../../../assets/likeFull.png")}/>}
+                    {!hearthFull && <Image style={styles.likeIcon} source={require("../../../assets/like.png")}/>}
                     <Text style={styles.botPostInfo}>{likesAPI} Like</Text>
                 </Pressable>
             </View>

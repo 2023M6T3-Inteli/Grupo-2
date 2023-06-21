@@ -23,7 +23,7 @@ export default styles = StyleSheet.create({
         alignItems: "center"
     },
     likeIcon: {
-        width: 30,
-        height: 30,
+        width: 15,
+        height: 15,
     }
 });
