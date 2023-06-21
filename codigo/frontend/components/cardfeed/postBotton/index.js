@@ -20,7 +20,7 @@ export function PostBotton({ likes, idPost, idArray }) {
     const [save, setSave] = useState(false)
     const [likesAPI, setLikesAPI] = useState(0)
     const [isLike, setIsLike] = useState(true)
-    
+
 
     const animation = useRef(null)
     const firstRun = useRef(true)
@@ -43,6 +43,8 @@ export function PostBotton({ likes, idPost, idArray }) {
 
             })
 
+
+
             setIsLike(!isLike)
 
             const json = await response.json();
@@ -57,7 +59,7 @@ export function PostBotton({ likes, idPost, idArray }) {
         }
     };
 
-    
+
 
     useEffect(() => {
         setLikesAPI(likes)
@@ -65,7 +67,7 @@ export function PostBotton({ likes, idPost, idArray }) {
         if (idArray.includes(account.idUser)) {
             setIsLike(false)
         }
-      
+
     }, [])
 
 
@@ -89,7 +91,7 @@ export function PostBotton({ likes, idPost, idArray }) {
                 <Image source={require('../../../assets/comment.png')} />
                 <Text style={styles.botPostInfo}>2k Comment</Text>
             </Pressable>
-            <Pressable style={styles.botPostRow} onPress={() => Sharing.shareAsync("youtube.com",'UTI')}>
+            <Pressable style={styles.botPostRow} onPress={() => Sharing.shareAsync("youtube.com", 'UTI')}>
                 <Image source={require('../../../assets/share.png')} />
                 <Text style={styles.botPostInfo}>Share</Text>
             </Pressable>

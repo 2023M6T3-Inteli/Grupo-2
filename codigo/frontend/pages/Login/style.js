@@ -31,7 +31,8 @@ export const styles = StyleSheet.create({
 
         borderWidth: 2,
 
-        marginBottom: 20
+        marginBottom: 20,
+        marginTop: 20
     },
 
     imageDell: {

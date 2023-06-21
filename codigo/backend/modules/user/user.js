@@ -45,6 +45,7 @@ class User {
       this.router.get("/project/:id", controllerGetProjectById.exec);
       this.router.get("/post/:id", controllerGetPostById.exec);
       this.router.get("/:id", controllerGetUserById.exec);
+      this.router.get("/ranking/:id", controllergetRanking.exec);
 
       //login protocol
       this.router.post("/login", controllerLogin.exec);
@@ -52,15 +53,14 @@ class User {
       //post protocol
       this.router.post("/post", controllerPostPost.exec);
 
-      this.router.get("/ranking/:id", controllergetRanking.exec);
-
       this.router.post("/comment-post", controllerCommentPost.exec);
-      //put protocol
-      this.router.put("/like", controllerPutLike.exec);
-
+      
       //complain
       this.router.post("/complain-post", controllerPostComplain.exec);
       this.router.post("/complain-project", controllerProjectComplain.exec);
+
+      //put protocol
+      this.router.put("/like", controllerPutLike.exec);
 
       return this.router;
     }
