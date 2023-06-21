@@ -1,5 +1,5 @@
-import { StyleSheet, Text, View, Button, Image, ScrollView, SafeAreaView, } from 'react-native';
+// import { StyleSheet, Text, View, Button, Image, ScrollView, SafeAreaView, } from 'react-native';
 
-export default styles = StyleSheet.create({
+// export default styles = StyleSheet.create({
 
-})
+// })
