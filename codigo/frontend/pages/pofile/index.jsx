@@ -14,7 +14,7 @@ import { RankingProfileInfo } from "../../components/profile/profileRanking";
 import { TopProfileInfo } from "../../components/profile/profileTop";
 import { Tags } from "../../components/tags";
 import { SwapComponentProfile } from "../../components/swapComponentProfile";
-import { FeedCard } from "../../components/cardfeed";
+import { FeedCard } from "../../components/cardfeed copy";
 import { BlackSpace } from "../../components/BlackSpace";
 import { Context } from "../../context/context";
 import { URL_API } from "../../api";

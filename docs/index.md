@@ -467,7 +467,7 @@ Na imagem acima podemos ver o consumo de mensagens. O MQTT se comunica com o Col
 
 # Manual do Usuário
 
-Fornecer instruções detalhadas sobre como usar o software corretamente. É uma ferramenta valiosa para ajudar os usuários a compreender as funções do software, instalar o software, configurar as preferências do usuário, entre outras tarefas. O manual do usuário geralmente inclui screenshots, animações e outros recursos visuais para tornar a experiência do usuário mais clara e intuitiva. Além disso, ele também pode incluir informações sobre solução de problemas, dicas e truques, bem como informações de contato para suporte técnico. É importante que a seção de manual do usuário seja atualizada frequentemente para garantir que os usuários tenham acesso à informação mais recente e precisa sobre o software.
+Link para o manual do usuário, feito no canva: <a>https://www.canva.com/design/DAFmpcHgOpI/BEqBLmxYSDcvLO9XbZ2rrw/edit</a>
 
 # Referências
 
