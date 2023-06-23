@@ -70,10 +70,10 @@ export function PostBotton({ likes, idPost, idArray }) {
     useEffect(() => {
         setLikesAPI(likes)
 
-        if (idArray.includes(account.idUser)) {
-            setIsLike(false)
-            setHealthFull(true)
-        }
+        // if (idArray.includes(account.idUser)) {
+        //     setIsLike(false)
+        //     setHealthFull(true)
+        // }
 
     }, [])
 
