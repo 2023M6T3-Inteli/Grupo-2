@@ -75,7 +75,7 @@
 - [Pipeline de Dados](#pipeline-de-dados)
 - [Manual do Usuário](#Manual-do-usuário)
 - [Referências](#referências)
-- [Apêndice](#apêndice)
+
 
 # Visão Geral do Projeto
 
@@ -446,9 +446,8 @@ Fornecer instruções detalhadas sobre como usar o software corretamente. É uma
 
 # Referências
 
-Toda referência citada no texto deverá constar nessa seção, utilizando o padrão de normalização da ABNT - ABNT NBR 10520). As citações devem ser confiáveis e relevantes para o trabalho. São imprescindíveis as citações dos sites de download das ferramentas utilizadas, bem como a citação de algum objeto, música, textura ou outros que não tenham sido produzidos pelo grupo, mas utilizados (mesmo no caso de licenças gratuitas, royalty free ou similares)
-Sugerimos o uso do sistema autor-data para citações.
-
-# Apêndice
-
-Os apêndices representam informações adicionais que não caberiam no documento exposto acima, mas que são importantes por alguma razão específica do projeto.
+1- React Native: Documentação. Disponível em: https://reactnative.dev/. Acesso em: 23 jun. 2023.
+2- Express.js: Documentação em português. Disponível em: https://expressjs.com/pt-br/. Acesso em: 23 jun. 2023.
+3- Dribbble: Showcase and discover creative work. Disponível em: https://dribbble.com/. Acesso em: 23 jun. 2023.
+4- Prisma: The Database Toolkit. Disponível em: https://www.prisma.io/. Acesso em: 23 jun. 2023.
+5- Unsplash: Beautiful Free Images & Pictures in Portuguese (Brazil). Disponível em: https://unsplash.com/pt-br. Acesso em: 23 jun. 2023.
