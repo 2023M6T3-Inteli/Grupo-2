@@ -58,7 +58,6 @@
   - [Mapeamento do processo em alto nível](#mapeamento-do-processo-em-alto-nível)
   - [Requisitos Funcionais](#requisitos-funcionais)
   - [Requisitos não Funcionais](#requisitos-não-funcionais)
-  - [Perfis de Usuários](#perfis-de-usuários)
   - [Casos de Uso](#casos-de-uso)
   - [Matriz de rastreabilidade](#matriz-de-rastreabilidade)
 - [Arquitetura do Sistema](#arquitetura-do-sistema)
@@ -71,17 +70,12 @@
   - [Modelo Lógico](#modelo-conceitual)
 - [Testes de Software](#testes-de-software)
   - [Teste Unitário](#teste-unitário)
-  - [Teste de Integração](#teste-de-integração)
-  - [Teste de Regressão](#teste-de-regressão)
-  - [Teste de Usabilidade](#teste-de-usabilidade)
-  - [Teste de Funcionalidade](#teste-de-funcionalidade)
-  - [Teste de API](#teste-de-api)
 - [Documentação da API](#documentação-da-api)
 - [Construção da Base de Dados](#construção-da-base-de-dados)
 - [Pipeline de Dados](#pipeline-de-dados)
 - [Manual do Usuário](#Manual-do-usuário)
 - [Referências](#referências)
-- [Apêndice](#apêndice)
+
 
 # Visão Geral do Projeto
 
@@ -97,16 +91,33 @@ O Problema que a Dell tem enfrentado é a retenção de talentos e a desmotivaç
 
 Esse aplicativo, tem como objetivo motivar os funcionários da Dell por meio da oportunidade de fazer postagens, compartilhar conteúdos, participar de projetos oferecidos dentro da empresa e consequentemente, ser bonificado pde acordo com as interações feitas dentro do aplicativo.
 
-### Análise do Problema
+## Descritivo da Solução
+O aplicativo mobile de rede social para funcionários tem como objetivo engajar os colaboradores da Dell, fornecendo uma plataforma interna onde eles possam se conectar, compartilhar informações, colaborar, celebrar conquistas e fortalecer os laços dentro da organização. O aplicativo inclui recursos como perfis de usuários, feeds de notícias, processo de gameficação e até mesmo um ranking. 
 
-Nesta seção, serão apresentados os problemas identificados e as necessidades do usuário, bem como uma avaliação da situação atual e as possíveis soluções para cada questão. Além disso, serão identificados os obstáculos e limitações do projeto, a fim de assegurar que todas as preocupações sejam abordadas antes do início da implementação. A Análise do Problema é essencial para garantir que a solução do software seja eficaz e atenda às necessidades dos usuários. É importante que seja realizada uma pesquisa exaustiva e que todas as perspectivas sejam consideradas para garantir que a solução seja bem-sucedida.
+Os Benefícios que essa solução vai fornecer para a empresa são diversos, e entre eles é possível citar: 
+1- Aumento do engajamento dos funcionários, promovendo uma maior colaboração e um sentimento de pertencimento à empresa.
+2- Melhoria da comunicação interna, permitindo o compartilhamento rápido de informações e ideias.
+3- Facilitação da integração de novos funcionários, proporcionando uma forma mais fácil de se conectar com colegas.
+4- Identificação de talentos e líderes emergentes.
+5- Promoção de um ambiente de trabalho mais transparente e participativo.
+
+
+## Partes Interessadas
+As principais partes Interessadas nesse projeto são:
+
+1- Funcionários, pois o aplicativo permite que eles se conectem com colegas de empresa que atuam em áreas diferentes, compartilhem conhecimento, e colaborem em projetos. Por fim, pode-se dizer que a plataforma vai estimular o engajamento dos funcionários e permitir que eles colaborem entre si.
+
+2- Gestores: Os gestores da empresa também se beneficiam com o aplicativo, pois eles podem acompanhar as interações e o envolvimento dos funcionários, identificar talentos e líderes emergentes, promover a comunicação e o alinhamento de equipes, reconhecer e recompensar conquistas individuais e coletivas, além de obter insights valiosos por meio do feedback e das discussões realizadas na plataforma.
 
 ### Matriz de Oceano Azul
 
 A Matriz de Oceano Azul é uma ferramenta de estratégia empresarial criada para identificar oportunidades de negócios em mercados inexplorados. Ela gera oportunidade para as empresas criarem novos espaços de mercado e cresçam de forma significativa e sustentável.
-No Link abaixo, é possível acessar a matriz de oceano azul que o grupo TINAM Devs produziu.
+As imagens expõem a Matriz de Oceano Azul do grupo TINAM
 
-(https://docs.google.com/spreadsheets/d/1KIeyIy-Iuh03lGvlmdwfQv6QXbmrh3x-anDuJ2xkDOg/edit#gid=0)
+
+<img src="./img/oceanoazulT.png">
+<img src="./img/oceanoazulIMG.png">
+
 
 Dessa forma, depois de analisar a empresa Dell antes e depois do produto que foi desenvolvido pelo grupo, é possível tirar algumas conclusões:
 
@@ -120,7 +131,8 @@ Dessa forma, depois de analisar a empresa Dell antes e depois do produto que foi
 - O projeto vai criar inovação na empresa Dell.
 
 ### Proposta de Valor e Value Proposition Canvas
-
+O Canvas de Proposta de Valor é uma ferramenta visual que ajuda a entender as dores do público, auxilia na descoberta dos problemas que esse consumidor enfrenta e como o produto pode ajudar a resolvê-los. Ou seja, relaciona as necessidades e dores do perfil do cliente ao produto ou serviço criado de forma a apresentar as soluções como ‘aliviadores de dor’.
+Dessa forma, o grupo TINAM desenvolveu um Canva Proposta de Valor para medir o quanto o nosso aplicativo irá agregar na empresa Dell. É possível observar a Proposta de Valor na imagem abaixo:
 <img src="./img/Canvas.png">
 
 ### Matriz de Risco
@@ -138,38 +150,17 @@ A seguir, encontra-se o link para acessar a análise financeira realizada pelo g
 https://docs.google.com/document/d/16Y3fO-OvyRv0n_pdTYwdQThtXdSX4TZi7Df-IhWQdBc/edit
 
 ### Mapeamento do Processo
+O mapeamento de processos é uma técnica utilizada para representar visualmente e descrever de forma detalhada as etapas, atividades e interações envolvidas em um processo de negócio. Essa representação é feita através de diagramas ou fluxogramas, que mostram a sequência lógica das atividades, as entradas e saídas de cada etapa, os responsáveis pela execução de cada atividade, as decisões tomadas ao longo do processo, entre outras informações relevantes.
 
-Apresentar a modelagem do processo "to be", representando em alto nível o fluxo de trabalho a ser realizado dentro da solução.
+O objetivo principal do mapeamento de processo é compreender e analisar os processos existentes em uma organização, identificando possíveis gargalos, ineficiências ou oportunidades de melhoria. Ele também ajuda a padronizar a execução das tarefas, melhorar a comunicação entre as equipes, facilitar a gestão e o monitoramento dos processos, e promover a otimização contínua. 
+
 
 <img src="./img/mapeamento-de-processos-V2.png">
 
-## Descritivo da Solução
 
-Descrição da solução a ser desenvolvida (o que é, quais principais funcionalidades, como usar) . Caso ainda não esteja definida a solução na Sprint 1, o faça assim que possível.
-
-### Objetivos
-
-Descrever os objetivos do projeto, objetivos gerais e objetivos específicos.
-
-#### Objetivos gerais
-
-#### Objetivos específicos
-
-### Justificativa
-
-Qual o tipo de arquitetura de nuvem escolhida e sua justificativa
-Como arquitetura de nuvem escolhida deverá ser utilizada
-Quais os benefícios trazidos pela arquitetura de nuvem proposta
-
-## Partes Interessadas
-
-Descrever os principais stakeholders envolvidos no projeto e seus papéis.
 
 # Requisitos
 
-Esta seção é importante porque permite que os desenvolvedores entendam claramente o que é esperado do software e quais serão as restrições e desafios enfrentados durante o desenvolvimento. Além disso, permite que os usuários finais saibam se o software atende às suas expectativas e se está adequado ao seu ambiente de trabalho.
-
-A seção de requisitos do sistema é atualizada constantemente durante o ciclo de desenvolvimento do software, garantindo que todas as necessidades e especificações estejam sempre atualizadas.
 
 ## Requisitos Funcionais
 
@@ -203,10 +194,6 @@ Descreve os recursos necessários para sua execução, os requisitos de seguran�
 - O sistema deve armazenar e mostrar todo o histórico de projetos cadastrados na plataforma
 - O sistema deve oferecer a opção de cadastrar o projeto na plataforma para atingir novos participantes de forma simples e rápida.
 
-## Perfis de Usuários
-
-A seção de perfil de usuário da documentação de software é responsável por descrever instruções detalhadas sobre o uso de cada opção e recursos relacionados ao perfil do usuário, garantindo uma experiência fácil e intuitiva para o usuário final.
-
 ## Casos de Uso
 
 A seção de casos de uso da documentação de software é uma parte crucial que descreve as funcionalidades
@@ -238,7 +225,7 @@ do software e como elas serão utilizadas pelos usuários. Aqui, são listados t
 
 ## Matriz de rastreabilidade
 
-A seção de matriz de rastreabilidade tem como função auxiliar a visualização da relação entre os requisitos funcionais e não funcionais e os casos de uso.
+A matriz de rastreabilidade, é uma ferramenta utilizada para acompanhar e documentar a relação entre diferentes itens ou elementos ao longo de um projeto ou processo. Essa matriz estabelece uma ligação entre os requisitos, funcionalidades, componentes, testes, casos de uso ou outros elementos relacionados, permitindo rastrear as interdependências e garantir que todas as partes estejam devidamente cobertas e atendidas.
 
 (https://docs.google.com/spreadsheets/d/12dbTVegm-uH6M-8SOcBtjQVkdFnjaft-R1v4uMoWH3o/edit?usp=sharing)
 
@@ -248,7 +235,7 @@ A seção de matriz de rastreabilidade tem como função auxiliar a visualizaç�
 
 # Arquitetura do Sistema
 
-Atualizar a cada revisão/atualização da arquitetura, mantendo todas as 3 versões no documento..
+A arquitetura da solução, é uma descrição abrangente da estrutura e organização de uma solução de software ou sistema, incluindo seus componentes, relacionamentos, interfaces, padrões de comunicação e fluxo de dados. Ela fornece uma visão de alto nível da solução e define a maneira como os diferentes elementos se conectam e interagem para atender aos requisitos do sistema.
 
 <center>
 <img src="./img/arquitetura-do-sistema-V1.png" alt="arq" border="0" width="100%">
@@ -262,7 +249,7 @@ Arquitetura do sistema 1.0
 Diagrama de fluxo 1.0
 </center>
 
-<<<<<<< Updated upstream
+
 ## Arquitetura de Mensageria
 
 <p>A arquitetura de mensageria é um modelo de design para sistemas que se comunicam por meio de mensagens. A ideia por trás dessa arquitetura é separar as partes do sistema que produzem mensagens das partes que as consomem, permitindo que elas se comuniquem de maneira assíncrona e desacoplada.</p>
@@ -280,8 +267,6 @@ Diagrama de fluxo 1.0
   <img src="./img/ArquiteturaV3.jpg" alt="arq" border="0" width="100%">
 
 # UX e UI Design
-
-Aborda o design e a funcionalidade da aplicação ou sistema em questão. Ela fornece informações sobre como o software é projetado para ser fácil de usar e intuitivo para os usuários. Nesta seção, deve ser possível encontrar descrições detalhadas sobre as principais características e recursos da interface do usuário, como botões, menus, ícones e outros elementos que são utilizados para facilitar a interação do usuário com o software. Além disso, são fornecidos exemplos de como as funcionalidades do software são acessadas e usadas pelos usuários, incluindo informações sobre os passos necessários para realizar tarefas específicas. Esta seção também aborda as principais preocupações de UX, como acessibilidade, usabilidade, consistência e simplicidade. São apresentados exemplos de como o software é projetado para atender às necessidades dos usuários com diferentes tipos de habilidades e recursos.
 
 ## Benchmarking e Revisão de Design Systems
 
@@ -359,7 +344,7 @@ Refere-se ao design visual, cores, tipografia, imagens, logotipos, ou seja, os e
   
 ## Gameficação
  <p> A gameficação é uma metodologia que utiliza elementos de jogos para atrair os usuarios em ambientes que não se resumem a entreterimento. O TINAM App vai utilizar a gameficação para gerar engajameno com  usuario.
-Os pontos vão ser distribuidos da seginte forma: a cada projeto participado o usuario ganha 30 pontos e 15 coins. A cada like recebido no post aumenta 2 pontos e a cada comentario 3 pontos. Já na temporada, os pontos de receber like e comentario sao dobrados caso o post seja sobre o assunto que está em alta.
+Os pontos vão ser distribuidos da seginte forma: a cada projeto participado o usuario ganha 30 pontos e 15 coins. A cada like recebido no post aumenta 2 pontos e a cada comentario 3 pontos. Já na temporada, os pontos de receber like e comentario são dobrados caso o post seja sobre o assunto que está em alta.
 Os pontos vão impactar na posição do jogador no ranking. E as moedas podem ser usadas para comprar itens no shop do aplicativo. </p>
   
 # Projeto de Banco de Dados
@@ -368,17 +353,14 @@ Documento contendo diagrama de entidades e relacionamentos do banco de dados
 
 ## Modelo Conceitual
 
-<p>O modelo lógico de um banco de dados é uma representação abstrata dos dados que serão armazenados e gerenciados pelo sistema de banco de dados. Ele descreve a estrutura dos dados e as relações entre eles, sem se preocupar com a implementação física do banco de dados.
+<p>O modelo Conceitual de um banco de dados é uma representação abstrata dos dados que serão armazenados e gerenciados pelo sistema de banco de dados. Ele descreve a estrutura dos dados e as relações entre eles, sem se preocupar com a implementação física do banco de dados.
 
-O modelo lógico é importante porque permite que os desenvolvedores de banco de dados projetem e construam sistemas de banco de dados que atendam às necessidades dos usuários de maneira eficiente e eficaz. Ele ajuda a garantir que os dados sejam organizados de maneira coerente e que as informações sejam facilmente acessíveis quando necessário.</p>
+O modelo Conceitual é importante porque permite que os desenvolvedores de banco de dados projetem e construam sistemas de banco de dados que atendam às necessidades dos usuários de maneira eficiente e eficaz. Ele ajuda a garantir que os dados sejam organizados de maneira coerente e que as informações sejam facilmente acessíveis quando necessário.</p>
 
 <center>
 <img src="./img/diagramDB_Logico.png">
 </center>
 
-## Modelo Lógico
-
-O modelo lógico de banco de dados é uma representação abstrata e simplificada dos dados armazenados no sistema. É utilizado para entender como os dados são relacionados e para garantir a integridade e consistência dos dados armazenados. Incluir uma descrição detalhada das tabelas, campos e relações presentes no modelo lógico de banco de dados. Também serão apresentadas as regras de negócio e as restrições aplicadas aos dados para garantir a integridade e a consistência dos dados armazenados.
 
 # Testes de Software
 
@@ -417,25 +399,12 @@ Dessa forma, o grupo TINAM fez diversos arquivos de testes unitários para garan
 
 
 
-## Teste de Integração
 
-Link ou imagem da tabela com dados organizados dos testes realizados
-
-## Teste de Regressão
-
-Link ou imagem da tabela com dados organizados dos testes realizados
 
 ## Teste de Usabilidade
 
 Link ou imagem da tabela com dados organizados dos testes realizados
 
-## Teste de Funcionalidade
-
-Link ou imagem da tabela com dados organizados dos testes realizados
-
-## Teste de API
-
-Link ou imagem da tabela com dados organizados dos testes realizados
 
 # Documentação da API
 
@@ -463,17 +432,26 @@ A Pipeline de Dados segue o modelo ETL (Extração, Transformação e Carga). Es
   <img src="./img/Pipeline.jpg" alt="arq" border="0" width="100%">
   
 # Testes finais de envio e consumos das mensagens.
-Na imagem acima podemos ver o consumo de mensagens. O MQTT se comunica com o Colab que faz a análise de dados e gera uma lista de filmes mais recomendados para aquele usuário e depois retorna essa informação para o MQTT.
+<img src="./img/mqtt.png">
+MQQT é um protocolo de mensagens que foi criado com o objetivo de oferecer um baixo consumo de rede, banda e também dos demais recursos de software.
 
-# Manual do Usuário
+Nós conctamos nosso ambiente de trabalho (Colab) a um sistema MQTT. Dessa forma, nós pré-selecionamos um filme da base de dadis e utilizando o modelo KNN, foi calculado os dez filmes mais próximos.   
+Logo, essa abordagem é útil para recomendação de filmes, pois permite encontrar filmes com características semelhantes ao filme que o usuário gosta. Isso pode ajudar a descobrir novos filmes que possam ser do  interesse do usuário com base em padrões encontrados nos dados.
+
 
 Link para o manual do usuário, feito no canva: <a>https://www.canva.com/design/DAFmpcHgOpI/BEqBLmxYSDcvLO9XbZ2rrw/edit</a>
 
+Na imagem acima podemos ver o resultado dessa conexão.  
+
+
+# Manual do Usuário
+
+Fornecer instruções detalhadas sobre como usar o software corretamente. É uma ferramenta valiosa para ajudar os usuários a compreender as funções do software, instalar o software, configurar as preferências do usuário, entre outras tarefacom o modelo de recomendaçãs. O manual do usuário geralmente inclui screenshots, animações e outros recursos visuais para tornar a experiência do usuário mais clara e intuitiva. Além disso, ele também pode incluir informações sobre solução de problemas, dicas e truques, bem como informações de contato para suporte técnico. É importante que a seção de manual do usuário seja atualizada frequentemente para garantir que os usuários tenham acesso à informação mais recente e precisa sobre o software.
+
 # Referências
 
-Toda referência citada no texto deverá constar nessa seção, utilizando o padrão de normalização da ABNT - ABNT NBR 10520). As citações devem ser confiáveis e relevantes para o trabalho. São imprescindíveis as citações dos sites de download das ferramentas utilizadas, bem como a citação de algum objeto, música, textura ou outros que não tenham sido produzidos pelo grupo, mas utilizados (mesmo no caso de licenças gratuitas, royalty free ou similares)
-Sugerimos o uso do sistema autor-data para citações.
-
-# Apêndice
-
-Os apêndices representam informações adicionais que não caberiam no documento exposto acima, mas que são importantes por alguma razão específica do projeto.
+1- React Native: Documentação. Disponível em: https://reactnative.dev/. Acesso em: 23 jun. 2023.
+2- Express.js: Documentação em português. Disponível em: https://expressjs.com/pt-br/. Acesso em: 23 jun. 2023.
+3- Dribbble: Showcase and discover creative work. Disponível em: https://dribbble.com/. Acesso em: 23 jun. 2023.
+4- Prisma: The Database Toolkit. Disponível em: https://www.prisma.io/. Acesso em: 23 jun. 2023.
+5- Unsplash: Beautiful Free Images & Pictures in Portuguese (Brazil). Disponível em: https://unsplash.com/pt-br. Acesso em: 23 jun. 2023.

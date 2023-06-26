@@ -101,7 +101,7 @@ router.post("/comment-post", controllerCommentPost.exec);
 
 /**
  * @swagger
- * /user/project:
+ * /user/posts:
  *   get:
  *     description: Get all posts
  *     responses:
@@ -109,7 +109,21 @@ router.post("/comment-post", controllerCommentPost.exec);
  *         description: Success
  */
 
-router.post("/post", controllerPostPost.exec);
+router.get("/posts", controllerGetPosts.exec);
+
+/**
+ * @swagger
+ * /user/project:
+ *   get:
+ *     description: Get all projects
+ *     responses:
+ *       200:
+ *         description: Success
+ */
+router.get("/project", controllerProjects.exec);
+
+
+
 /**
  * @swagger
  * /user/complain-post:
@@ -123,5 +137,6 @@ router.post("/post", controllerPostPost.exec);
  *         type: string
  */
 router.post("/PostComplain", controllerPostComplain.exec);
+
 
 export default router;
