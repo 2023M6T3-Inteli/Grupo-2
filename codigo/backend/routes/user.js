@@ -38,6 +38,51 @@ import { controllergetRanking } from "../modules/user/Ranking/controller.js";
  *
  *
  */
+
+ router.get("/getPostById/:id", controllerGetPostById.exec);
+
+ /**
+  * @swagger
+  * /user/posts:
+  *  post:
+  *     description: Create new post
+  *     parameters:
+  *       - name: article
+  *         description: content
+  *         in: body
+  *         required: true
+  *         type: string
+  *       - name: time
+  *         description: publish time
+  *         in: body
+  *         required: true
+  *         type: DateTime
+  *       - name: ups
+  *         description: publish ups
+  *         in: body
+  *         required: true
+  *         type: Int
+  *       - name: downs
+  *         description: publish ups
+  *         in: body
+  *         required: true
+  *         type: Int
+  *       - name: image
+  *         description: publish image
+  *         in: body
+  *         required: true
+  *         type: string
+  *       - name: qntLikes
+  *         description: publish likes
+  *         in: body
+  *         required: true
+  *         type: Int
+  *     responses:
+  *       200:
+  *         description: Success
+  *
+  *
+  */
 router.post("/login", controllerLogin.exec);
 
 /**
@@ -63,6 +108,7 @@ router.post("/comment-post", controllerCommentPost.exec);
  *       200:
  *         description: Success
  */
+
 router.get("/posts", controllerGetPosts.exec);
 
 /**
@@ -76,49 +122,7 @@ router.get("/posts", controllerGetPosts.exec);
  */
 router.get("/project", controllerProjects.exec);
 
-/**
- * @swagger
- * /user/posts:
- *  post:
- *     description: Create new post
- *     parameters:
- *       - name: article
- *         description: content
- *         in: body
- *         required: true
- *         type: string
- *       - name: time
- *         description: publish time
- *         in: body
- *         required: true
- *         type: DateTime
- *       - name: ups
- *         description: publish ups
- *         in: body
- *         required: true
- *         type: Int
- *       - name: downs
- *         description: publish ups
- *         in: body
- *         required: true
- *         type: Int
- *       - name: image
- *         description: publish image
- *         in: body
- *         required: true
- *         type: string
- *       - name: qntLikes
- *         description: publish likes
- *         in: body
- *         required: true
- *         type: Int
- *     responses:
- *       200:
- *         description: Success
- *
- *
- */
-router.post("/post", controllerPostPost.exec);
+
 
 /**
  * @swagger

@@ -53,6 +53,63 @@ class ServicePutLike {
       return error;
     }
   }
+
+  async addPointsByOwnerPost(idPost, points, idUser) {
+
+    try {
+      const postResult = await prisma.post.findUnique({
+        where: {
+          idPost: idPost
+        }
+      })
+
+      if (Number(postResult.idUser) !== Number(idUser)) {
+
+        return await prisma.rankUser.update({
+          where: {
+            idUser: postResult.idUser
+          },
+
+          data: {
+            points: { increment: points }
+          }
+        })
+      }
+
+
+    } catch (error) {
+
+      return error
+    }
+
+  }
+
+  async lessPointsByOwnerPost(idPost, points, idUser) {
+
+    try {
+
+      const postResult = await prisma.post.findUnique({
+        where: {
+          idPost: idPost
+        }
+      })
+
+      if (Number(postResult.idUser) === Number(idUser)) {
+
+        return await prisma.rankUser.update({
+          where: {
+            idUser: postResult.idUser
+          },
+
+          data: {
+            points: { increment: -points }
+          }
+        })
+      }
+    } catch (error) {
+      return error
+    }
+  }
 }
 
 export const servicePutLike = new ServicePutLike();

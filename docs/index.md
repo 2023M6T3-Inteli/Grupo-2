@@ -249,7 +249,7 @@ Arquitetura do sistema 1.0
 Diagrama de fluxo 1.0
 </center>
 
-<<<<<<< Updated upstream
+
 ## Arquitetura de Mensageria
 
 <p>A arquitetura de mensageria é um modelo de design para sistemas que se comunicam por meio de mensagens. A ideia por trás dessa arquitetura é separar as partes do sistema que produzem mensagens das partes que as consomem, permitindo que elas se comuniquem de maneira assíncrona e desacoplada.</p>
@@ -438,7 +438,11 @@ MQQT é um protocolo de mensagens que foi criado com o objetivo de oferecer um b
 Nós conctamos nosso ambiente de trabalho (Colab) a um sistema MQTT. Dessa forma, nós pré-selecionamos um filme da base de dadis e utilizando o modelo KNN, foi calculado os dez filmes mais próximos.   
 Logo, essa abordagem é útil para recomendação de filmes, pois permite encontrar filmes com características semelhantes ao filme que o usuário gosta. Isso pode ajudar a descobrir novos filmes que possam ser do  interesse do usuário com base em padrões encontrados nos dados.
 
+
+Link para o manual do usuário, feito no canva: <a>https://www.canva.com/design/DAFmpcHgOpI/BEqBLmxYSDcvLO9XbZ2rrw/edit</a>
+
 Na imagem acima podemos ver o resultado dessa conexão.  
+
 
 # Manual do Usuário
 
