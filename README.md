@@ -1,22 +1,19 @@
 <table>
 <tr>
 <td>
-<a href= "https://www.dell.com/pt-br"><img src="https://pt.wikipedia.org/wiki/Ficheiro:Dell_logo_2016.svg" alt="Dell" border="0" width="100%"></a>
+<a href= "https://www.dell.com/pt-br"><img src="docs/img/img_docs/Dell_Logo.svg.png" alt="Dell" border="0" width="20%"></a>
 </td>
-<td><a href= "https://www.inteli.edu.br/"><img src="./docs/img/inteli-logo.png" alt="Inteli - Instituto de Tecnologia e Liderança" border="0" width="30%"></a>
+<td><a href= "https://www.inteli.edu.br/"><img src="https://github.com/2023M6T3-Inteli/Grupo-6/blob/main/docs/img/inteli-logo.png" alt="Inteli - Instituto de Tecnologia e Liderança" border="0" width="30%"></a>
 </td>
 </tr>
 </table>
 
-# Introdução
+# Desenvolvimento de serviços em cloud computing com app dispositivo móvel
 
-Este é o repositório dos arquivos dos alunos do Módulo 6 do curso de Engenharia de Software do Inteli no 2º trimestre de 2023. Durante este trimperíodoestre está sendo desenvolvido um projeto em parceria com a Dell.
+## TINAN
 
-> Alunos do grupo: veja as [instruções para os alunos](LEIAME_aluno.md).
 
-# Projeto: *APP Dispositivo Móvel*
-
-# Grupo: *Tinam*
+### Integrantes:
 
 - <a href="https://www.linkedin.com/in/abner-silva-barbosa-8a3542225/">Abner Silva</a>
 - <a href="https://www.linkedin.com/in/arthur-fraige/">Arthur Fraige</a>
@@ -25,7 +22,7 @@ Este é o repositório dos arquivos dos alunos do Módulo 6 do curso de Engenhar
 - <a href="https://www.linkedin.com/in/mike-mouadeb/">Mike Mouadeb</a>
 - <a href="https://www.linkedin.com/in/sophia-de-oliveira-tosar-aba7ab23b/">Sophia Tosar</a>
 
-# Descrição
+## 💻 Projeto
 
 Um aplicativo mobile de rede social para funcionários tem como objetivo engajar os colaboradores da Dell, fornecendo uma plataforma interna onde eles possam se conectar, compartilhar informações, colaborar, celebrar conquistas e fortalecer os laços dentro da organização. O aplicativo inclui recursos como perfis de usuários, feeds de notícias, processo de gameficação e até mesmo um ranking.
 A solução surgiu diante de um problema muito comum em grandes organizações: a retenção de talentos e a desmotivação de funcionários.
