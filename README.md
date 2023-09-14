@@ -16,11 +16,13 @@ Este é o repositório dos arquivos dos alunos do Módulo 6 do curso de Engenhar
 
 # Projeto: *APP Dispositivo Móvel*
 
-# Grupo: *Nome_do_seu_Grupo*
+# Grupo: *Tinam*
 
 # Descrição
 
-*Descrição_resumida_do_projeto*
+Um aplicativo mobile de rede social para funcionários tem como objetivo engajar os colaboradores da Dell, fornecendo uma plataforma interna onde eles possam se conectar, compartilhar informações, colaborar, celebrar conquistas e fortalecer os laços dentro da organização. O aplicativo inclui recursos como perfis de usuários, feeds de notícias, processo de gameficação e até mesmo um ranking.
+A solução surgiu diante de um problema muito comum em grandes organizações: a retenção de talentos e a desmotivação de funcionários.
+Com esse projeto, os benefícios gerados são diversos: aumento do engajamento dos funcionários, melhoria da comunicação interna, facilitação da integração de novos funcionários, identificação de talentos e líderes emergentes e promoção de um ambiente de trabalho mais transparente e participativo.
 
 # Documentação
 
