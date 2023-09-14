@@ -18,6 +18,13 @@ Este é o repositório dos arquivos dos alunos do Módulo 6 do curso de Engenhar
 
 # Grupo: *Tinam*
 
+- <a href="https://www.linkedin.com/in/abner-silva-barbosa-8a3542225/">Abner Silva</a>
+- <a href="https://www.linkedin.com/in/arthur-fraige/">Arthur Fraige</a>
+- <a href="https://www.linkedin.com/in/carolina-favaro-fricks-1a0423231/">Carolina Fricks</a>
+- <a href="https://www.linkedin.com/in/gabriel--nascimento/">Gabriel Nascimento</a>
+- <a href="https://www.linkedin.com/in/mike-mouadeb/">Mike Mouadeb</a>
+- <a href="https://www.linkedin.com/in/sophia-de-oliveira-tosar-aba7ab23b/">Sophia Tosar</a>
+
 # Descrição
 
 Um aplicativo mobile de rede social para funcionários tem como objetivo engajar os colaboradores da Dell, fornecendo uma plataforma interna onde eles possam se conectar, compartilhar informações, colaborar, celebrar conquistas e fortalecer os laços dentro da organização. O aplicativo inclui recursos como perfis de usuários, feeds de notícias, processo de gameficação e até mesmo um ranking.
