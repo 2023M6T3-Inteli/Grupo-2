@@ -60,11 +60,70 @@ Com esse projeto, os benefícios gerados são diversos: aumento do engajamento d
 <br>
 2 - Para rodar localmente o projeto, é necessário:
 <br>
-&emsp; 2.1 - Rodar no prompt de comando dentro da pasta ```backend o comando``` ```npm run start:dev``` ;
-&emsp; 2.1 - Rodar no prompt de comando dentro da pasta ```backend o comando``` ```npm run start:dev``` ;
+&emsp; 2.1 - Criar o .env dentro da pasta ```backend ```;
 <br>
-&emsp; 2.2 - Fazer dowload do arquivo .apk dentro da pasta ```codigo```;
+&emsp; 2.2 - Rodar no prompt de comando dentro da pasta ```backend o comando``` ```npm run start:dev``` ;
+<br>
+&emsp; 2.3 - No front-end é necessário baixar as dependências utilizando o node 18 >=;
+<br>
+&emsp; 2.4 - Rodar no prompt de comando dentro da pasta ```bfrontend o comando``` ```npm run dev```;
+<br>
+&emsp; 2.5 - Para visualizar a aplicação no dispositivo móvel recomenda-se a utilização do [expo](https://expo.dev/);
 <br>
 3 - O projeto já está pronto para teste local.
 <br>
 
+## 💻 Configuração para Aplicação
+
+1 - Criação de VPC e subredes na AWS
+<br>
+2 - Criação de EC2 na AWS
+<br>
+3 - Criação de LoadBalancer na AWS
+<br>
+4 - Criação de RDS na AWS
+<br>
+5 - Configuração de variáveis de ambiente para a ligação com os serviços AWS
+
+## 📄 Histórico de lançamentos
+
+A cada atualização os detalhes devem ser lançados aqui.
+
+* Sprint 1 - 12/05/2023
+    * Entrega da análise de negócios
+    * A primeira versão do Wireframe
+    * A primeira versão do Mockup
+    * A primeira versão da arquitetura
+    * Requisitos funcionais
+    * Requisitos não funcionais
+    * Benchmarking
+    * Desing System
+    * Casos de uso
+* Sprint 2 - 24/02/2023
+    * Segunda versão da arquitetura
+    * Arquitetura de mensageria
+    * Algumas páginas desenvolvidas em React-native
+    * Definição de endpoints
+    * Arquitetura backend
+    * Arquitetura banco de dados
+* Sprint 3 - 26/05/2023
+    * Páginas a mais de React-native
+    * Terceira versão da arquitetura
+    * Pipeline de dados - ETL
+    * Construção da base dados
+    * Finalização dos testes unitários
+    * Documentação da API
+    * Construção dos logs no backend
+    * Início da integração do back-end e front-end
+* Sprint 4 - 09/06/2023
+    * Implementação do modelo de recomendação
+    * Finalização da integração
+    * Implementação do MQTT - produção e consumo de mensagem
+    * Fluxo da aplicação com a nova IA
+* Sprint 5 - 23/06/2023
+    * Finalização do front-end
+    * Finalização da integração
+    * Finalização do modelo de recomendação
+    * Finalização da documentação
+    * Testes de integração
+    * Logs
